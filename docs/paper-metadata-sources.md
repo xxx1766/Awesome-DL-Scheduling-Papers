@@ -819,9 +819,9 @@ records are preferred; arXiv-only records retain `DOI: -`.
 - Affiliations: Hong Kong University of Science and Technology; Alibaba Group; Fudan University
 - Affiliations source: https://www.usenix.org/system/files/osdi26-li-suyi.pdf
 - Method: 生产 AI 集群工作负载刻画；GPU 碎片整理与抢占成本感知 SpotGPU 调度
-- Advantages: 减少 20.2% 的资源松散节点；GPU 分配率从 68% 提升至 93%
+- Advantages: 回放实验中，存在资源余量的节点数减少 20.2%；GPU 分配率从 68% 提升至 93%
 - Method/advantages source: https://www.usenix.org/conference/osdi26/presentation/li-suyi
-- Verification: confirmed against the official OSDI 2026 paper page and proceedings PDF.
+- Verification: confirmed against the official OSDI 2026 paper page and proceedings PDF: the abstract and §4.1 “Effectiveness of IPC” report the 20.2% reduction in nodes with slack resources in trace replay (the section specifies a two-month replay); Fig. 9 and §4.2 “Benefits of SpotGPU” report the allocation-ratio increase from 68% to 93%.
 
 ### Weave (2026)
 - Paper title: Weave: Efficient Co-Scheduling for Disaggregated RL Post-Training
@@ -859,9 +859,9 @@ records are preferred; arXiv-only records retain `DOI: -`.
 - Affiliations: Hong Kong University of Science and Technology
 - Affiliations source: https://www.asplos-conference.org/asplos2025/program.html
 - Method: 四层共享 ML 集群栈；优化 FCFS、回填与装箱式资源分配
-- Advantages: 降低运维负担并兼顾利用率与分配公平性；支撑 160+ GPU 和 480+ 活跃用户
+- Advantages: 简化校园共享集群运维，通过公平 FCFS、回填等机制改善资源分配；已用于管理 160+ GPU、服务 480+ 活跃用户
 - Method/advantages source: https://kqxu.com/papers/asplos25-sing-xu-kaiqiang.pdf
-- Verification: confirmed against the official ASPLOS 2025 program, formal ACM DOI, and author-hosted proceedings PDF.
+- Verification: confirmed against the official ASPLOS 2025 program, formal ACM DOI, and author-hosted proceedings PDF: the abstract (PDF p. 2) reports management of 160+ GPUs and service to 480+ active users; §3 (PDF p. 4) describes the four-layer operational design, and §3.3 “Scheduler Layer,” Fig. 4, and Algorithm 1 (PDF pp. 7–8) document fair FCFS and thresholded backfill.
 
 ### Rubick (2025)
 - Paper title: Rubick: Exploiting Job Reconfigurability for Deep Learning Cluster Scheduling
@@ -869,9 +869,9 @@ records are preferred; arXiv-only records retain `DOI: -`.
 - Affiliations: East China Normal University; Alibaba Group; Huazhong University of Science and Technology; Peng Cheng Laboratory
 - Affiliations source: https://proceedings.mlsys.org/paper_files/paper/2025/file/270339c997293ca2988c62f4308e389f-Paper-Conference.pdf
 - Method: 性能模型驱动作业执行计划重配置；联合优化多资源分配
-- Advantages: 平均 JCT 与 makespan 分别改善最高 3.2× 和 1.4×
+- Advantages: 在 64-GPU 集群实验中，相对论文比较的先进系统，平均 JCT 和 makespan 最多分别缩短至 1/3.2 和 1/1.4
 - Method/advantages source: https://proceedings.mlsys.org/paper_files/paper/2025/hash/270339c997293ca2988c62f4308e389f-Abstract-Conference.html
-- Verification: confirmed against the official MLSys 2025 proceedings page and conference paper PDF.
+- Verification: confirmed against the official MLSys 2025 proceedings page and conference paper PDF: the abstract (PDF p. 1) states the 64-GPU boundary and reductions of up to 3.2× and 1.4× versus state-of-the-art systems; §7 “Evaluation” (PDF p. 8) specifies the 64-GPU cluster, and §7.2 “End-to-end comparison,” Table 4 (PDF p. 10), reports the average-JCT and makespan comparisons.
 
 ### JABAS (2025)
 - Paper title: JABAS: Joint Adaptive Batching and Automatic Scaling for DNN Training on Heterogeneous GPUs
