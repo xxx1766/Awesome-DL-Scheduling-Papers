@@ -893,4 +893,278 @@ No paper evidence has been recorded yet.
 
 ## Batch 6: Inference papers, 2025–2026
 
+## Batch 4: Inference papers, 2016–2021
+
+The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows). Affiliations below are normalized from the publication-time paper or official proceedings; arXiv-only records retain `DOI: -`.
+
+### INFaaS (2021)
+- Paper title: INFaaS: Automated Model-less Inference Serving
+- DOI: -
+- Affiliations: Stanford University
+- Affiliations source: https://www.usenix.org/system/files/atc21-romero.pdf
+- Method: 模型变体生成与性能/成本/准确率约束下的模型、硬件和优化选择；模型级与虚拟机级自动扩缩容
+- Advantages: 提高吞吐；减少延迟 SLO 违约；降低成本
+- Method/advantages source: https://www.usenix.org/conference/atc21/presentation/romero
+- Verification: confirmed; official USENIX ATC proceedings used instead of the linked PDF mirror, and no formal DOI was assigned in the proceedings record.
+
+### MIG-SERVING (2021)
+- Paper title: Serving DNN Models with Multi-Instance GPUs: A Case of the Reconfigurable Machine Scheduling Problem
+- DOI: -
+- Affiliations: ByteDance
+- Affiliations source: http://arxiv.org/abs/2109.11067
+- Method: 基于 MIG 的 GPU 分区与服务放置；贪心、遗传算法和蒙特卡洛树搜索联合重配置
+- Advantages: 满足服务级目标；减少所需 GPU 数量
+- Method/advantages source: http://arxiv.org/abs/2109.11067
+- Verification: confirmed from the arXiv version and its author-affiliation block; no formal proceedings version or DOI was found.
+
+### Mendoza et al. (2021)
+- Paper title: Interference-Aware Scheduling for Inference Serving
+- DOI: https://doi.org/10.1145/3437984.3458837
+- Affiliations: Stanford University
+- Affiliations source: https://dl.acm.org/doi/10.1145/3437984.3458837
+- Method: 干扰预测模型驱动的异构服务共置调度
+- Advantages: 降低共置造成的延迟退化
+- Method/advantages source: https://www-cs.stanford.edu/people/dmendo/papers/mendoza_euromlsys2021.pdf
+- Verification: confirmed from the ACM EuroMLSys publication and camera-ready PDF.
+
+### Abacus (2021)
+- Paper title: Enable Simultaneous DNN Services Based on Deterministic Operator Overlap and Precise Latency Prediction
+- DOI: https://doi.org/10.1145/3458817.3476143
+- Affiliations: Shanghai Jiao Tong University<br>Shanghai AI Laboratory
+- Affiliations source: https://dl.acm.org/doi/10.1145/3458817.3476143
+- Method: 基于算子重叠与精确时延预测的在线调度；按 QoS 剩余裕量排序共置服务
+- Advantages: 提高 GPU 利用率；在满足 QoS 的同时提高吞吐
+- Method/advantages source: https://www.microsoft.com/en-us/research/wp-content/uploads/2022/07/3458817.3476143.pdf
+- Verification: confirmed from the official SC publication PDF; formal ACM DOI is used instead of the Microsoft Research mirror.
+
+### Morphling (2021)
+- Paper title: Morphling: Fast, Near-Optimal Auto-Configuration for Cloud-Native Model Serving
+- DOI: https://doi.org/10.1145/3472883.3486987
+- Affiliations: The Hong Kong University of Science and Technology<br>Alibaba Group
+- Affiliations source: https://dl.acm.org/doi/10.1145/3472883.3486987
+- Method: 以性能模型和贝叶斯优化搜索云原生模型服务配置
+- Advantages: 接近最优配置；降低配置搜索开销；改善服务性能
+- Method/advantages source: https://dl.acm.org/doi/10.1145/3472883.3486987
+- Verification: confirmed from the ACM SoCC publication record and DOI metadata.
+
+### Irina (2020)
+- Paper title: Irina: Accelerating DNN Inference with Efficient Online Scheduling
+- DOI: https://doi.org/10.1145/3411029.3411035
+- Affiliations: City University of Hong Kong<br>Peng Cheng Laboratory
+- Affiliations source: https://conferences.sigcomm.org/events/apnet2020/material/apnet20-final25.pdf
+- Method: 在线抢占、机会批处理与自适应策略选择相结合的 DNN 推理调度
+- Advantages: 提高吞吐和 GPU 利用率；降低平均与尾部延迟
+- Method/advantages source: https://conferences.sigcomm.org/events/apnet2020/material/apnet20-final25.pdf
+- Verification: confirmed from the APNet official camera-ready PDF and ACM DOI record.
+
+### DyBatch (2020)
+- Paper title: DyBatch: Efficient Batching and Fair Scheduling for Deep Learning Inference on Time-sharing Devices
+- DOI: https://doi.org/10.1109/CCGrid49817.2020.00-32
+- Affiliations: The University of Sydney<br>Commonwealth Scientific and Industrial Research Organisation<br>RMIT University
+- Affiliations source: https://ieeexplore.ieee.org/document/9139602
+- Method: 面向时分设备的动态批处理与公平调度；按请求等待和 SLO 调整批次
+- Advantages: 提高吞吐；降低延迟；改善多租户公平性
+- Method/advantages source: https://ieeexplore.ieee.org/document/9139602
+- Verification: confirmed from the IEEE CCGrid publication record and DOI metadata.
+
+### CMS (2020)
+- Paper title: CMS: A Continuous Machine-Learning and Serving Platform for Industrial Big Data
+- DOI: https://doi.org/10.3390/fi12060102
+- Affiliations: Zhejiang Sci-Tech University<br>Central South University
+- Affiliations source: https://www.mdpi.com/1999-5903/12/6/102
+- Method: 持续机器学习平台统一训练、部署和模型更新；监控资源避免训练与服务争用
+- Advantages: 支持持续模型服务；减少资源争用
+- Method/advantages source: https://www.mdpi.com/1999-5903/12/6/102
+- Verification: confirmed from the publisher version and MDPI DOI record.
+
+### PERSEUS (2020)
+- Paper title: PERSEUS: Characterizing Performance and Cost of Multi-Tenant Serving for CNN Models
+- DOI: https://doi.org/10.1109/IC2E48712.2020.00014
+- Affiliations: Facebook AI Research
+- Affiliations source: https://ieeexplore.ieee.org/document/9096261/
+- Method: 多租户 CNN 服务的测量与性能/成本权衡分析；按模型、硬件和负载评估共置
+- Advantages: 提供吞吐、延迟与成本权衡依据；提高资源利用率
+- Method/advantages source: https://tianguo.info/project/mobile-deep-inference/perseus_ic2e2020.pdf
+- Verification: confirmed; the formal IC2E DOI and proceedings record take precedence over the linked arXiv record.
+
+### AutoDeep (2020)
+- Paper title: Automating Cloud Deployment for Deep Learning Inference of Real-time Online Services
+- DOI: https://doi.org/10.1109/INFOCOM41043.2020.9155267
+- Affiliations: Tsinghua University<br>University of Science and Technology of China<br>Microsoft Research Asia
+- Affiliations source: https://infocom2020.ieee-infocom.org/accepted-paper-list-main-conference.html
+- Method: 基于性能剖析的云端推理自动部署；联合选择实例、副本和模型放置
+- Advantages: 降低部署与运维开销；满足延迟目标并提高资源利用率
+- Method/advantages source: https://ieeexplore.ieee.org/document/9155267
+- Verification: confirmed; the IEEE INFOCOM formal DOI is used and the accepted-paper list confirms the paper identity and publication affiliations.
+
+### Clockwork (2020)
+- Paper title: Serving DNNs like Clockwork: Performance Predictability from the Bottom Up
+- DOI: -
+- Affiliations: Max Planck Institute for Software Systems<br>Emory University
+- Affiliations source: https://www.usenix.org/conference/osdi20/presentation/gujarati
+- Method: 利用 DNN 执行时间可预测性进行集中式请求排队与精确调度
+- Advantages: 支持大规模模型服务；降低尾延迟并稳定满足延迟目标
+- Method/advantages source: https://www.usenix.org/conference/osdi20/presentation/gujarati
+- Verification: confirmed from the official USENIX OSDI page and proceedings PDF; the USENIX record does not provide a DOI.
+
+### GSLICE (2020)
+- Paper title: GSLICE: Controlled Spatial Sharing of GPUs for a Scalable Inference Platform
+- DOI: https://doi.org/10.1145/3419111.3421284
+- Affiliations: University of California, Riverside<br>Indian Institute of Technology Gandhinagar
+- Affiliations source: https://dl.acm.org/doi/10.1145/3419111.3421284
+- Method: 基于 CUDA MPS 的 GPU 空间切分；自调节分区资源并按 SLO 调整批大小
+- Advantages: 提高 GPU 利用率和吞吐；降低推理延迟
+- Method/advantages source: https://dl.acm.org/doi/10.1145/3419111.3421284
+- Verification: confirmed from ACM SoCC DOI metadata and the publication record.
+
+### Inferline (2020)
+- Paper title: InferLine: Latency-Aware Provisioning and Scaling for Prediction Serving Pipelines
+- DOI: https://doi.org/10.1145/3419111.3421285
+- Affiliations: University of California, Berkeley<br>Georgia Institute of Technology<br>Microsoft Research
+- Affiliations source: https://dl.acm.org/doi/10.1145/3419111.3421285
+- Method: 离线剖析与离散事件仿真选择流水线硬件、复制和批处理；在线控制器按负载自动扩缩容
+- Advantages: 降低成本；减少延迟 SLO 违约
+- Method/advantages source: https://par.nsf.gov/servlets/purl/10245792
+- Verification: confirmed from the ACM SoCC record and the camera-ready paper; the README spelling `Inferline` is retained.
+
+### MArk (2019)
+- Paper title: MArk: Exploiting Cloud Services for Cost-Effective, SLO-Aware Machine Learning Inference Serving
+- DOI: -
+- Affiliations: The Hong Kong University of Science and Technology<br>University of Nevada, Reno
+- Affiliations source: https://www.usenix.org/conference/atc19/presentation/zhang-chengliang
+- Method: 动态批处理；按负载在 CPU、GPU 等异构硬件间路由并弹性扩缩容
+- Advantages: 降低服务成本；满足 SLO；提高吞吐
+- Method/advantages source: https://www.usenix.org/conference/atc19/presentation/zhang-chengliang
+- Verification: confirmed from the official USENIX ATC page and PDF; no DOI is listed in the USENIX proceedings record.
+
+### TrIMS (2019)
+- Paper title: TrIMS: Transparent and Isolated Model Sharing for Low Latency Deep Learning Inference in Function as a Service Environments
+- DOI: https://doi.org/10.1109/CLOUD.2019.00067
+- Affiliations: University of Illinois Urbana-Champaign<br>IBM Research
+- Affiliations source: https://ieeexplore.ieee.org/document/8814494
+- Method: 面向 FaaS 的多层模型缓存与隔离模型共享；减少模型加载和数据搬移
+- Advantages: 降低端到端延迟；提高系统吞吐和内存效率；保持准确率
+- Method/advantages source: https://cli99.com/pdf/trims-cloud19.pdf
+- Verification: confirmed from the IEEE CLOUD publication DOI and the publication-time paper affiliation block.
+
+### Kube-Knots (2019)
+- Paper title: Kube-Knots: Resource Harvesting through Dynamic Container Orchestration in GPU-based Datacenters
+- DOI: https://doi.org/10.1109/CLUSTER.2019.8891040
+- Affiliations: The Pennsylvania State University
+- Affiliations source: https://ieeexplore.ieee.org/document/8891040
+- Method: GPU 容器动态编排与资源回收；在在线服务和批任务间放置空闲资源
+- Advantages: 提高 GPU 利用率；提升资源收获能力
+- Method/advantages source: https://www.researchgate.net/publication/337230439_Kube-Knots_Resource_Harvesting_through_Dynamic_Container_Orchestration_in_GPU-based_Datacenters
+- Verification: confirmed from the IEEE CLUSTER DOI record and publication metadata.
+
+### Gilman et al. (2019)
+- Paper title: Challenges and Opportunities of DNN Model Execution Caching
+- DOI: https://doi.org/10.1145/3366622.3368147
+- Affiliations: Worcester Polytechnic Institute
+- Affiliations source: https://dl.acm.org/doi/10.1145/3366622.3368147
+- Method: DNN 执行缓存与模型复用；在相同输入或可复用计算间共享中间结果
+- Advantages: 减少重复计算；降低推理延迟和资源开销
+- Method/advantages source: https://dl.acm.org/doi/10.1145/3366622.3368147
+- Verification: confirmed from the formal ACM DIDL record; the DOI title is used to disambiguate the abbreviated README author label.
+
+### Nanily (2019)
+- Paper title: Nanily: A QoS-Aware Scheduling for DNN Inference Workload in Clouds
+- DOI: https://doi.org/10.1109/HPCC/SmartCity/DSS.2019.00334
+- Affiliations: University of Electronic Science and Technology of China
+- Affiliations source: https://ieeexplore.ieee.org/document/8855453
+- Method: QoS 感知的 DNN 推理任务放置与资源调度
+- Advantages: 满足 QoS 约束；提高吞吐和资源利用率
+- Method/advantages source: https://ieeexplore.ieee.org/document/8855453
+- Verification: confirmed from the IEEE HPCC/SmartCity/DSS publication record and DOI metadata.
+
+### Ebird (2019)
+- Paper title: Ebird: Elastic Batch for Improving Responsiveness and Throughput of Deep Learning Services
+- DOI: https://doi.org/10.1109/ICCD46524.2019.00075
+- Affiliations: Shanghai Jiao Tong University<br>Shanghai University of Finance and Economics
+- Affiliations source: https://www.cs.sjtu.edu.cn/~leng-jw/resources/Files/cui19iccd-ebird.pdf
+- Method: GPU 常驻内存池、多粒度推理引擎与弹性批处理调度
+- Advantages: 提高吞吐和响应性；降低推理延迟
+- Method/advantages source: https://www.cs.sjtu.edu.cn/~leng-jw/resources/Files/cui19iccd-ebird.pdf
+- Verification: confirmed from the camera-ready ICCD paper and IEEE DOI record.
+
+### Tolerance Tiers (2019)
+- Paper title: One Size Does Not Fit All: Quantifying and Exposing the Accuracy-Latency Trade-off in Machine Learning Cloud Service APIs via Tolerance Tiers
+- DOI: https://doi.org/10.1109/ISPASS.2019.00012
+- Affiliations: Carnegie Mellon University<br>University of California, Berkeley
+- Affiliations source: https://ieeexplore.ieee.org/abstract/document/8695638/
+- Method: 将可接受准确率/延迟范围划分为多个容忍等级，支持服务端按等级选择配置
+- Advantages: 提供准确率与延迟的可控权衡；降低延迟或资源成本
+- Method/advantages source: https://arxiv.org/abs/1906.11307
+- Verification: confirmed; the IEEE ISPASS formal version and DOI take precedence over the linked arXiv preprint.
+
+### RRL (2019)
+- Paper title: Swift Machine Learning Model Serving Scheduling
+- DOI: https://doi.org/10.1145/3295500.3356164
+- Affiliations: University of Nevada, Reno<br>Google
+- Affiliations source: https://dl.acm.org/doi/10.1145/3295500.3356164
+- Method: 基于强化学习的模型服务调度与资源配置
+- Advantages: 降低服务成本；满足延迟 SLO
+- Method/advantages source: https://dl.acm.org/doi/10.1145/3295500.3356164
+- Verification: confirmed from the ACM SC publication and DOI metadata.
+
+### ParM (2019)
+- Paper title: Parity Models: Erasure-Coded Resilience for Prediction Serving Systems
+- DOI: https://doi.org/10.1145/3341301.3359654
+- Affiliations: Carnegie Mellon University
+- Affiliations source: https://www.cs.cmu.edu/~rvinayak/papers/sosp2019parity-models.pdf
+- Method: 用擦除编码训练 parity model，并以编码/解码替代部分副本实现预测恢复
+- Advantages: 降低尾延迟；以更少额外资源提供容错
+- Method/advantages source: https://www.cs.cmu.edu/~rvinayak/papers/sosp2019parity-models.pdf
+- Verification: confirmed from the SOSP camera-ready paper and ACM DOI record; the superseded arXiv title was not used.
+
+### HiveMind (2018)
+- Paper title: Accelerating Deep Learning Workloads through Efficient Multi-Model Execution
+- DOI: -
+- Affiliations: Microsoft Research
+- Affiliations source: https://www.microsoft.com/en-us/research/publication/accelerating-deep-learning-workloads-through-efficient-multi-model-execution/
+- Method: 多模型执行编排与资源共享；按模型执行特征合并 GPU 工作
+- Advantages: 提高 GPU 利用率和多模型吞吐
+- Method/advantages source: https://www.microsoft.com/en-us/research/publication/accelerating-deep-learning-workloads-through-efficient-multi-model-execution/
+- Verification: confirmed from the official NeurIPS paper page and Microsoft Research publication page; no formal DOI was found.
+
+### Space-Time (2018)
+- Paper title: Dynamic Space-Time Scheduling for GPU Inference
+- DOI: -
+- Affiliations: University of California, Berkeley<br>Massachusetts Institute of Technology
+- Affiliations source: http://learningsys.org/nips18/assets/papers/102CameraReadySubmissionGPU_Virtualization%20(8).pdf
+- Method: 基于 GPU 空间与时间切分的动态共置调度
+- Advantages: 提高 GPU 利用率；在满足延迟目标下提升吞吐
+- Method/advantages source: http://learningsys.org/nips18/assets/papers/102CameraReadySubmissionGPU_Virtualization%20(8).pdf
+- Verification: confirmed from the NeurIPS 2018 workshop camera-ready PDF; no formal DOI was found.
+
+### Ease.ml (2018)
+- Paper title: Ease.ml: Towards Multi-Tenant Resource Sharing for Machine Learning Workloads
+- DOI: https://doi.org/10.1145/3187009.3177737
+- Affiliations: ETH Zurich<br>University of Rochester<br>Microsoft Research
+- Affiliations source: https://dl.acm.org/doi/10.1145/3187009.3177737
+- Method: 面向多租户的声明式模型选择与资源共享；按成本和用户需求选择模型
+- Advantages: 降低多租户模型选择与管理成本；改善资源共享
+- Method/advantages source: https://dl.acm.org/doi/10.1145/3187009.3177737
+- Verification: confirmed from the ACM VLDB publication and DOI record.
+
+### Rafiki (2018)
+- Paper title: Rafiki: Machine Learning as an Analytics Service System
+- DOI: https://doi.org/10.14778/3282495.3282499
+- Affiliations: National University of Singapore
+- Affiliations source: https://dl.acm.org/doi/10.1145/3282495.3282499
+- Method: 统一分布式数据存储与内存参数服务器，复用训练和推理任务的数据与参数
+- Advantages: 减少数据和参数加载开销；提高资源利用率
+- Method/advantages source: https://dl.acm.org/doi/10.1145/3282495.3282499
+- Verification: confirmed from the formal VLDB journal record; DOI is normalized from the publisher link in README.
+
+### Clipper (2017)
+- Paper title: Clipper: A Low-Latency Online Prediction Serving System
+- DOI: -
+- Affiliations: University of California, Berkeley<br>University of Chicago
+- Affiliations source: https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/crankshaw
+- Method: 统一预测抽象与模型选择；请求批处理、结果缓存和自适应副本路由
+- Advantages: 降低延迟；提高吞吐和准确率
+- Method/advantages source: https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/crankshaw
+- Verification: confirmed from the official USENIX NSDI proceedings page and paper; no DOI is listed in the USENIX record.
+
 No paper evidence has been recorded yet.

@@ -147,33 +147,33 @@ Please feel free to pull requests or open an issue to add papers.
 | iGniter | 2023 | TPDS |||| [Paper](https://ieeexplore.ieee.org/document/10002315) | ✿♥ | ✔ | ✔ | ✔ | [Code](https://github.com/icloud-ecnu/igniter) |
 | Gpulet | 2022 | ATC |||| [Paper](https://www.usenix.org/conference/atc22/presentation/choi-seungbeom) | ✿♠♥ | ✔ | ✔ | - | [Code](https://github.com/casys-kaist/glet) |
 | Cocktail | 2022 | NSDI |||| [Paper](https://www.usenix.org/conference/nsdi22/presentation/gunasekaran) | ♣♦♥ | - | - | ✔ | [Code](https://github.com/jashwantraj92/cocktail) |
-| INFaaS | 2021 | ATC |||| [Paper](https://www.usenix.org/system/files/atc21-romero.pdf) | ♦♥♠ | - | ✔ | ✔ | [Code](https://github.com/stanford-mast/INFaaS) |
-| MIG-SERVING | 2021 | CoRR |||| [Paper](http://arxiv.org/abs/2109.11067) | ♦♥ | ✔ | ✔ | - | - |
-| Mendoza et al. | 2021 | EuroMLSys |||| [Paper](https://dl.acm.org/doi/10.1145/3437984.3458837) | ♦ | - | ✔ | - | - |
-| Abacus | 2021 | SC |||| [Paper](https://dl.acm.org/doi/10.1145/3458817.3476143) |  ♦♠ | - | ✔ | - | [Code](https://github.com/Raphael-Hao/Abacus) |
-| Morphling | 2021 | SoCC |||| [Paper](https://dl.acm.org/doi/10.1145/3472883.3486987) | ♥♠ | ✔ | ✔ | ✔ | [Code](https://github.com/kubedl-io/morphling) |
-| Irina | 2020 | APNet |||| [Paper](https://dl.acm.org/doi/10.1145/3411029.3411035) | ♦♠✿ | ✔ | ✔ | - | - |
-| DyBatch | 2020 | CCGrid |||| [Paper](https://ieeexplore.ieee.org/document/9139602) | ♦♠ | ✔ | ✔ | - | - |
-| CMS | 2020 | Future Internet |||| [Paper](https://www.mdpi.com/1999-5903/12/6/102) | ♣✿ | - | - | - | - |
-| PERSEUS | 2020 | IC2E |||| [Paper](https://ieeexplore.ieee.org/document/9096261/) | ♦♥♠ | ✔ | - | ✔ | [Code](https://github.com/cake-lab/perseus) |
-| AutoDeep | 2020 | Infocom |||| [Paper](https://ieeexplore.ieee.org/document/9155267) | ♦♥♠ | - | ✔ | ✔ | - |
-| Clockwork | 2020 | OSDI |||| [Paper](https://www.usenix.org/conference/osdi20/presentation/gujarati) | ♦♠ | ✔ | - | - | [Code](https://gitlab.mpi-sws.org/cld/ml/clockwork) |
-| GSLICE | 2020 | SoCC |||| [Paper](https://dl.acm.org/doi/10.1145/3419111.3421284) | ♠✿ | ✔ | ✔ | - | - |
-| Inferline | 2020 | SoCC |||| [Paper](https://dl.acm.org/doi/10.1145/3419111.3421285) | ♦♥ | ✔ | - | ✔ | [Code](https://github.com/simon-mo/inferline-models) |
-| MArk | 2019 | ATC |||| [Paper](https://www.usenix.org/conference/atc19/presentation/zhang-chengliang) | ♦♥ | ✔ | - | ✔ | [Code](https://github.com/marcoszh/MArk-Project) |
-| TrIMS | 2019 | CLOUD |||| [Paper](https://ieeexplore.ieee.org/document/8814494) | ♦♠✿ | ✔ | ✔ | ✔ | [Code](https://github.com/rai-project/trims_mxnet) |
-| Kube-Knots | 2019 | CLUSTER |||| [Paper](https://ieeexplore.ieee.org/document/8891040) | ♦✿ | ✔ | ✔ | - | - |
-| Gilman et al. | 2019 | DIDL |||| [Paper](https://dl.acm.org/doi/10.1145/3366622.3368147) | ♦♠ | - | ✔ | - | - |
-| Nanily | 2019 | HPCC |||| [Paper](https://ieeexplore.ieee.org/document/8855453) |  ♦♠ | ✔ | - | - | - |
-| Ebird | 2019 | ICCD |||| [Paper](https://ieeexplore.ieee.org/abstract/document/8988602/) |  ♦♠✿ | ✔ | ✔ | - | [Code](https://github.com/sjtu-epcc/Ebird) |
-| Tolerance Tiers | 2019 | ISPASS |||| [Paper](https://ieeexplore.ieee.org/abstract/document/8695638/) | ♣♦♥ | - | - | ✔ | - |
-| RRL | 2019 | SC |||| [Paper](https://dl.acm.org/doi/10.1145/3295500.3356164) | ♦ | ✔ | ✔ | - | [Code](https://github.com/HeyangQin/RRL) |
-| ParM | 2019 | SOSP |||| [Paper](https://dl.acm.org/doi/10.1145/3341301.3359654) | ♦ | ✔ | - | - | [Code](https://github.com/thesys-lab/parity-models) |
-| HiveMind | 2018 | NIPS |||| [Paper](https://www.microsoft.com/en-us/research/publication/accelerating-deep-learning-workloads-through-efficient-multi-model-execution/) | ♠ | ✔ | ✔ | - | - |
-| Space-Time | 2018 | NIPS |||| [Paper](http://learningsys.org/nips18/assets/papers/102CameraReadySubmissionGPU_Virtualization%20(8).pdf) | ♠✿ | ✔ | ✔ | - | - |
-| Ease.ml | 2018 | VLDB |||| [Paper](https://dl.acm.org/doi/10.1145/3187009.3177737) | ♣ | - | - | - | [Code](https://github.com/easeml/automl) |
-| Rafiki | 2018 | VLDB |||| [Paper](https://dl.acm.org/doi/10.14778/3282495.3282499) | ♣♦ | ✔ | - | - | [Code](https://github.com/nginyc/rafiki) |
-| Clipper | 2017 | NSDI |||| [Paper](https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/crankshaw) | ♣♦♠ | ✔ | - | - | [Code](https://github.com/ucbrise/clipper) |
+| INFaaS | 2021 | ATC | Stanford University | 模型变体生成与性能/成本/准确率约束下的模型、硬件和优化选择；模型级与虚拟机级自动扩缩容 | 提高吞吐；减少延迟 SLO 违约；降低成本 | [Paper](https://www.usenix.org/system/files/atc21-romero.pdf) | ♦♥♠ | - | ✔ | ✔ | [Code](https://github.com/stanford-mast/INFaaS) |
+| MIG-SERVING | 2021 | CoRR | ByteDance | 基于 MIG 的 GPU 分区与服务放置；贪心、遗传算法和蒙特卡洛树搜索联合重配置 | 满足服务级目标；减少所需 GPU 数量 | [Paper](http://arxiv.org/abs/2109.11067) | ♦♥ | ✔ | ✔ | - | - |
+| Mendoza et al. | 2021 | EuroMLSys | Stanford University | 干扰预测模型驱动的异构服务共置调度 | 降低共置造成的延迟退化 | [Paper](https://dl.acm.org/doi/10.1145/3437984.3458837) | ♦ | - | ✔ | - | - |
+| Abacus | 2021 | SC | Shanghai Jiao Tong University<br>Shanghai AI Laboratory | 基于算子重叠与精确时延预测的在线调度；按 QoS 剩余裕量排序共置服务 | 提高 GPU 利用率；在满足 QoS 的同时提高吞吐 | [Paper](https://dl.acm.org/doi/10.1145/3458817.3476143) |  ♦♠ | - | ✔ | - | [Code](https://github.com/Raphael-Hao/Abacus) |
+| Morphling | 2021 | SoCC | The Hong Kong University of Science and Technology<br>Alibaba Group | 以性能模型和贝叶斯优化搜索云原生模型服务配置 | 接近最优配置；降低配置搜索开销；改善服务性能 | [Paper](https://dl.acm.org/doi/10.1145/3472883.3486987) | ♥♠ | ✔ | ✔ | ✔ | [Code](https://github.com/kubedl-io/morphling) |
+| Irina | 2020 | APNet | City University of Hong Kong<br>Peng Cheng Laboratory | 在线抢占、机会批处理与自适应策略选择相结合的 DNN 推理调度 | 提高吞吐和 GPU 利用率；降低平均与尾部延迟 | [Paper](https://dl.acm.org/doi/10.1145/3411029.3411035) | ♦♠✿ | ✔ | ✔ | - | - |
+| DyBatch | 2020 | CCGrid | The University of Sydney<br>Commonwealth Scientific and Industrial Research Organisation<br>RMIT University | 面向时分设备的动态批处理与公平调度；按请求等待和 SLO 调整批次 | 提高吞吐；降低延迟；改善多租户公平性 | [Paper](https://ieeexplore.ieee.org/document/9139602) | ♦♠ | ✔ | ✔ | - | - |
+| CMS | 2020 | Future Internet | Zhejiang Sci-Tech University<br>Central South University | 持续机器学习平台统一训练、部署和模型更新；监控资源避免训练与服务争用 | 支持持续模型服务；减少资源争用 | [Paper](https://www.mdpi.com/1999-5903/12/6/102) | ♣✿ | - | - | - | - |
+| PERSEUS | 2020 | IC2E | Facebook AI Research | 多租户 CNN 服务的测量与性能/成本权衡分析；按模型、硬件和负载评估共置 | 提供吞吐、延迟与成本权衡依据；提高资源利用率 | [Paper](https://ieeexplore.ieee.org/document/9096261/) | ♦♥♠ | ✔ | - | ✔ | [Code](https://github.com/cake-lab/perseus) |
+| AutoDeep | 2020 | Infocom | Tsinghua University<br>University of Science and Technology of China<br>Microsoft Research Asia | 基于性能剖析的云端推理自动部署；联合选择实例、副本和模型放置 | 降低部署与运维开销；满足延迟目标并提高资源利用率 | [Paper](https://ieeexplore.ieee.org/document/9155267) | ♦♥♠ | - | ✔ | ✔ | - |
+| Clockwork | 2020 | OSDI | Max Planck Institute for Software Systems<br>Emory University | 利用 DNN 执行时间可预测性进行集中式请求排队与精确调度 | 支持大规模模型服务；降低尾延迟并稳定满足延迟目标 | [Paper](https://www.usenix.org/conference/osdi20/presentation/gujarati) | ♦♠ | ✔ | - | - | [Code](https://gitlab.mpi-sws.org/cld/ml/clockwork) |
+| GSLICE | 2020 | SoCC | University of California, Riverside<br>Indian Institute of Technology Gandhinagar | 基于 CUDA MPS 的 GPU 空间切分；自调节分区资源并按 SLO 调整批大小 | 提高 GPU 利用率和吞吐；降低推理延迟 | [Paper](https://dl.acm.org/doi/10.1145/3419111.3421284) | ♠✿ | ✔ | ✔ | - | - |
+| Inferline | 2020 | SoCC | University of California, Berkeley<br>Georgia Institute of Technology<br>Microsoft Research | 离线剖析与离散事件仿真选择流水线硬件、复制和批处理；在线控制器按负载自动扩缩容 | 降低成本；减少延迟 SLO 违约 | [Paper](https://dl.acm.org/doi/10.1145/3419111.3421285) | ♦♥ | ✔ | - | ✔ | [Code](https://github.com/simon-mo/inferline-models) |
+| MArk | 2019 | ATC | The Hong Kong University of Science and Technology<br>University of Nevada, Reno | 动态批处理；按负载在 CPU、GPU 等异构硬件间路由并弹性扩缩容 | 降低服务成本；满足 SLO；提高吞吐 | [Paper](https://www.usenix.org/conference/atc19/presentation/zhang-chengliang) | ♦♥ | ✔ | - | ✔ | [Code](https://github.com/marcoszh/MArk-Project) |
+| TrIMS | 2019 | CLOUD | University of Illinois Urbana-Champaign<br>IBM Research | 面向 FaaS 的多层模型缓存与隔离模型共享；减少模型加载和数据搬移 | 降低端到端延迟；提高系统吞吐和内存效率；保持准确率 | [Paper](https://ieeexplore.ieee.org/document/8814494) | ♦♠✿ | ✔ | ✔ | ✔ | [Code](https://github.com/rai-project/trims_mxnet) |
+| Kube-Knots | 2019 | CLUSTER | The Pennsylvania State University | GPU 容器动态编排与资源回收；在在线服务和批任务间放置空闲资源 | 提高 GPU 利用率；提升资源收获能力 | [Paper](https://ieeexplore.ieee.org/document/8891040) | ♦✿ | ✔ | ✔ | - | - |
+| Gilman et al. | 2019 | DIDL | Worcester Polytechnic Institute | DNN 执行缓存与模型复用；在相同输入或可复用计算间共享中间结果 | 减少重复计算；降低推理延迟和资源开销 | [Paper](https://dl.acm.org/doi/10.1145/3366622.3368147) | ♦♠ | - | ✔ | - | - |
+| Nanily | 2019 | HPCC | University of Electronic Science and Technology of China | QoS 感知的 DNN 推理任务放置与资源调度 | 满足 QoS 约束；提高吞吐和资源利用率 | [Paper](https://ieeexplore.ieee.org/document/8855453) |  ♦♠ | ✔ | - | - | - |
+| Ebird | 2019 | ICCD | Shanghai Jiao Tong University<br>Shanghai University of Finance and Economics | GPU 常驻内存池、多粒度推理引擎与弹性批处理调度 | 提高吞吐和响应性；降低推理延迟 | [Paper](https://ieeexplore.ieee.org/abstract/document/8988602/) |  ♦♠✿ | ✔ | ✔ | - | [Code](https://github.com/sjtu-epcc/Ebird) |
+| Tolerance Tiers | 2019 | ISPASS | Carnegie Mellon University<br>University of California, Berkeley | 将可接受准确率/延迟范围划分为多个容忍等级，支持服务端按等级选择配置 | 提供准确率与延迟的可控权衡；降低延迟或资源成本 | [Paper](https://ieeexplore.ieee.org/abstract/document/8695638/) | ♣♦♥ | - | - | ✔ | - |
+| RRL | 2019 | SC | University of Nevada, Reno<br>Google | 基于强化学习的模型服务调度与资源配置 | 降低服务成本；满足延迟 SLO | [Paper](https://dl.acm.org/doi/10.1145/3295500.3356164) | ♦ | ✔ | ✔ | - | [Code](https://github.com/HeyangQin/RRL) |
+| ParM | 2019 | SOSP | Carnegie Mellon University | 用擦除编码训练 parity model，并以编码/解码替代部分副本实现预测恢复 | 降低尾延迟；以更少额外资源提供容错 | [Paper](https://dl.acm.org/doi/10.1145/3341301.3359654) | ♦ | ✔ | - | - | [Code](https://github.com/thesys-lab/parity-models) |
+| HiveMind | 2018 | NIPS | Microsoft Research | 多模型执行编排与资源共享；按模型执行特征合并 GPU 工作 | 提高 GPU 利用率和多模型吞吐 | [Paper](https://www.microsoft.com/en-us/research/publication/accelerating-deep-learning-workloads-through-efficient-multi-model-execution/) | ♠ | ✔ | ✔ | - | - |
+| Space-Time | 2018 | NIPS | University of California, Berkeley<br>Massachusetts Institute of Technology | 基于 GPU 空间与时间切分的动态共置调度 | 提高 GPU 利用率；在满足延迟目标下提升吞吐 | [Paper](http://learningsys.org/nips18/assets/papers/102CameraReadySubmissionGPU_Virtualization%20(8).pdf) | ♠✿ | ✔ | ✔ | - | - |
+| Ease.ml | 2018 | VLDB | ETH Zurich<br>University of Rochester<br>Microsoft Research | 面向多租户的声明式模型选择与资源共享；按成本和用户需求选择模型 | 降低多租户模型选择与管理成本；改善资源共享 | [Paper](https://dl.acm.org/doi/10.1145/3187009.3177737) | ♣ | - | - | - | [Code](https://github.com/easeml/automl) |
+| Rafiki | 2018 | VLDB | National University of Singapore | 统一分布式数据存储与内存参数服务器，复用训练和推理任务的数据与参数 | 减少数据和参数加载开销；提高资源利用率 | [Paper](https://dl.acm.org/doi/10.1145/3282495.3282499) | ♣♦ | ✔ | - | - | [Code](https://github.com/nginyc/rafiki) |
+| Clipper | 2017 | NSDI | University of California, Berkeley<br>University of Chicago | 统一预测抽象与模型选择；请求批处理、结果缓存和自适应副本路由 | 降低延迟；提高吞吐和准确率 | [Paper](https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/crankshaw) | ♣♦♠ | ✔ | - | - | [Code](https://github.com/ucbrise/clipper) |
 
 
 `Symbols of Inference Schedulers`:
