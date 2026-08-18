@@ -172,7 +172,7 @@ Please feel free to pull requests or open an issue to add papers.
 | HiveMind | 2018 | NIPS | Stanford University<br>Microsoft Research | 多模型执行编排与资源共享；按模型执行特征合并 GPU 工作 | 提高 GPU 利用率和多模型吞吐 | [Paper](https://www.microsoft.com/en-us/research/publication/accelerating-deep-learning-workloads-through-efficient-multi-model-execution/) | ♠ | ✔ | ✔ | - | - |
 | Space-Time | 2018 | NIPS | University of California, Berkeley<br>Massachusetts Institute of Technology | 基于 GPU 空间与时间切分的动态共置调度 | 提高 GPU 利用率；在满足延迟目标下提升吞吐 | [Paper](http://learningsys.org/nips18/assets/papers/102CameraReadySubmissionGPU_Virtualization%20(8).pdf) | ♠✿ | ✔ | ✔ | - | - |
 | Ease.ml | 2018 | VLDB | ETH Zurich<br>University of Rochester<br>Microsoft Research | 面向多租户的声明式模型选择与资源共享；按成本和用户需求选择模型 | 降低多租户模型选择与管理成本；改善资源共享 | [Paper](https://dl.acm.org/doi/10.1145/3187009.3177737) | ♣ | - | - | - | [Code](https://github.com/easeml/automl) |
-| Rafiki | 2018 | VLDB | National University of Singapore | 统一分布式数据存储与内存参数服务器，复用训练和推理任务的数据与参数 | 减少数据和参数加载开销；提高资源利用率 | [Paper](https://dl.acm.org/doi/10.1145/3282495.3282499) | ♣♦ | ✔ | - | - | [Code](https://github.com/nginyc/rafiki) |
+| Rafiki | 2018 | VLDB | National University of Singapore | 统一分布式数据存储与内存参数服务器，复用训练和推理任务的数据与参数 | 减少数据和参数加载开销；提高资源利用率 | [Paper](https://dl.acm.org/doi/10.14778/3282495.3282499) | ♣♦ | ✔ | - | - | [Code](https://github.com/nginyc/rafiki) |
 | Clipper | 2017 | NSDI | University of California, Berkeley<br>University of Chicago | 统一预测抽象与模型选择；请求批处理、结果缓存和自适应副本路由 | 降低延迟；提高吞吐和准确率 | [Paper](https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/crankshaw) | ♣♦♠ | ✔ | - | - | [Code](https://github.com/ucbrise/clipper) |
 
 
