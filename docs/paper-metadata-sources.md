@@ -883,11 +883,6 @@ records are preferred; arXiv-only records retain `DOI: -`.
 - Method/advantages source: https://dl.acm.org/doi/10.1145/3689031.3696078
 - Verification: confirmed against the official EuroSys 2025 accepted-papers page and formal ACM proceedings record.
 
-## Batch 5: Inference papers, 2022–2024
-
-
-## Batch 6: Inference papers, 2025–2026
-
 ## Batch 4: Inference papers, 2016–2021
 
 The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows). Affiliations below are normalized from the publication-time paper or official proceedings; arXiv-only records retain `DOI: -`.
@@ -1161,3 +1156,8 @@ The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows)
 - Advantages: 降低延迟；提高吞吐和准确率
 - Method/advantages source: https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/crankshaw
 - Verification: confirmed from the official USENIX NSDI proceedings page and paper; no DOI is listed in the USENIX record.
+
+## Batch 5: Inference papers, 2022–2024
+
+
+## Batch 6: Inference papers, 2025–2026
