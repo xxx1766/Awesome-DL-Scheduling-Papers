@@ -41,12 +41,12 @@ survey names, were used for matching.
 - Verification: confirmed
 
 ### Parrot (2020)
-- Affiliations: -
-- Affiliations source: https://ieeexplore.ieee.org/document/9269382
-- Method: -
-- Advantages: -
+- Affiliations: Hong Kong University of Science and Technology; Tianjin University; Dalian University of Technology
+- Affiliations source: http://cic.tju.edu.cn/faculty/liwenxin/pdf/efficient_online_tcc20.pdf
+- Method: LPCAS 推断 SRPT 作业；动态作业权重与 LP 加权带宽缩放分配
+- Advantages: 提高依赖 coflow 的通信调度效率，较 Aalo 最多降低 58.4% 总 JCT
 - Method/advantages source: https://ieeexplore.ieee.org/document/9269382
-- Verification: blocked: the README link resolves to the MArk article, not a Parrot paper; no safe formal Parrot DOI or official link was identified, so no MArk metadata is used.
+- Verification: confirmed against the formal TCC paper, "Efficient Online Scheduling for Coflow-Aware Machine Learning Clusters" (DOI 10.1109/TCC.2020.3040312); publication-time affiliations follow the paper's author footnotes.
 
 ### Non-Intrusive (2020)
 - Affiliations: -
@@ -281,8 +281,8 @@ survey names, were used for matching.
 - Verification: confirmed against the README-linked Philly/ATC publication; the prior five-institution list belonged to Gandiva and was removed.
 
 ### Gandiva (2018)
-- Affiliations: Microsoft
-- Affiliations source: https://www.usenix.org/system/files/conference/osdi18/osdi18-xiao.pdf
+- Affiliations: Beihang University; Microsoft Research; The University of Hong Kong; Huazhong University of Science and Technology; Peking University
+- Affiliations source: https://www.usenix.org/system/files/osdi18-xiao.pdf
 - Method: 运行时剖析；可抢占迭代级 GPU 调度
 - Advantages: 提高 GPU 利用率和作业吞吐
 - Method/advantages source: https://www.usenix.org/conference/osdi18/presentation/xiao
