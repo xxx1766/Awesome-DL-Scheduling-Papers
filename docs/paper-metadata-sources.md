@@ -813,7 +813,75 @@ records are preferred; arXiv-only records retain `DOI: -`.
 
 ## Batch 3: Training papers, 2025–2026
 
-No paper evidence has been recorded yet.
+### Heterogeneity at Hyperscale (2026)
+- Paper title: Heterogeneity at Hyperscale: Characterization and Scheduling of Large Production AI Clusters at Alibaba (Operational Systems)
+- DOI: -
+- Affiliations: Hong Kong University of Science and Technology; Alibaba Group; Fudan University
+- Affiliations source: https://www.usenix.org/system/files/osdi26-li-suyi.pdf
+- Method: 生产 AI 集群工作负载刻画；GPU 碎片整理与抢占成本感知 SpotGPU 调度
+- Advantages: 减少 20.2% 的资源松散节点；GPU 分配率从 68% 提升至 93%
+- Method/advantages source: https://www.usenix.org/conference/osdi26/presentation/li-suyi
+- Verification: confirmed against the official OSDI 2026 paper page and proceedings PDF.
+
+### Weave (2026)
+- Paper title: Weave: Efficient Co-Scheduling for Disaggregated RL Post-Training
+- DOI: -
+- Affiliations: Hong Kong University of Science and Technology; University of Illinois Urbana–Champaign; Alibaba Group
+- Affiliations source: https://www.usenix.org/system/files/osdi26-wu-tianyuan.pdf
+- Method: 解耦式 RL 后训练跨集群共调度；两级 co-execution group 编排与热启动切换
+- Advantages: 成本效率较标准解耦提升 1.84×、较共置基线提升 1.38×；SLO 达成率 100%
+- Method/advantages source: https://www.usenix.org/conference/osdi26/presentation/wu-tianyuan
+- Verification: confirmed against the official OSDI 2026 paper page and proceedings PDF.
+
+### RollPacker (2026)
+- Paper title: RollPacker: Taming Long-Tail Rollouts for RL Post-Training with Tail Batching
+- DOI: -
+- Affiliations: Hong Kong University of Science and Technology; Alibaba Group
+- Affiliations source: https://www.usenix.org/conference/nsdi26/presentation/gao-wei
+- Method: Tail batching 集中长尾 rollout；联合弹性并行、奖励阶段调度与流式训练
+- Advantages: 较 veRL 端到端加速 2.03×–2.56×、较 RLHFuse 最高 2.24×；保持 on-policy 准确性
+- Method/advantages source: https://www.usenix.org/system/files/nsdi26-gao-wei.pdf
+- Verification: confirmed against the official NSDI 2026 paper page and proceedings PDF.
+
+### GFS (2026)
+- Paper title: GFS: A Preemption-aware Scheduling Framework for GPU Clusters with Predictive Spot Instance Management
+- DOI: https://doi.org/10.1145/3760250.3762231
+- Affiliations: Shanghai Jiao Tong University; Zhejiang University; Alibaba Group
+- Affiliations source: https://www.asplos-conference.org/asplos2026/program/index.html
+- Method: 租户 GPU 需求预测；动态 Spot 配额与抢占成本感知调度
+- Advantages: Spot 任务驱逐率降低 33.0%、排队延迟降低 44.1%；GPU 分配率最高提升 22.8%
+- Method/advantages source: https://arxiv.org/pdf/2509.11134
+- Verification: confirmed as an ASPLOS 2026 proceedings paper by the official conference program; title, DOI, method, and results cross-checked against the paper PDF and formal ACM publication metadata.
+
+### SING (2025)
+- Paper title: Design and Operation of Shared Machine Learning Clusters on Campus
+- DOI: https://doi.org/10.1145/3669940.3707266
+- Affiliations: Hong Kong University of Science and Technology
+- Affiliations source: https://www.asplos-conference.org/asplos2025/program.html
+- Method: 四层共享 ML 集群栈；优化 FCFS、回填与装箱式资源分配
+- Advantages: 降低运维负担并兼顾利用率与分配公平性；支撑 160+ GPU 和 480+ 活跃用户
+- Method/advantages source: https://kqxu.com/papers/asplos25-sing-xu-kaiqiang.pdf
+- Verification: confirmed against the official ASPLOS 2025 program, formal ACM DOI, and author-hosted proceedings PDF.
+
+### Rubick (2025)
+- Paper title: Rubick: Exploiting Job Reconfigurability for Deep Learning Cluster Scheduling
+- DOI: -
+- Affiliations: East China Normal University; Alibaba Group; Huazhong University of Science and Technology; Peng Cheng Laboratory
+- Affiliations source: https://proceedings.mlsys.org/paper_files/paper/2025/file/270339c997293ca2988c62f4308e389f-Paper-Conference.pdf
+- Method: 性能模型驱动作业执行计划重配置；联合优化多资源分配
+- Advantages: 平均 JCT 与 makespan 分别改善最高 3.2× 和 1.4×
+- Method/advantages source: https://proceedings.mlsys.org/paper_files/paper/2025/hash/270339c997293ca2988c62f4308e389f-Abstract-Conference.html
+- Verification: confirmed against the official MLSys 2025 proceedings page and conference paper PDF.
+
+### JABAS (2025)
+- Paper title: JABAS: Joint Adaptive Batching and Automatic Scaling for DNN Training on Heterogeneous GPUs
+- DOI: https://doi.org/10.1145/3689031.3696078
+- Affiliations: UNIST; Samsung SDS
+- Affiliations source: https://dl.acm.org/doi/10.1145/3689031.3696078
+- Method: 异构 GPU 上联合细粒度自适应 batching 与粗粒度 GPU 自动扩缩容
+- Advantages: 平均训练时间缩短 33.3%、成本降低 54.2%，且无准确率损失
+- Method/advantages source: https://dl.acm.org/doi/10.1145/3689031.3696078
+- Verification: confirmed against the official EuroSys 2025 accepted-papers page and formal ACM proceedings record.
 
 ## Batch 4: Inference papers, 2016–2021
 
