@@ -14,6 +14,8 @@ Create one entry per paper using the following form:
 
 - Affiliations: Institution A; Institution B
 - Affiliations source: URL
+- Paper title: Full paper title
+- DOI: https://doi.org/...
 - Method: 中文方法短语
 - Advantages: 中文优点短语
 - Method/advantages source: URL
@@ -42,9 +44,11 @@ survey names, were used for matching.
 
 ### Parrot (2020)
 - Affiliations: Hong Kong University of Science and Technology; Tianjin University; Dalian University of Technology
-- Affiliations source: http://cic.tju.edu.cn/faculty/liwenxin/pdf/efficient_online_tcc20.pdf
+- Affiliations source: https://doi.org/10.1109/TCC.2020.3040312 (DOI is the identity anchor; the publication record is the source for the affiliation block.)
+- Paper title: Efficient Online Scheduling for Coflow-Aware Machine Learning Clusters
+- DOI: https://doi.org/10.1109/TCC.2020.3040312
 - Method: LPCAS 推断 SRPT 作业；动态作业权重与 LP 加权带宽缩放分配
-- Advantages: 提高依赖 coflow 的通信调度效率，较 Aalo 最多降低 58.4% 总 JCT
+- Advantages: 降低依赖 coflow 作业的总 JCT；仿真中较 Aalo 最多降低 58.4%
 - Method/advantages source: https://ieeexplore.ieee.org/document/9269382
 - Verification: confirmed against the formal TCC paper, "Efficient Online Scheduling for Coflow-Aware Machine Learning Clusters" (DOI 10.1109/TCC.2020.3040312); publication-time affiliations follow the paper's author footnotes.
 
