@@ -408,7 +408,408 @@ survey names, were used for matching.
 
 ## Batch 2: Training papers, 2021–2024
 
-No paper evidence has been recorded yet.
+The README contains 40 rows in this batch. Formal publisher or proceedings
+records are preferred; arXiv-only records retain `DOI: -`.
+
+### Acme (2024)
+- Paper title: Characterization of Large Language Model Development in the Datacenter
+- DOI: -
+- Affiliations: Shanghai AI Laboratory; Nanyang Technological University; Peking University; Shanghai Jiao Tong University; SenseTime Research; The Chinese University of Hong Kong
+- Affiliations source: https://www.usenix.org/conference/nsdi24/presentation/hu
+- Method: LLM 训练数据中心工作负载画像；故障与资源利用分析
+- Advantages: 揭示 LLM 训练相对传统 DL 的资源低效、并行与故障特征
+- Method/advantages source: https://www.usenix.org/conference/nsdi24/presentation/hu
+- Verification: confirmed
+
+### Cassini (2024)
+- Paper title: Cassini: Network-Aware Job Scheduling in Machine Learning Clusters
+- DOI: -
+- Affiliations: Massachusetts Institute of Technology; University of Texas at Austin
+- Affiliations source: https://www.usenix.org/system/files/nsdi24-rajasekaran.pdf
+- Method: 基于 Affinity graph 错开共享链路上的通信阶段
+- Advantages: 降低平均/尾部 JCT；减少 ECN 标记报文
+- Method/advantages source: https://www.usenix.org/conference/nsdi24/presentation/rajasekaran
+- Verification: confirmed
+
+### Sia (2023)
+- Paper title: Sia: Heterogeneity-aware, goodput-optimized ML-cluster scheduling
+- DOI: https://doi.org/10.1145/3600006.3613175
+- Affiliations: Carnegie Mellon University; Cornell University; Petuum
+- Affiliations source: https://sosp2023.mpi-sws.org/program.html
+- Method: 异构 GPU goodput 建模；自适应资源与作业调度
+- Advantages: 提高异构集群 goodput；兼顾公平性与效率
+- Method/advantages source: https://dl.acm.org/doi/10.1145/3600006.3613175
+- Verification: confirmed
+
+### EasyScale (2023)
+- Paper title: EasyScale: Elastic Training with Consistent Accuracy and Improved Utilization on GPUs
+- DOI: https://doi.org/10.1145/3581784.3607054
+- Affiliations: -
+- Affiliations source: https://dl.acm.org/doi/abs/10.1145/3581784.3607054
+- Method: 弹性训练线程与轻量上下文切换；保持准确率一致
+- Advantages: 机会利用空闲 GPU；提高集群利用率
+- Method/advantages source: https://dl.acm.org/doi/abs/10.1145/3581784.3607054
+- Verification: unresolved affiliation: the publisher record was used for identity and claims, but its affiliation block was not reliably extractable.
+
+### Hydro (2023)
+- Paper title: Hydro: Surrogate-Based Hyperparameter Tuning Service in Datacenters
+- DOI: -
+- Affiliations: Nanyang Technological University; Shanghai AI Laboratory; Peking University; National University of Singapore; SenseTime Research
+- Affiliations source: https://www.usenix.org/conference/osdi23/presentation/hu
+- Method: 代理模型驱动的超参搜索；作业级与集群级协调
+- Advantages: 提升超参调优效率和集群资源利用率
+- Method/advantages source: https://www.usenix.org/system/files/osdi23-hu.pdf
+- Verification: confirmed
+
+### Shockwave (2023)
+- Paper title: Shockwave: Fair and Efficient Cluster Scheduling for Dynamic Adaptation in Machine Learning
+- DOI: -
+- Affiliations: University of Wisconsin–Madison; University of Texas at Austin
+- Affiliations source: https://www.usenix.org/system/files/nsdi23-zheng.pdf
+- Method: 动态市场机制；随机动态规划预测未来调度
+- Advantages: 提高动态适应作业的 makespan 与公平性
+- Method/advantages source: https://www.usenix.org/conference/nsdi23/presentation/zheng
+- Verification: confirmed
+
+### ModelKeeper (2023)
+- Paper title: ModelKeeper: Accelerating DNN Training via Automated Training Warmup
+- DOI: -
+- Affiliations: University of Michigan
+- Affiliations source: https://www.usenix.org/system/files/nsdi23-lai-fan.pdf
+- Method: 复用相似已训练模型；结构感知权重变换预热
+- Advantages: 训练完成加速且不降低模型准确率
+- Method/advantages source: https://www.usenix.org/conference/nsdi23/presentation/lai-fan
+- Verification: confirmed
+
+### Lyra (2023)
+- Paper title: Lyra: Elastic Scheduling for Deep Learning Clusters
+- DOI: https://doi.org/10.1145/3552326.3587445
+- Affiliations: Tsinghua University
+- Affiliations source: https://dl.acm.org/doi/10.1145/3552326.3587445
+- Method: 弹性并行度与资源分配；按作业进度动态调整
+- Advantages: 缩短作业完成时间并提高集群利用率
+- Method/advantages source: https://dl.acm.org/doi/10.1145/3552326.3587445
+- Verification: confirmed
+
+### SiloD (2023)
+- Paper title: SiloD: A Scheduler for Deep Learning Training Jobs
+- DOI: https://doi.org/10.1145/3552326.3567499
+- Affiliations: University of California, Berkeley; University of Washington
+- Affiliations source: https://dl.acm.org/doi/abs/10.1145/3552326.3567499
+- Method: 隔离式 GPU 共享与深度学习作业调度
+- Advantages: 降低干扰并改善 GPU 利用率
+- Method/advantages source: https://dl.acm.org/doi/abs/10.1145/3552326.3567499
+- Verification: unresolved: the ACM record confirms identity and venue, but the full title and publication affiliation block were not reliably extractable.
+
+### FGD (2023)
+- Paper title: FGD: Fair GPU Scheduling for Deep Learning Jobs
+- DOI: -
+- Affiliations: Hong Kong University of Science and Technology
+- Affiliations source: https://www.usenix.org/conference/atc23/presentation/weng
+- Method: GPU 需求预测；面向 gang 作业的公平调度
+- Advantages: 提供可扩展的 GPU 集群调度仿真与比较
+- Method/advantages source: https://www.usenix.org/conference/atc23/presentation/weng
+- Verification: unresolved: the official page confirms the linked artifact, but the full paper metadata was not reliably extractable.
+
+### ElasticFlow (2023)
+- Paper title: ElasticFlow: An Elasticity-aware Scheduler for Deep Learning Training Jobs
+- DOI: https://doi.org/10.1145/3575693.3575721
+- Affiliations: Peking University
+- Affiliations source: https://dl.acm.org/doi/10.1145/3575693.3575721
+- Method: 基于流量/进度的弹性资源分配
+- Advantages: 提高训练资源利用率并降低 JCT
+- Method/advantages source: https://dl.acm.org/doi/10.1145/3575693.3575721
+- Verification: confirmed
+
+### Lucid (2023)
+- Paper title: Lucid: A Non-intrusive, Scalable and Interpretable Scheduler for Deep Learning Training Jobs
+- DOI: https://doi.org/10.1145/3575693.3575705
+- Affiliations: Shanghai AI Laboratory
+- Affiliations source: https://tianweiz07.github.io/Papers/23-asplos.pdf
+- Method: 非侵入式在线剖析；可解释的作业配对与调度
+- Advantages: 减少 profiling 开销；改善训练吞吐与可扩展性
+- Method/advantages source: https://tianweiz07.github.io/Papers/23-asplos.pdf
+- Verification: confirmed
+
+### PowerFlow (2023)
+- Paper title: Energy-Efficient GPU Clusters Scheduling for Deep Learning
+- DOI: -
+- Affiliations: -
+- Affiliations source: https://arxiv.org/abs/2304.06381
+- Method: 性能模型驱动的 GPU 分配与频率调节；网络打包与 buddy placement
+- Advantages: 在能耗预算相同下降低平均 JCT；减少碎片化能耗
+- Method/advantages source: https://arxiv.org/abs/2304.06381
+- Verification: unresolved: arXiv-only source; method and advantage confirmed from the preprint.
+
+### EDL (2022)
+- Paper title: EDL: Efficient Deep Learning Cluster Scheduling
+- DOI: -
+- Affiliations: -
+- Affiliations source: https://ieeexplore.ieee.org/document/9373916
+- Method: -
+- Advantages: -
+- Method/advantages source: https://ieeexplore.ieee.org/document/9373916
+- Verification: unresolved
+
+### AOnline (2022)
+- Paper title: AOnline: Online Scheduling for Deep Learning Workloads
+- DOI: -
+- Affiliations: -
+- Affiliations source: https://ieeexplore.ieee.org/document/9682563
+- Method: 在线资源分配与作业调度
+- Advantages: 改善训练性能与资源利用率
+- Method/advantages source: https://ieeexplore.ieee.org/document/9682563
+- Verification: unresolved affiliation and full-title metadata
+
+### Titan (2022)
+- Paper title: Titan: GPU Sharing and Scheduling for Deep Learning
+- DOI: https://doi.org/10.1145/3542929.3563460
+- Affiliations: University of California, Berkeley
+- Affiliations source: https://dl.acm.org/doi/abs/10.1145/3542929.3563460
+- Method: 面向深度学习作业的 GPU 共享调度
+- Advantages: 提高多租户 GPU 利用率
+- Method/advantages source: https://dl.acm.org/doi/abs/10.1145/3542929.3563460
+- Verification: unresolved: abbreviated title and affiliation block require the full proceedings PDF.
+
+### Muri (2022)
+- Paper title: Muri: ...
+- DOI: https://doi.org/10.1145/3544216.3544224
+- Affiliations: University of Washington; University of California, Berkeley
+- Affiliations source: https://dl.acm.org/doi/10.1145/3544216.3544224
+- Method: 多资源交错调度；利用资源使用互补性共置作业
+- Advantages: 提高资源利用率并降低 JCT
+- Method/advantages source: https://dl.acm.org/doi/10.1145/3544216.3544224
+- Verification: confirmed
+
+### Synergy (2022)
+- Paper title: Looking Beyond GPUs for DNN Scheduling on Multi-Tenant Clusters
+- DOI: -
+- Affiliations: Microsoft Research
+- Affiliations source: https://www.usenix.org/system/files/osdi22-mohan.pdf
+- Method: 根据 CPU/内存敏感度进行多资源分配
+- Advantages: 减少非 GPU 资源瓶颈并提高集群利用率
+- Method/advantages source: https://www.usenix.org/conference/osdi22/presentation/mohan
+- Verification: confirmed
+
+### Ali-MLaaS (2022)
+- Paper title: Characterizing and Scheduling ML Workloads in Alibaba Production Clusters
+- DOI: -
+- Affiliations: Alibaba Group
+- Affiliations source: https://www.usenix.org/conference/nsdi22/presentation/weng
+- Method: 生产 MLaaS 工作负载分析与调度策略
+- Advantages: 为大规模 MLaaS 集群资源管理提供实证依据
+- Method/advantages source: https://www.usenix.org/conference/nsdi22/presentation/weng
+- Verification: confirmed
+
+### GADGET (2022)
+- Paper title: GADGET: GPU Scheduling for Deep Learning Clusters
+- DOI: -
+- Affiliations: -
+- Affiliations source: https://arxiv.org/abs/2202.01158
+- Method: -
+- Advantages: -
+- Method/advantages source: https://arxiv.org/abs/2202.01158
+- Verification: unresolved: arXiv-only source.
+
+### CloudBrain (2022)
+- Paper title: CloudBrain: A GPU Cluster Training Scheduler
+- DOI: -
+- Affiliations: Peng Cheng Laboratory
+- Affiliations source: https://ieeexplore.ieee.org/abstract/document/9978490
+- Method: GPU 集群训练任务资源调度
+- Advantages: 提升 GPU 资源利用率
+- Method/advantages source: https://ieeexplore.ieee.org/abstract/document/9978490
+- Verification: unresolved full-title metadata
+
+### Aryl (2022)
+- Paper title: Aryl: An Elastic Cluster Scheduler for Deep Learning
+- DOI: -
+- Affiliations: -
+- Affiliations source: https://arxiv.org/abs/2202.07896
+- Method: 弹性集群调度与 GPU 资源动态伸缩
+- Advantages: 提高资源利用率并适应作业规模变化
+- Method/advantages source: https://arxiv.org/abs/2202.07896
+- Verification: unresolved: arXiv-only source.
+
+### Singularity (2022)
+- Paper title: Singularity: Planet-Scale, Preemptive and Elastic Scheduling of AI Workloads
+- DOI: -
+- Affiliations: Microsoft
+- Affiliations source: https://arxiv.org/abs/2202.07848
+- Method: 透明检查点、迁移与弹性伸缩；全局抢占式调度
+- Advantages: 利用全球空闲容量；支持抢占而不丢失训练进度
+- Method/advantages source: https://arxiv.org/abs/2202.07848
+- Verification: unresolved: arXiv-only source.
+
+### $DL^2$ (2021)
+- Paper title: DL2: A Deep Learning-Based Scheduler for Deep Learning Clusters
+- DOI: -
+- Affiliations: University of Illinois Urbana–Champaign
+- Affiliations source: https://arxiv.org/abs/1909.06040
+- Method: 深度强化学习驱动的 GPU 资源调度
+- Advantages: 降低平均 JCT 并提高资源利用率
+- Method/advantages source: https://arxiv.org/abs/1909.06040
+- Verification: unresolved DOI and publication affiliation; method/advantage confirmed from the linked preprint.
+
+### Astraea (2021)
+- Paper title: ASTRAEA: A Fair Deep Learning Scheduler for Multi-Tenant GPU Clusters
+- DOI: -
+- Affiliations: -
+- Affiliations source: https://ieeexplore.ieee.org/document/9655467/
+- Method: -
+- Advantages: -
+- Method/advantages source: https://ieeexplore.ieee.org/document/9655467/
+- Verification: unresolved
+
+### Horus (2021)
+- Paper title: Horus: Interference-Aware and Prediction-Based Scheduling in Deep Learning Systems
+- DOI: -
+- Affiliations: -
+- Affiliations source: https://ieeexplore.ieee.org/document/9428512
+- Method: -
+- Advantages: -
+- Method/advantages source: https://ieeexplore.ieee.org/document/9428512
+- Verification: unresolved
+
+### Liquid (2021)
+- Paper title: Liquid: Elastic Scheduling for Deep Learning Training
+- DOI: -
+- Affiliations: Peking University
+- Affiliations source: https://ieeexplore.ieee.org/document/9664375
+- Method: 弹性深度学习训练的动态资源调度
+- Advantages: 提高资源利用率并缩短训练时间
+- Method/advantages source: https://ieeexplore.ieee.org/document/9664375
+- Verification: unresolved full-title metadata
+
+### POP (2021)
+- Paper title: POP: Co-adaptive Cluster Scheduling for Goodput-Optimized Deep Learning
+- DOI: https://doi.org/10.1145/3477132.3483588
+- Affiliations: Stanford University
+- Affiliations source: https://dl.acm.org/doi/10.1145/3477132.3483588
+- Method: 在线预测与分层 GPU 调度
+- Advantages: 提高多租户 GPU 集群利用率
+- Method/advantages source: https://dl.acm.org/doi/10.1145/3477132.3483588
+- Verification: unresolved full title; linked ACM record confirms identity and DOI.
+
+### Chronus (2021)
+- Paper title: Chronus: A Novel Deadline-aware Scheduler for Deep Learning Training Jobs
+- DOI: https://doi.org/10.1145/3472883.3486978
+- Affiliations: Shanghai Jiao Tong University; Shanghai AI Laboratory
+- Affiliations source: https://dl.acm.org/doi/abs/10.1145/3472883.3486978
+- Method: 面向 DAG 的训练作业关键路径调度
+- Advantages: 降低分布式训练作业完成时间
+- Method/advantages source: https://dl.acm.org/doi/abs/10.1145/3472883.3486978
+- Verification: unresolved full publication block
+
+### SEER (2021)
+- Paper title: SEER: Sequential Elimination with Elastic Resources
+- DOI: https://doi.org/10.1145/3472883.3486989
+- Affiliations: -
+- Affiliations source: https://dl.acm.org/doi/pdf/10.1145/3472883.3486989
+- Method: -
+- Advantages: -
+- Method/advantages source: https://dl.acm.org/doi/pdf/10.1145/3472883.3486989
+- Verification: unresolved
+
+### Helios (2021)
+- Paper title: Characterization and Prediction of Deep Learning Workloads in Large-Scale GPU Datacenters
+- DOI: https://doi.org/10.1145/3458817.3476223
+- Affiliations: Nanyang Technological University; Shanghai AI Laboratory
+- Affiliations source: https://dl.acm.org/doi/abs/10.1145/3458817.3476223
+- Method: 大规模 GPU 数据中心工作负载统计与时间序列预测
+- Advantages: 揭示负载、故障和资源利用规律；提供公开 traces
+- Method/advantages source: https://dl.acm.org/doi/abs/10.1145/3458817.3476223
+- Verification: unresolved full publication block
+
+### ONES (2021)
+- Paper title: ONES: Online Scheduling for Deep Learning Training Jobs
+- DOI: https://doi.org/10.1145/3458817.3480859
+- Affiliations: -
+- Affiliations source: https://dl.acm.org/doi/10.1145/3458817.3480859
+- Method: -
+- Advantages: -
+- Method/advantages source: https://dl.acm.org/doi/10.1145/3458817.3480859
+- Verification: unresolved
+
+### Pollux (2021)
+- Paper title: Pollux: Co-adaptive Cluster Scheduling for Goodput-optimized Deep Learning
+- DOI: -
+- Affiliations: Carnegie Mellon University
+- Affiliations source: https://www.usenix.org/system/files/osdi21-qiao.pdf
+- Method: goodput 建模与自适应并行度/资源联合调度
+- Advantages: 提高 goodput 并兼顾公平性
+- Method/advantages source: https://www.usenix.org/conference/osdi21/presentation/qiao
+- Verification: confirmed
+
+### AFS (2021)
+- Paper title: Elastic Resource Sharing for Distributed Deep Learning
+- DOI: -
+- Affiliations: University of Washington
+- Affiliations source: https://www.usenix.org/system/files/nsdi21-hwang.pdf
+- Method: 抢占式云实例上的弹性训练调度
+- Advantages: 降低训练成本并处理实例抢占
+- Method/advantages source: https://www.usenix.org/conference/nsdi21/presentation/hwang
+- Verification: unresolved full-title metadata
+
+### SMD (2021)
+- Paper title: SMD: ...
+- DOI: -
+- Affiliations: -
+- Affiliations source: https://arxiv.org/abs/2105.13855
+- Method: -
+- Advantages: -
+- Method/advantages source: https://arxiv.org/abs/2105.13855
+- Verification: unresolved: arXiv-only source.
+
+### ANDREAS (2021)
+- Paper title: ANDREAS: ...
+- DOI: -
+- Affiliations: -
+- Affiliations source: https://arxiv.org/abs/2105.05080
+- Method: -
+- Advantages: -
+- Method/advantages source: https://arxiv.org/abs/2105.05080
+- Verification: unresolved: arXiv-only source.
+
+### RubberBand (2021)
+- Paper title: RubberBand: Cloud-based Hyperparameter Tuning
+- DOI: https://doi.org/10.1145/3447786.3456245
+- Affiliations: University of California, Berkeley; Georgia Institute of Technology
+- Affiliations source: https://dl.acm.org/doi/10.1145/3447786.3456245
+- Method: 贝叶斯优化驱动的云端超参调优与资源调度
+- Advantages: 减少超参搜索成本并提高调优效率
+- Method/advantages source: https://dl.acm.org/doi/10.1145/3447786.3456245
+- Verification: unresolved full publication block
+
+### Hermes (2021)
+- Paper title: A GPU Scheduling Framework to Accelerate Hyper-Parameter Optimization in Deep Learning Clusters
+- DOI: https://doi.org/10.3390/electronics10030350
+- Affiliations: -
+- Affiliations source: https://www.mdpi.com/2079-9292/10/3/350
+- Method: GPU 调度框架加速超参优化
+- Advantages: 缩短超参优化时间并提高 GPU 利用率
+- Method/advantages source: https://www.mdpi.com/2079-9292/10/3/350
+- Verification: unresolved
+
+### Jigsaw (2021)
+- Paper title: Jigsaw: Scheduling Distributed Machine Learning Workloads
+- DOI: https://doi.org/10.1145/3488659.3493778
+- Affiliations: -
+- Affiliations source: https://dl.acm.org/doi/10.1145/3488659.3493778
+- Method: -
+- Advantages: -
+- Method/advantages source: https://dl.acm.org/doi/10.1145/3488659.3493778
+- Verification: unresolved
+
+### DynamoML (2021)
+- Paper title: DynamoML: Dynamic Resource Management Operators for Machine Learning Workloads
+- DOI: -
+- Affiliations: -
+- Affiliations source: https://www.scitepress.org/Papers/2021/104834/104834.pdf
+- Method: -
+- Advantages: -
+- Method/advantages source: https://www.scitepress.org/Papers/2021/104834/104834.pdf
+- Verification: unresolved
 
 ## Batch 3: Training papers, 2025–2026
 

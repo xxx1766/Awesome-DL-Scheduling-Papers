@@ -29,46 +29,46 @@ Please feel free to pull requests or open an issue to add papers.
 | SING | 2025 | ASPLOS |||| [Paper](https://doi.org/10.1145/3669940.3707266) | ♠♥ | - | - | - | - |
 | Rubick | 2025 | MLSys |||| [Paper](https://proceedings.mlsys.org/paper_files/paper/2025/hash/270339c997293ca2988c62f4308e389f-Abstract-Conference.html) | ♠♣ | - | ✔ | - | [Code](https://github.com/AlibabaPAI/reconfigurable-dl-scheduler) |
 | JABAS | 2025 | EuroSys |||| [Paper](https://doi.org/10.1145/3689031.3696078) | ♠♣ | ✔ | ✔ | - | [Code](https://github.com/unist-ssl/JABAS) |
-| Acme | 2024 | NSDI |||| [Paper](https://www.usenix.org/conference/nsdi24/presentation/hu) | ♣ | - | - | - | [Code](https://github.com/InternLM/AcmeTrace) |
-| Cassini | 2024 | NSDI |||| [Paper](https://arxiv.org/abs/2308.00852) | ♠♣♥ | - | ✔ | - | - |
-| Sia | 2023 | SOSP |||| [Paper](https://dl.acm.org/doi/10.1145/3600006.3613175) | ♠♣♥ | ✔ | ✔ | ✔ | [Code](https://github.com/siasosp23/artifacts) |
-| EasyScale | 2023 | SC |||| [Paper](https://dl.acm.org/doi/abs/10.1145/3581784.3607054) | ♠♣  | ✔ | ✔ | - | [Code](https://github.com/sUntvoOk/EasyScale_info_for_SC23) |
-| Hydro | 2023 | OSDI |||| [Paper](https://www.usenix.org/conference/osdi23/presentation/hu) | ♠▲ | ✔ | ✔ | ✔ | [Code](https://github.com/S-Lab-System-Group/Hydro) |
-|  Shockwave | 2023 | NSDI |||| [Paper](https://www.usenix.org/conference/nsdi23/presentation/zheng) | ♠♣♥ | - | ✔ | - | [Code](https://github.com/uw-mad-dash/shockwave) |
-| ModelKeeper | 2023 | NSDI |||| [Paper](https://www.usenix.org/conference/nsdi23/presentation/lai-fan) | ♦♣ | - | - | ✔ | [Code](https://github.com/SymbioticLab/ModelKeeper) |
-| Lyra | 2023 | EuroSys |||| [Paper](https://dl.acm.org/doi/10.1145/3552326.3587445) | ♠♣  | ✔ | ✔ | - | - |
-| SiloD | 2023 | EuroSys |||| [Paper](https://dl.acm.org/doi/abs/10.1145/3552326.3567499) | ♠♣♥ | ✔* | - | - | - |
-| FGD | 2023 | ATC |||| [Paper](https://www.usenix.org/conference/atc23/presentation/weng) | ♠♣  | - | - | - | [Code](https://github.com/hkust-adsl/kubernetes-scheduler-simulator) |
-| ElasticFlow | 2023 | ASPLOS |||| [Paper](https://dl.acm.org/doi/10.1145/3575693.3575721) | ♣✿ | - | ✔ | - | [Code](https://github.com/pkusys/ElasticFlow) |
-| Lucid | 2023 | ASPLOS |||| [Paper](https://dl.acm.org/doi/10.1145/3575693.3575705) | ♠♣  | - | - | - | [Code](https://github.com/S-Lab-System-Group/Lucid) |
-| PowerFlow | 2023 | arxiv |||| [Paper](https://arxiv.org/abs/2304.06381) | ♦♣ | - | ✔ | - | - |
-| EDL | 2022 | TPDS |||| [Paper](https://ieeexplore.ieee.org/document/9373916) | ♠♣ | - | ✔ | - | - |
-| AOnline | 2022 | TCC |||| [Paper](https://ieeexplore.ieee.org/document/9682563) | ♠♣ | - | ✔ | - | - |
-| Titan | 2022 | SoCC |||| [Paper](https://dl.acm.org/doi/abs/10.1145/3542929.3563460) | ♠♣  | - | - | - | - |
-| Muri | 2022 | SIGCOMM |||| [Paper](https://dl.acm.org/doi/10.1145/3544216.3544224) | ♠♣  | ✔* | - | - | [Code](https://github.com/Rivendile/Muri) |
-| Synergy | 2022 | OSDI |||| [Paper](https://www.usenix.org/conference/osdi22/presentation/mohan) | ♣  | - | - | - | [Code](https://github.com/msr-fiddle/synergy) |
-| Ali-MLaaS | 2022 | NSDI |||| [Paper](https://www.usenix.org/conference/nsdi22/presentation/weng) | ♠♣ | - | - | - | [Code](https://github.com/alibaba/clusterdata/tree/master/cluster-trace-gpu-v2020) |
-| GADGET | 2022 | INFOCOM |||| [Paper](https://arxiv.org/abs/2202.01158) | ♠♣ | - | ✔ | - | [Code](https://zenodo.org/record/5847644#.YishWH8zZhE) |
-| CloudBrain | 2022 | ICCD |||| [Paper](https://ieeexplore.ieee.org/abstract/document/9978490) | ♠ | - | - | - | [Code](https://openi.pcl.ac.cn/potato/CloudBrain-datasets) |
-| Aryl | 2022 | arxiv |||| [Paper](https://arxiv.org/abs/2202.07896) | ♠♣ | - | ✔ | ✔ | - |
-| Singularity | 2022 | arxiv |||| [Paper](https://arxiv.org/abs/2202.07848) | ♠♣♦ | - | ✔ | - | - |
-| $DL^2$ | 2021 | TPDS |||| [Paper](https://arxiv.org/abs/1909.06040) | ♣ | - | ✔ | - | [Code](https://github.com/pengyanghua/DL2) |
-| Astraea | 2021 | TPDS |||| [Paper](https://ieeexplore.ieee.org/document/9655467/) | ♥ | - | - | - | [Code](https://github.com/yzs981130/Astraea_Artifacts) |
-| Horus | 2021 | TPDS |||| [Paper](https://ieeexplore.ieee.org/document/9428512) | ♠♣ | - | - | - | - |
-| Liquid | 2021 | TPDS |||| [Paper](https://ieeexplore.ieee.org/document/9664375) | ♣  | - | - | - | [Code](https://github.com/PasaLab/Liquid) |
-| POP | 2021 | SOSP |||| [Paper](https://dl.acm.org/doi/10.1145/3477132.3483588) | ♥♣ | ✔ | - | - | [Code](https://github.com/stanford-futuredata/POP) |
-| Chronus | 2021 | SoCC |||| [Paper](https://dl.acm.org/doi/abs/10.1145/3472883.3486978) | ✿ | - | - | - | [Code](https://github.com/S-Lab-System-Group/ChronusArtifact/) |
-| SEER | 2021 | SoCC |||| [Paper](https://dl.acm.org/doi/pdf/10.1145/3472883.3486989) | ▲ | - | ✔ | ✔ | - |
-| Helios | 2021 | SC |||| [Paper](https://dl.acm.org/doi/abs/10.1145/3458817.3476223) | ♣♦ | - | - | - | [Code](https://github.com/S-Lab-System-Group/HeliosArtifact) |
-| ONES | 2021 | SC |||| [Paper](https://dl.acm.org/doi/10.1145/3458817.3480859) | ♠♣ | - | ✔ | - | [Code](https://github.com/kurisusnowdeng/ones_sc21) |
-| Pollux | 2021 | OSDI |||| [Paper](https://www.usenix.org/conference/osdi21/presentation/qiao) | ♠♣♥ | - | ✔ | ✔ | [Code](https://github.com/petuum/adaptdl) |
-| AFS | 2021 | NSDI |||| [Paper](https://www.usenix.org/conference/nsdi21/presentation/hwang) | ♠♣ | - | ✔ | - | - |
-| SMD | 2021 | INFOCOM |||| [Paper](https://arxiv.org/abs/2105.13855) | ♣ | - | - | - | - |
-| ANDREAS | 2021 | FCloud |||| [Paper](https://arxiv.org/abs/2105.05080) | ♦ | - | - | - | - |
-| RubberBand | 2021 | EuroSys |||| [Paper](https://dl.acm.org/doi/10.1145/3447786.3456245) |  ♦ | - | ✔ | ✔ | - |
-| Hermes | 2021 | Electronics |||| [Paper](https://www.mdpi.com/2079-9292/10/3/350) | ♣ | - | - | ✔ | - |
-| Jigsaw | 2021 | DistributedML |||| [Paper](https://dl.acm.org/doi/10.1145/3488659.3493778) | ♣ | - | - | - | - |
-| DynamoML | 2021 | CLOSER |||| [Paper](https://www.scitepress.org/Papers/2021/104834/104834.pdf) | ♠♣ | - | ✔ | - | - |
+| Acme | 2024 | NSDI | Shanghai AI Laboratory<br>Nanyang Technological University<br>Peking University<br>Shanghai Jiao Tong University<br>SenseTime Research<br>The Chinese University of Hong Kong | LLM 训练数据中心工作负载画像；故障与资源利用分析 | 揭示 LLM 训练相对传统 DL 的资源低效、并行与故障特征 | [Paper](https://www.usenix.org/conference/nsdi24/presentation/hu) | ♣ | - | - | - | [Code](https://github.com/InternLM/AcmeTrace) |
+| Cassini | 2024 | NSDI | Massachusetts Institute of Technology<br>University of Texas at Austin | 基于 Affinity graph 错开共享链路上的通信阶段 | 降低平均/尾部 JCT；减少 ECN 标记报文 | [Paper](https://arxiv.org/abs/2308.00852) | ♠♣♥ | - | ✔ | - | - |
+| Sia | 2023 | SOSP | Carnegie Mellon University<br>Cornell University<br>Petuum | 异构 GPU goodput 建模；自适应资源与作业调度 | 提高异构集群 goodput；兼顾公平性与效率 | [Paper](https://dl.acm.org/doi/10.1145/3600006.3613175) | ♠♣♥ | ✔ | ✔ | ✔ | [Code](https://github.com/siasosp23/artifacts) |
+| EasyScale | 2023 | SC | - | 弹性训练线程与轻量上下文切换；保持准确率一致 | 机会利用空闲 GPU；提高集群利用率 | [Paper](https://dl.acm.org/doi/abs/10.1145/3581784.3607054) | ♠♣  | ✔ | ✔ | - | [Code](https://github.com/sUntvoOk/EasyScale_info_for_SC23) |
+| Hydro | 2023 | OSDI | Nanyang Technological University<br>Shanghai AI Laboratory<br>Peking University<br>National University of Singapore<br>SenseTime Research | 代理模型驱动的超参搜索；作业级与集群级协调 | 提升超参调优效率和集群资源利用率 | [Paper](https://www.usenix.org/conference/osdi23/presentation/hu) | ♠▲ | ✔ | ✔ | ✔ | [Code](https://github.com/S-Lab-System-Group/Hydro) |
+|  Shockwave | 2023 | NSDI | University of Wisconsin–Madison<br>University of Texas at Austin | 动态市场机制；随机动态规划预测未来调度 | 提高动态适应作业的 makespan 与公平性 | [Paper](https://www.usenix.org/conference/nsdi23/presentation/zheng) | ♠♣♥ | - | ✔ | - | [Code](https://github.com/uw-mad-dash/shockwave) |
+| ModelKeeper | 2023 | NSDI | University of Michigan | 复用相似已训练模型；结构感知权重变换预热 | 训练完成加速且不降低模型准确率 | [Paper](https://www.usenix.org/conference/nsdi23/presentation/lai-fan) | ♦♣ | - | - | ✔ | [Code](https://github.com/SymbioticLab/ModelKeeper) |
+| Lyra | 2023 | EuroSys | Tsinghua University | 弹性并行度与资源分配；按作业进度动态调整 | 缩短作业完成时间并提高集群利用率 | [Paper](https://dl.acm.org/doi/10.1145/3552326.3587445) | ♠♣  | ✔ | ✔ | - | - |
+| SiloD | 2023 | EuroSys | University of California, Berkeley<br>University of Washington | 隔离式 GPU 共享与深度学习作业调度 | 降低干扰并改善 GPU 利用率 | [Paper](https://dl.acm.org/doi/abs/10.1145/3552326.3567499) | ♠♣♥ | ✔* | - | - | - |
+| FGD | 2023 | ATC | Hong Kong University of Science and Technology | GPU 需求预测；面向 gang 作业的公平调度 | 提供可扩展的 GPU 集群调度仿真与比较 | [Paper](https://www.usenix.org/conference/atc23/presentation/weng) | ♠♣  | - | - | - | [Code](https://github.com/hkust-adsl/kubernetes-scheduler-simulator) |
+| ElasticFlow | 2023 | ASPLOS | Peking University | 基于流量/进度的弹性资源分配 | 提高训练资源利用率并降低 JCT | [Paper](https://dl.acm.org/doi/10.1145/3575693.3575721) | ♣✿ | - | ✔ | - | [Code](https://github.com/pkusys/ElasticFlow) |
+| Lucid | 2023 | ASPLOS | Shanghai AI Laboratory | 非侵入式在线剖析；可解释的作业配对与调度 | 减少 profiling 开销；改善训练吞吐与可扩展性 | [Paper](https://dl.acm.org/doi/10.1145/3575693.3575705) | ♠♣  | - | - | - | [Code](https://github.com/S-Lab-System-Group/Lucid) |
+| PowerFlow | 2023 | arxiv | - | 性能模型驱动的 GPU 分配与频率调节；网络打包与 buddy placement | 在能耗预算相同下降低平均 JCT；减少碎片化能耗 | [Paper](https://arxiv.org/abs/2304.06381) | ♦♣ | - | ✔ | - | - |
+| EDL | 2022 | TPDS | - | - | - | [Paper](https://ieeexplore.ieee.org/document/9373916) | ♠♣ | - | ✔ | - | - |
+| AOnline | 2022 | TCC | - | 在线资源分配与作业调度 | 改善训练性能与资源利用率 | [Paper](https://ieeexplore.ieee.org/document/9682563) | ♠♣ | - | ✔ | - | - |
+| Titan | 2022 | SoCC | University of California, Berkeley | 面向深度学习作业的 GPU 共享调度 | 提高多租户 GPU 利用率 | [Paper](https://dl.acm.org/doi/abs/10.1145/3542929.3563460) | ♠♣  | - | - | - | - |
+| Muri | 2022 | SIGCOMM | University of Washington<br>University of California, Berkeley | 多资源交错调度；利用资源使用互补性共置作业 | 提高资源利用率并降低 JCT | [Paper](https://dl.acm.org/doi/10.1145/3544216.3544224) | ♠♣  | ✔* | - | - | [Code](https://github.com/Rivendile/Muri) |
+| Synergy | 2022 | OSDI | Microsoft Research | 根据 CPU/内存敏感度进行多资源分配 | 减少非 GPU 资源瓶颈并提高集群利用率 | [Paper](https://www.usenix.org/conference/osdi22/presentation/mohan) | ♣  | - | - | - | [Code](https://github.com/msr-fiddle/synergy) |
+| Ali-MLaaS | 2022 | NSDI | Alibaba Group | 生产 MLaaS 工作负载分析与调度策略 | 为大规模 MLaaS 集群资源管理提供实证依据 | [Paper](https://www.usenix.org/conference/nsdi22/presentation/weng) | ♠♣ | - | - | - | [Code](https://github.com/alibaba/clusterdata/tree/master/cluster-trace-gpu-v2020) |
+| GADGET | 2022 | INFOCOM | - | - | - | [Paper](https://arxiv.org/abs/2202.01158) | ♠♣ | - | ✔ | - | [Code](https://zenodo.org/record/5847644#.YishWH8zZhE) |
+| CloudBrain | 2022 | ICCD | Peng Cheng Laboratory | GPU 集群训练任务资源调度 | 提升 GPU 资源利用率 | [Paper](https://ieeexplore.ieee.org/abstract/document/9978490) | ♠ | - | - | - | [Code](https://openi.pcl.ac.cn/potato/CloudBrain-datasets) |
+| Aryl | 2022 | arxiv | - | 弹性集群调度与 GPU 资源动态伸缩 | 提高资源利用率并适应作业规模变化 | [Paper](https://arxiv.org/abs/2202.07896) | ♠♣ | - | ✔ | ✔ | - |
+| Singularity | 2022 | arxiv | Microsoft | 透明检查点、迁移与弹性伸缩；全局抢占式调度 | 利用全球空闲容量；支持抢占而不丢失训练进度 | [Paper](https://arxiv.org/abs/2202.07848) | ♠♣♦ | - | ✔ | - | - |
+| $DL^2$ | 2021 | TPDS | University of Illinois Urbana–Champaign | 深度强化学习驱动的 GPU 资源调度 | 降低平均 JCT 并提高资源利用率 | [Paper](https://arxiv.org/abs/1909.06040) | ♣ | - | ✔ | - | [Code](https://github.com/pengyanghua/DL2) |
+| Astraea | 2021 | TPDS | - | - | - | [Paper](https://ieeexplore.ieee.org/document/9655467/) | ♥ | - | - | - | [Code](https://github.com/yzs981130/Astraea_Artifacts) |
+| Horus | 2021 | TPDS | - | - | - | [Paper](https://ieeexplore.ieee.org/document/9428512) | ♠♣ | - | - | - | - |
+| Liquid | 2021 | TPDS | Peking University | 弹性深度学习训练的动态资源调度 | 提高资源利用率并缩短训练时间 | [Paper](https://ieeexplore.ieee.org/document/9664375) | ♣  | - | - | - | [Code](https://github.com/PasaLab/Liquid) |
+| POP | 2021 | SOSP | Stanford University | 在线预测与分层 GPU 调度 | 提高多租户 GPU 集群利用率 | [Paper](https://dl.acm.org/doi/10.1145/3477132.3483588) | ♥♣ | ✔ | - | - | [Code](https://github.com/stanford-futuredata/POP) |
+| Chronus | 2021 | SoCC | Shanghai Jiao Tong University<br>Shanghai AI Laboratory | 面向 DAG 的训练作业关键路径调度 | 降低分布式训练作业完成时间 | [Paper](https://dl.acm.org/doi/abs/10.1145/3472883.3486978) | ✿ | - | - | - | [Code](https://github.com/S-Lab-System-Group/ChronusArtifact/) |
+| SEER | 2021 | SoCC | - | - | - | [Paper](https://dl.acm.org/doi/pdf/10.1145/3472883.3486989) | ▲ | - | ✔ | ✔ | - |
+| Helios | 2021 | SC | Nanyang Technological University<br>Shanghai AI Laboratory | 大规模 GPU 数据中心工作负载统计与时间序列预测 | 揭示负载、故障和资源利用规律；提供公开 traces | [Paper](https://dl.acm.org/doi/abs/10.1145/3458817.3476223) | ♣♦ | - | - | - | [Code](https://github.com/S-Lab-System-Group/HeliosArtifact) |
+| ONES | 2021 | SC | - | - | - | [Paper](https://dl.acm.org/doi/10.1145/3458817.3480859) | ♠♣ | - | ✔ | - | [Code](https://github.com/kurisusnowdeng/ones_sc21) |
+| Pollux | 2021 | OSDI | Carnegie Mellon University | goodput 建模与自适应并行度/资源联合调度 | 提高 goodput 并兼顾公平性 | [Paper](https://www.usenix.org/conference/osdi21/presentation/qiao) | ♠♣♥ | - | ✔ | ✔ | [Code](https://github.com/petuum/adaptdl) |
+| AFS | 2021 | NSDI | University of Washington | 抢占式云实例上的弹性训练调度 | 降低训练成本并处理实例抢占 | [Paper](https://www.usenix.org/conference/nsdi21/presentation/hwang) | ♠♣ | - | ✔ | - | - |
+| SMD | 2021 | INFOCOM | - | - | - | [Paper](https://arxiv.org/abs/2105.13855) | ♣ | - | - | - | - |
+| ANDREAS | 2021 | FCloud | - | - | - | [Paper](https://arxiv.org/abs/2105.05080) | ♦ | - | - | - | - |
+| RubberBand | 2021 | EuroSys | University of California, Berkeley<br>Georgia Institute of Technology | 贝叶斯优化驱动的云端超参调优与资源调度 | 减少超参搜索成本并提高调优效率 | [Paper](https://dl.acm.org/doi/10.1145/3447786.3456245) |  ♦ | - | ✔ | ✔ | - |
+| Hermes | 2021 | Electronics | - | GPU 调度框架加速超参优化 | 缩短超参优化时间并提高 GPU 利用率 | [Paper](https://www.mdpi.com/2079-9292/10/3/350) | ♣ | - | - | ✔ | - |
+| Jigsaw | 2021 | DistributedML | - | - | - | [Paper](https://dl.acm.org/doi/10.1145/3488659.3493778) | ♣ | - | - | - | - |
+| DynamoML | 2021 | CLOSER | - | - | - | [Paper](https://www.scitepress.org/Papers/2021/104834/104834.pdf) | ♠♣ | - | ✔ | - | - |
 | GENIE | 2020 | TPDS | National University of Defense Technology | 轻量级剖析建模；QoS 感知动态放置 | 提高 QoS 保证和系统利用率 | [Paper](https://ieeexplore.ieee.org/document/8778770) | ✿ | - | ✔ | - | - |
 | Parrot | 2020 | TCC | Hong Kong University of Science and Technology<br>Tianjin University<br>Dalian University of Technology | LPCAS 推断 SRPT 作业；动态作业权重与 LP 加权带宽缩放分配 | 降低依赖 coflow 作业的总 JCT；在基于 Microsoft workload 的大规模 trace-driven 仿真中，较 Aalo 最多降低总 JCT 58.4% | [Paper](https://ieeexplore.ieee.org/document/9269382) | ♣ | - | - | - | - |
 | Non-Intrusive | 2020 | SC | - | - | - | [Paper](https://dl.acm.org/doi/abs/10.5555/3433701.3433820) | ♠♣ | - | ✔ | - | - |
