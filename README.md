@@ -69,43 +69,43 @@ Please feel free to pull requests or open an issue to add papers.
 | Hermes | 2021 | Electronics |||| [Paper](https://www.mdpi.com/2079-9292/10/3/350) | ♣ | - | - | ✔ | - |
 | Jigsaw | 2021 | DistributedML |||| [Paper](https://dl.acm.org/doi/10.1145/3488659.3493778) | ♣ | - | - | - | - |
 | DynamoML | 2021 | CLOSER |||| [Paper](https://www.scitepress.org/Papers/2021/104834/104834.pdf) | ♠♣ | - | ✔ | - | - |
-| GENIE | 2020 | TPDS |||| [Paper](https://ieeexplore.ieee.org/document/8778770) | ✿ | - | ✔ | - | - |
-| Parrot | 2020 | TCC |||| [Paper](https://ieeexplore.ieee.org/document/9269382) | ♣ | - | - | - | - |
-| Non-Intrusive | 2020 | SC |||| [Paper](https://dl.acm.org/doi/abs/10.5555/3433701.3433820) | ♠♣ | - | ✔ | - | - |
-| Antman | 2020 | OSDI |||| [Paper](https://www.usenix.org/system/files/osdi20-xiao.pdf) | ♠♣ | - | ✔ | - | [Code](https://github.com/alibaba/GPU-scheduler-for-deep-learning) |
-| Gavel | 2020 | OSDI |||| [Paper](https://www.usenix.org/conference/osdi20/presentation/narayanan-deepak) | ♣♥ | ✔ | - | - | [Code](https://github.com/stanford-futuredata/gavel) |
-| HiveD | 2020 | OSDI |||| [Paper](https://www.usenix.org/conference/osdi20/presentation/zhao-hanyu) | ♣ | - | - | - | [Code](https://github.com/microsoft/hivedscheduler) |
-| Themis | 2020 | NSDI |||| [Paper](https://www.usenix.org/conference/nsdi20/presentation/mahajan) | ♥ | - | - | - | - |
-| Salus | 2020 | MLSys |||| [Paper](https://proceedings.mlsys.org/paper/2020/hash/f7177163c833dff4b38fc8d2872f1ec6-Abstract.html) | ♠♣ | - | - | - | [Code](https://github.com/SymbioticLab/Salus) |
-| Vaibhav et al. | 2020 | MASCOTS |||| [Paper](https://ieeexplore.ieee.org/abstract/document/9285954) | ♠♣ | - | ✔ | - | - |
-| SPIN | 2020 | INFOCOM |||| [Paper](https://ieeexplore.ieee.org/document/9155445/) | ♣ | - | - | - | - |
-| E-LAS | 2020 | ICPP |||| [Paper](https://dl.acm.org/doi/fullHtml/10.1145/3404397.3404415) | ♣ | - | - | - | - |
-| CODA | 2020 | ICDCS |||| [Paper](https://ieeexplore.ieee.org/document/9355823) | ♣ | ✔* | - | - | - |
-| Elan | 2020 | ICDCS |||| [Paper](https://ieeexplore.ieee.org/document/9355755) | ♠♣ | - | ✔ | - | - |
-| Yeung | 2020 | HotCloud |||| [Paper](https://www.usenix.org/conference/hotcloud20/presentation/yeung) | ♠ | - | - | - | - |
-| $Gandiva_{fair}$ | 2020 | EuroSys |||| [Paper](https://dl.acm.org/doi/abs/10.1145/3342195.3387555) | ♥♣ | ✔ | - | - | - |
-| MLCloudPrice | 2020 | DISPA |||| [Paper](https://cs.stanford.edu/~matei/papers/2020/dispa_cloud_ml.pdf) |  ♣♦ | - | - | - | [Code](https://github.com/stanford-futuredata/training_on_a_dime) |
-| MLFS | 2020 | CoNext |||| [Paper](https://dl.acm.org/doi/10.1145/3386367.3432588) | ♣✿ | - | - | - | [Code](https://github.com/hiddenlayer2020/ML-Job-Scheduler-MLFS) |
-| MARBLE | 2020 | CCGRID |||| [Paper](https://ieeexplore.ieee.org/document/9407835) | ♠♣ | - | ✔ | - | - |
-| Ada-SRSF | 2020 | arxiv |||| [Paper](https://arxiv.org/abs/2002.10105) | ♣ | ✔* | - | - | - |
-| Co-scheML | 2020 | ACSOS |||| [Paper](https://ieeexplore.ieee.org/document/9196380) | ♣ | - | - | - | - |
-| HyperSched | 2019 | SoCC |||| [Paper](https://dl.acm.org/doi/10.1145/3357223.3362719) | ✿ ▲ | - | ✔ | ✔ | - |
-| Tiresias | 2019 | NSDI |||| [Paper](https://www.usenix.org/conference/nsdi19/presentation/gu) | ♣ | - | - | - | [Code](https://github.com/SymbioticLab/Tiresias) |
-| FfDL | 2019 | Middleware |||| [Paper](https://dl.acm.org/doi/10.1145/3361525.3361538) | ♣ | - | - | - | [Code](https://github.com/IBM/FfDL) |
-| JPAS | 2019 | JNCA |||| [Paper](https://www.sciencedirect.com/science/article/abs/pii/S1084804520300643) | ♣▲ | - | - | ✔ | - |
-| Harmony | 2019 | INFOCOM |||| [Paper](https://ieeexplore.ieee.org/document/8737460) | ♣ | - | - | - | - |
-| Cynthia | 2019 | ICPP |||| [Paper](https://dl.acm.org/doi/10.1145/3337821.3337873) | ♦ | - | ✔ | - | - |
-| Jahani | 2019 | ICCCS |||| [Paper](https://ieeexplore.ieee.org/document/8888151) | ♦ | ✔ | ✔ | - | - |
-| $Sched^2$ | 2019 | GLOBECOM |||| [Paper](https://ieeexplore.ieee.org/document/9014110) | ♣ | - | - | - | - |
-| Dragon | 2019 | CLOSER |||| [Paper](https://pdfs.semanticscholar.org/3075/cf85b9a70092bcafa10757c6ee6f73b75c2e.pdf) | ♠♣ | - | ✔ | - | - |
-| $FC^2$ | 2019 | CC |||| [Paper](https://link.springer.com/article/10.1007/s10586-019-02912-6) |  ♦ | ✔* | ✔ | - | - |
-| Philly | 2019 | ATC |||| [Paper](https://www.usenix.org/conference/atc19/presentation/jeon) | ♣ | - | - | - | [Code](https://github.com/msr-fiddle/philly-traces) |
-| Gandiva | 2018 | OSDI |||| [Paper](https://www.usenix.org/conference/osdi18/presentation/xiao) | ♠♣ | - | ✔ | ✔ | - |
-| OASiS | 2018 | INFOCOM |||| [Paper](https://ieeexplore.ieee.org/abstract/document/8486422) | ♠♣ | - | ✔ | - | - |
-| Optimus | 2018 | EuroSys |||| [Paper](https://i.cs.hku.hk/~cwu/papers/yhpeng-eurosys18.pdf) | ♣  | - | ✔ | - | [Code](https://github.com/pengyanghua/optimus) |
-| Dorm | 2017 | SMARTCOMP |||| [Paper](https://www.computer.org/csdl/proceedings-article/smartcomp/2017/07947053/12OmNAlvHZ3) | ♥ | - | - | - | - |
-| Topology-Aware | 2017 | SC |||| [Paper](https://dl.acm.org/doi/10.1145/3126908.3126933) | ♣ | - | - | - | [Code](https://github.com/HiEST/gpu-topo-aware) |
-| HyperDrive | 2017 | Middleware |||| [Paper](https://dl.acm.org/doi/10.1145/3135974.3135994) | ♣▲ | - | - | ✔ | - |
+| GENIE | 2020 | TPDS | National University of Defense Technology | 轻量级剖析建模；QoS 感知动态放置 | 提高 QoS 保证和系统利用率 | [Paper](https://ieeexplore.ieee.org/document/8778770) | ✿ | - | ✔ | - | - |
+| Parrot | 2020 | TCC | - | - | - | [Paper](https://ieeexplore.ieee.org/document/9269382) | ♣ | - | - | - | - |
+| Non-Intrusive | 2020 | SC | - | - | - | [Paper](https://dl.acm.org/doi/abs/10.5555/3433701.3433820) | ♠♣ | - | ✔ | - | - |
+| Antman | 2020 | OSDI | Alibaba | 动态显存扩缩容；机会计算共置 | 提高 GPU 显存和计算单元利用率 | [Paper](https://www.usenix.org/system/files/osdi20-xiao.pdf) | ♠♣ | - | ✔ | - | [Code](https://github.com/alibaba/GPU-scheduler-for-deep-learning) |
+| Gavel | 2020 | OSDI | Stanford University<br>Microsoft Research | 有效吞吐量建模；异构感知优化分配 | 提高负载承载量；降低 JCT 和 makespan | [Paper](https://www.usenix.org/conference/osdi20/presentation/narayanan-deepak) | ♣♥ | ✔ | - | - | [Code](https://github.com/stanford-futuredata/gavel) |
+| HiveD | 2020 | OSDI | Peking University<br>Microsoft<br>The University of Hong Kong | 多级 GPU 亲和单元；虚拟私有集群 | 提供共享安全保证；支持生产集群长期运行 | [Paper](https://www.usenix.org/conference/osdi20/presentation/zhao-hanyu) | ♣ | - | - | - | [Code](https://github.com/microsoft/hivedscheduler) |
+| Themis | 2020 | NSDI | University of Wisconsin–Madison<br>Microsoft Research | 完工时间公平；两级拍卖调度 | 提高公平性和集群效率 | [Paper](https://www.usenix.org/conference/nsdi20/presentation/mahajan) | ♥ | - | - | - | - |
+| Salus | 2020 | MLSys | University of Michigan | 快速作业切换；显存共享 | 支持细粒度 GPU 共享并提高利用率 | [Paper](https://proceedings.mlsys.org/paper/2020/hash/f7177163c833dff4b38fc8d2872f1ec6-Abstract.html) | ♠♣ | - | - | - | [Code](https://github.com/SymbioticLab/Salus) |
+| Vaibhav et al. | 2020 | MASCOTS | IBM Research | 动态批大小与资源联合扩缩容 | 改善作业运行时间和集群利用率 | [Paper](https://ieeexplore.ieee.org/abstract/document/9285954) | ♠♣ | - | ✔ | - | - |
+| SPIN | 2020 | INFOCOM | - | 通信争用感知的作业调度 | - | [Paper](https://ieeexplore.ieee.org/document/9155445/) | ♣ | - | - | - | - |
+| E-LAS | 2020 | ICPP | University of Louisiana at Lafayette | 基于实时 epoch 进度的完成时间无关调度 | 提高训练吞吐量并降低平均完成时间 | [Paper](https://dl.acm.org/doi/fullHtml/10.1145/3404397.3404415) | ♣ | - | - | - | - |
+| CODA | 2020 | ICDCS | Shanghai Jiao Tong University<br>China University of Geosciences | CPU 资源反馈分配；争用消除；多阵列调度 | 提高 GPU 利用率且不增加 CPU 作业排队时间 | [Paper](https://ieeexplore.ieee.org/document/9355823) | ♣ | ✔* | - | - | - |
+| Elan | 2020 | ICDCS | - | - | - | [Paper](https://ieeexplore.ieee.org/document/9355755) | ♠♣ | - | ✔ | - | - |
+| Yeung | 2020 | HotCloud | University of Leeds | 基于计算图的 GPU 利用率预测 | 无需隔离式在线剖析即可预测利用率 | [Paper](https://www.usenix.org/conference/hotcloud20/presentation/yeung) | ♠ | - | - | - | - |
+| $Gandiva_{fair}$ | 2020 | EuroSys | Microsoft Research India | Kubernetes 上的异构 GPU 公平共享与资源交易 | 在保证用户级 GPU 时间公平的同时提高集群效率和作业进度 | [Paper](https://dl.acm.org/doi/abs/10.1145/3342195.3387555) | ♥♣ | ✔ | - | - | - |
+| MLCloudPrice | 2020 | DISPA | Stanford University<br>Microsoft Research | 跨区域、市场和云实例的动态价格优化 | 降低训练成本；支持速度成本权衡 | [Paper](https://cs.stanford.edu/~matei/papers/2020/dispa_cloud_ml.pdf) |  ♣♦ | - | - | - | [Code](https://github.com/stanford-futuredata/training_on_a_dime) |
+| MLFS | 2020 | CoNext | - | 基于作业特征的并行度感知调度 | 降低 JCT 和 makespan | [Paper](https://dl.acm.org/doi/10.1145/3386367.3432588) | ♣✿ | - | - | - | [Code](https://github.com/hiddenlayer2020/ML-Job-Scheduler-MLFS) |
+| MARBLE | 2020 | CCGRID | Oak Ridge National Laboratory<br>Virginia Tech | 多 GPU 节点非线性扩展建模与共享调度 | 改善训练性能并降低 JCT | [Paper](https://ieeexplore.ieee.org/document/9407835) | ♠♣ | - | ✔ | - | - |
+| Ada-SRSF | 2020 | arxiv | - | 通信争用感知的放置与最短剩余服务时间调度 | 相比无争用或盲目接受争用的策略降低平均 JCT 并提高资源利用率 | [Paper](https://arxiv.org/abs/2002.10105) | ♣ | ✔* | - | - | - |
+| Co-scheML | 2020 | ACSOS | - | - | - | [Paper](https://ieeexplore.ieee.org/document/9196380) | ♣ | - | - | - | - |
+| HyperSched | 2019 | SoCC | University of California, Berkeley | 截止期驱动的动态资源再分配 | 提高截止期内完成率和资源利用率 | [Paper](https://dl.acm.org/doi/10.1145/3357223.3362719) | ✿ ▲ | - | ✔ | ✔ | - |
+| Tiresias | 2019 | NSDI | University of Michigan<br>Microsoft Research | 预估 JCT 的短作业优先与离散分配 | 降低平均 JCT | [Paper](https://www.usenix.org/conference/nsdi19/presentation/gu) | ♣ | - | - | - | [Code](https://github.com/SymbioticLab/Tiresias) |
+| FfDL | 2019 | Middleware | IBM Research | 容器化深度学习服务编排与资源调度 | 提供多框架训练服务 | [Paper](https://dl.acm.org/doi/10.1145/3361525.3361538) | ♣ | - | - | - | [Code](https://github.com/IBM/FfDL) |
+| JPAS | 2019 | JNCA | - | MAIF 作业进度感知的流优先级调度 | 加速分布式训练早期阶段的探索过程 | [Paper](https://www.sciencedirect.com/science/article/abs/pii/S1084804520300643) | ♣▲ | - | - | ✔ | - |
+| Harmony | 2019 | INFOCOM | - | 基于奖励建模的深度强化学习干扰感知放置 | 降低平均 JCT | [Paper](https://ieeexplore.ieee.org/document/8737460) | ♣ | - | - | - | - |
+| Cynthia | 2019 | ICPP | - | 轻量级分析模型驱动的云资源配置 | 提供可预测训练性能并降低训练预算 | [Paper](https://dl.acm.org/doi/10.1145/3337821.3337873) | ♦ | - | ✔ | - | - |
+| Jahani | 2019 | ICCCS | Politecnico di Milano | MILP 全局优化 GPU 租赁与作业延迟 | 降低租赁成本并维持作业时延 | [Paper](https://ieeexplore.ieee.org/document/8888151) | ♦ | ✔ | ✔ | - | - |
+| $Sched^2$ | 2019 | GLOBECOM | - | 深度强化学习驱动的局部性感知训练调度 | - | [Paper](https://ieeexplore.ieee.org/document/9014110) | ♣ | - | - | - | - |
+| Dragon | 2019 | CLOSER | - | Kubernetes 集群上的分布式训练作业动态调度与扩缩容 | - | [Paper](https://doi.org/10.5220/0007707605690577) | ♠♣ | - | ✔ | - | - |
+| $FC^2$ | 2019 | CC | - | 云端集群自动配置与参数服务器资源规划 | 降低云资源成本并保持训练性能 | [Paper](https://link.springer.com/article/10.1007/s10586-019-02912-6) |  ♦ | ✔* | ✔ | - | - |
+| Philly | 2019 | ATC | UNIST<br>University of Wisconsin<br>Microsoft Research<br>Beihang University | 生产多租户 GPU 集群工作负载分析与调度追踪 | 揭示 gang 调度、本地性和故障对集群利用率的影响并给出调度设计指导 | [Paper](https://www.usenix.org/conference/atc19/presentation/jeon) | ♣ | - | - | - | [Code](https://github.com/msr-fiddle/philly-traces) |
+| Gandiva | 2018 | OSDI | Beihang University<br>Microsoft Research<br>The University of Hong Kong<br>Huazhong University of Science and Technology<br>Peking University | 运行时剖析；可抢占迭代级 GPU 调度 | 提高 GPU 利用率和作业吞吐 | [Paper](https://www.usenix.org/conference/osdi18/presentation/xiao) | ♠♣ | - | ✔ | ✔ | - |
+| OASiS | 2018 | INFOCOM | The University of Hong Kong<br>University of Calgary | 原始-对偶在线调度；联合决定 worker 与 parameter server 数量 | 提高共享集群总体效用并改善训练完成时间 | [Paper](https://ieeexplore.ieee.org/abstract/document/8486422) | ♠♣ | - | ✔ | - | - |
+| Optimus | 2018 | EuroSys | The University of Hong Kong<br>ByteDance | 基于性能模型的动态资源调度 | 提高集群利用率并降低 JCT | [Paper](https://i.cs.hku.hk/~cwu/papers/yhpeng-eurosys18.pdf) | ♣  | - | ✔ | - | [Code](https://github.com/pengyanghua/optimus) |
+| Dorm | 2017 | SMARTCOMP | - | 容器化动态划分集群；运行时调整应用分区 | 兼顾共享集群的资源效率与公平性 | [Paper](https://www.computer.org/csdl/proceedings-article/smartcomp/2017/07947053/12OmNAlvHZ3) | ♥ | - | - | - | - |
+| Topology-Aware | 2017 | SC | Barcelona Supercomputing Center<br>Universitat Politècnica de Catalunya<br>IBM Watson Research Center | 拓扑感知多 GPU 放置 | 提高资源利用率和执行性能 | [Paper](https://dl.acm.org/doi/10.1145/3126908.3126933) | ♣ | - | - | - | [Code](https://github.com/HiEST/gpu-topo-aware) |
+| HyperDrive | 2017 | Middleware | Brown University<br>Microsoft<br>University of Nevada, Reno | POP 调度下的超参数探索 | 提高超参数搜索吞吐量 | [Paper](https://dl.acm.org/doi/10.1145/3135974.3135994) | ♣▲ | - | - | ✔ | - |
 
 `Symbols of Training Schedulers`:
 | JCT | Utilization | Cost | Fairness | DDL | Accuracy |
