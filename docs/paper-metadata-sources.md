@@ -885,11 +885,9 @@ records are preferred; arXiv-only records retain `DOI: -`.
 
 ## Batch 4: Inference papers, 2016–2021
 
-No paper evidence has been recorded yet.
 
 ## Batch 5: Inference papers, 2022–2024
 
-No paper evidence has been recorded yet.
 
 ## Batch 6: Inference papers, 2025–2026
 
@@ -1020,7 +1018,7 @@ The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows)
 ### Inferline (2020)
 - Paper title: InferLine: Latency-Aware Provisioning and Scaling for Prediction Serving Pipelines
 - DOI: https://doi.org/10.1145/3419111.3421285
-- Affiliations: University of California, Berkeley<br>Georgia Institute of Technology<br>Microsoft Research
+- Affiliations: Microsoft Research<br>University of California, Berkeley<br>Anyscale<br>Databricks<br>Georgia Institute of Technology
 - Affiliations source: https://dl.acm.org/doi/10.1145/3419111.3421285
 - Method: 离线剖析与离散事件仿真选择流水线硬件、复制和批处理；在线控制器按负载自动扩缩容
 - Advantages: 降低成本；减少延迟 SLO 违约
@@ -1120,12 +1118,12 @@ The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows)
 ### HiveMind (2018)
 - Paper title: Accelerating Deep Learning Workloads through Efficient Multi-Model Execution
 - DOI: -
-- Affiliations: Microsoft Research
-- Affiliations source: https://www.microsoft.com/en-us/research/publication/accelerating-deep-learning-workloads-through-efficient-multi-model-execution/
+- Affiliations: Stanford University<br>Microsoft Research
+- Affiliations source: https://people.eecs.berkeley.edu/~matei/papers/2018/mlsys_hivemind.pdf
 - Method: 多模型执行编排与资源共享；按模型执行特征合并 GPU 工作
 - Advantages: 提高 GPU 利用率和多模型吞吐
 - Method/advantages source: https://www.microsoft.com/en-us/research/publication/accelerating-deep-learning-workloads-through-efficient-multi-model-execution/
-- Verification: confirmed from the official NeurIPS paper page and Microsoft Research publication page; no formal DOI was found.
+- Verification: confirmed from the publication PDF and Microsoft Research publication page; no formal DOI was found.
 
 ### Space-Time (2018)
 - Paper title: Dynamic Space-Time Scheduling for GPU Inference
@@ -1166,5 +1164,3 @@ The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows)
 - Advantages: 降低延迟；提高吞吐和准确率
 - Method/advantages source: https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/crankshaw
 - Verification: confirmed from the official USENIX NSDI proceedings page and paper; no DOI is listed in the USENIX record.
-
-No paper evidence has been recorded yet.
