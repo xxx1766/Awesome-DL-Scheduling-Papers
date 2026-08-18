@@ -883,9 +883,6 @@ records are preferred; arXiv-only records retain `DOI: -`.
 - Method/advantages source: https://dl.acm.org/doi/10.1145/3689031.3696078
 - Verification: confirmed against the official EuroSys 2025 accepted-papers page and formal ACM proceedings record.
 
-## Batch 4: Inference papers, 2016–2021
-
-
 ## Batch 5: Inference papers, 2022–2024
 
 
@@ -978,11 +975,11 @@ The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows)
 ### PERSEUS (2020)
 - Paper title: PERSEUS: Characterizing Performance and Cost of Multi-Tenant Serving for CNN Models
 - DOI: https://doi.org/10.1109/IC2E48712.2020.00014
-- Affiliations: Facebook AI Research
+- Affiliations: Worcester Polytechnic Institute
 - Affiliations source: https://ieeexplore.ieee.org/document/9096261/
 - Method: 多租户 CNN 服务的测量与性能/成本权衡分析；按模型、硬件和负载评估共置
 - Advantages: 提供吞吐、延迟与成本权衡依据；提高资源利用率
-- Method/advantages source: https://tianguo.info/project/mobile-deep-inference/perseus_ic2e2020.pdf
+- Method/advantages source: https://ieeexplore.ieee.org/document/9096261
 - Verification: confirmed; the formal IC2E DOI and proceedings record take precedence over the linked arXiv record.
 
 ### AutoDeep (2020)
@@ -1042,7 +1039,7 @@ The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows)
 - Affiliations source: https://ieeexplore.ieee.org/document/8814494
 - Method: 面向 FaaS 的多层模型缓存与隔离模型共享；减少模型加载和数据搬移
 - Advantages: 降低端到端延迟；提高系统吞吐和内存效率；保持准确率
-- Method/advantages source: https://cli99.com/pdf/trims-cloud19.pdf
+- Method/advantages source: https://ieeexplore.ieee.org/document/8814494
 - Verification: confirmed from the IEEE CLOUD publication DOI and the publication-time paper affiliation block.
 
 ### Kube-Knots (2019)
@@ -1052,7 +1049,7 @@ The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows)
 - Affiliations source: https://ieeexplore.ieee.org/document/8891040
 - Method: GPU 容器动态编排与资源回收；在在线服务和批任务间放置空闲资源
 - Advantages: 提高 GPU 利用率；提升资源收获能力
-- Method/advantages source: https://www.researchgate.net/publication/337230439_Kube-Knots_Resource_Harvesting_through_Dynamic_Container_Orchestration_in_GPU-based_Datacenters
+- Method/advantages source: https://ieeexplore.ieee.org/document/8891040
 - Verification: confirmed from the IEEE CLUSTER DOI record and publication metadata.
 
 ### Gilman et al. (2019)
@@ -1092,7 +1089,7 @@ The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows)
 - Affiliations source: https://ieeexplore.ieee.org/abstract/document/8695638/
 - Method: 将可接受准确率/延迟范围划分为多个容忍等级，支持服务端按等级选择配置
 - Advantages: 提供准确率与延迟的可控权衡；降低延迟或资源成本
-- Method/advantages source: https://arxiv.org/abs/1906.11307
+- Method/advantages source: https://doi.org/10.1109/ISPASS.2019.00012
 - Verification: confirmed; the IEEE ISPASS formal version and DOI take precedence over the linked arXiv preprint.
 
 ### RRL (2019)
@@ -1148,12 +1145,12 @@ The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows)
 ### Rafiki (2018)
 - Paper title: Rafiki: Machine Learning as an Analytics Service System
 - DOI: https://doi.org/10.14778/3282495.3282499
-- Affiliations: National University of Singapore
-- Affiliations source: https://dl.acm.org/doi/10.1145/3282495.3282499
-- Method: 统一分布式数据存储与内存参数服务器，复用训练和推理任务的数据与参数
-- Advantages: 减少数据和参数加载开销；提高资源利用率
-- Method/advantages source: https://dl.acm.org/doi/10.1145/3282495.3282499
-- Verification: confirmed from the formal VLDB journal record; DOI is normalized from the publisher link in README.
+- Affiliations: National University of Singapore<br>Beijing Institute of Technology<br>Zhejiang University<br>University of Electronic Science and Technology of China
+- Affiliations source: https://doi.org/10.14778/3282495.3282499
+- Method: 覆盖分布式超参数调优、在线集成建模以及延迟/准确率权衡
+- Advantages: 提升训练与推理服务的效率、可扩展性和可用性
+- Method/advantages source: https://doi.org/10.14778/3282495.3282499
+- Verification: confirmed from the formal VLDB paper and DOI record; affiliations are listed in first-appearance order.
 
 ### Clipper (2017)
 - Paper title: Clipper: A Low-Latency Online Prediction Serving System
