@@ -70,7 +70,7 @@ Please feel free to pull requests or open an issue to add papers.
 | Jigsaw | 2021 | DistributedML |||| [Paper](https://dl.acm.org/doi/10.1145/3488659.3493778) | ♣ | - | - | - | - |
 | DynamoML | 2021 | CLOSER |||| [Paper](https://www.scitepress.org/Papers/2021/104834/104834.pdf) | ♠♣ | - | ✔ | - | - |
 | GENIE | 2020 | TPDS | National University of Defense Technology | 轻量级剖析建模；QoS 感知动态放置 | 提高 QoS 保证和系统利用率 | [Paper](https://ieeexplore.ieee.org/document/8778770) | ✿ | - | ✔ | - | - |
-| Parrot | 2020 | TCC | Hong Kong University of Science and Technology<br>Tianjin University<br>Dalian University of Technology | LPCAS 推断 SRPT 作业；动态作业权重与 LP 加权带宽缩放分配 | 降低依赖 coflow 作业的总 JCT；仿真中较 Aalo 最多降低 58.4% | [Paper](https://ieeexplore.ieee.org/document/9269382) | ♣ | - | - | - | - |
+| Parrot | 2020 | TCC | Hong Kong University of Science and Technology<br>Tianjin University<br>Dalian University of Technology | LPCAS 推断 SRPT 作业；动态作业权重与 LP 加权带宽缩放分配 | 降低依赖 coflow 作业的总 JCT；在基于 Microsoft workload 的大规模 trace-driven 仿真中，较 Aalo 最多降低总 JCT 58.4% | [Paper](https://ieeexplore.ieee.org/document/9269382) | ♣ | - | - | - | - |
 | Non-Intrusive | 2020 | SC | - | - | - | [Paper](https://dl.acm.org/doi/abs/10.5555/3433701.3433820) | ♠♣ | - | ✔ | - | - |
 | Antman | 2020 | OSDI | Alibaba | 动态显存扩缩容；机会计算共置 | 提高 GPU 显存和计算单元利用率 | [Paper](https://www.usenix.org/system/files/osdi20-xiao.pdf) | ♠♣ | - | ✔ | - | [Code](https://github.com/alibaba/GPU-scheduler-for-deep-learning) |
 | Gavel | 2020 | OSDI | Stanford University<br>Microsoft Research | 有效吞吐量建模；异构感知优化分配 | 提高负载承载量；降低 JCT 和 makespan | [Paper](https://www.usenix.org/conference/osdi20/presentation/narayanan-deepak) | ♣♥ | ✔ | - | - | [Code](https://github.com/stanford-futuredata/gavel) |

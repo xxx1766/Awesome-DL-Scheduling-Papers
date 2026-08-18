@@ -37,6 +37,8 @@ survey names, were used for matching.
 ### GENIE (2020)
 - Affiliations: National University of Defense Technology
 - Affiliations source: https://www.computer.org/csdl/journal/td/2020/01/08778770/1fPUi51S3ny
+- Paper title: Characterizing and Scheduling with QoS Guarantees on GPU Clusters
+- DOI: -
 - Method: 轻量级剖析建模；QoS 感知动态放置
 - Advantages: 提高 QoS 保证和系统利用率
 - Method/advantages source: https://jianbinfang.github.io/files/2019-07-29-tpds.pdf
@@ -47,14 +49,18 @@ survey names, were used for matching.
 - Affiliations source: https://doi.org/10.1109/TCC.2020.3040312 (DOI is the identity anchor; the publication record is the source for the affiliation block.)
 - Paper title: Efficient Online Scheduling for Coflow-Aware Machine Learning Clusters
 - DOI: https://doi.org/10.1109/TCC.2020.3040312
+- Paper title: Efficient Online Scheduling for Coflow-Aware Machine Learning Clusters
+- DOI: https://doi.org/10.1109/TCC.2020.3040312
 - Method: LPCAS 推断 SRPT 作业；动态作业权重与 LP 加权带宽缩放分配
-- Advantages: 降低依赖 coflow 作业的总 JCT；仿真中较 Aalo 最多降低 58.4%
+- Advantages: 降低依赖 coflow 作业的总 JCT；在基于 Microsoft workload 的大规模 trace-driven 仿真中，较 Aalo 最多降低总 JCT 58.4%
 - Method/advantages source: https://ieeexplore.ieee.org/document/9269382
-- Verification: confirmed against the formal TCC paper, "Efficient Online Scheduling for Coflow-Aware Machine Learning Clusters" (DOI 10.1109/TCC.2020.3040312); publication-time affiliations follow the paper's author footnotes.
+- Verification: confirmed against the formal TCC paper, "Efficient Online Scheduling for Coflow-Aware Machine Learning Clusters" (online publication: 2020; IEEE Transactions on Cloud Computing, Volume 10, Issue 4, 2022; DOI 10.1109/TCC.2020.3040312); publication-time affiliations follow the paper's author footnotes.
 
 ### Non-Intrusive (2020)
 - Affiliations: -
 - Affiliations source: https://dl.acm.org/doi/abs/10.5555/3433701.3433820
+- Paper title: An Efficient and Non-Intrusive GPU Scheduling Framework for Deep Learning Training Systems
+- DOI: https://doi.org/10.5555/3433701.3433820
 - Method: -
 - Advantages: -
 - Method/advantages source: https://dl.acm.org/doi/abs/10.5555/3433701.3433820
@@ -63,6 +69,8 @@ survey names, were used for matching.
 ### Antman (2020)
 - Affiliations: Alibaba
 - Affiliations source: https://www.usenix.org/system/files/osdi20-xiao.pdf
+- Paper title: AntMan: Dynamic Scaling on GPU Clusters for Deep Learning
+- DOI: -
 - Method: 动态显存扩缩容；机会计算共置
 - Advantages: 提高 GPU 显存和计算单元利用率
 - Method/advantages source: https://www.usenix.org/system/files/osdi20-xiao.pdf
@@ -71,6 +79,8 @@ survey names, were used for matching.
 ### Gavel (2020)
 - Affiliations: Stanford University; Microsoft Research
 - Affiliations source: https://deepakn94.github.io/assets/papers/gavel-osdi20.pdf
+- Paper title: Heterogeneity-Aware Cluster Scheduling Policies for Deep Learning Workloads
+- DOI: -
 - Method: 有效吞吐量建模；异构感知优化分配
 - Advantages: 提高负载承载量；降低 JCT 和 makespan
 - Method/advantages source: https://www.usenix.org/conference/osdi20/presentation/narayanan-deepak
@@ -79,6 +89,8 @@ survey names, were used for matching.
 ### HiveD (2020)
 - Affiliations: Peking University; Microsoft; The University of Hong Kong
 - Affiliations source: https://www.usenix.org/system/files/osdi20-zhao_hanyu.pdf
+- Paper title: HiveD: Sharing a GPU Cluster for Deep Learning with Guarantees
+- DOI: -
 - Method: 多级 GPU 亲和单元；虚拟私有集群
 - Advantages: 提供共享安全保证；支持生产集群长期运行
 - Method/advantages source: https://www.usenix.org/system/files/osdi20-zhao_hanyu.pdf
@@ -87,6 +99,8 @@ survey names, were used for matching.
 ### Themis (2020)
 - Affiliations: University of Wisconsin–Madison; Microsoft Research
 - Affiliations source: https://wisr.cs.wisc.edu/papers/nsdi20-themis.pdf
+- Paper title: Themis: Fair and Efficient GPU Cluster Scheduling
+- DOI: -
 - Method: 完工时间公平；两级拍卖调度
 - Advantages: 提高公平性和集群效率
 - Method/advantages source: https://www.usenix.org/conference/nsdi20/presentation/mahajan
@@ -95,6 +109,8 @@ survey names, were used for matching.
 ### Salus (2020)
 - Affiliations: University of Michigan
 - Affiliations source: https://symbioticlab.org/publications/files/salus:mlsys20/salus-mlsys20.pdf
+- Paper title: Salus: Fine-grained GPU Sharing Primitives for Deep Learning Applications
+- DOI: -
 - Method: 快速作业切换；显存共享
 - Advantages: 支持细粒度 GPU 共享并提高利用率
 - Method/advantages source: https://proceedings.mlsys.org/paper_files/paper/2020/hash/d9cd83bc91b8c36a0c7c0fcca59228f2-Abstract.html
@@ -103,6 +119,8 @@ survey names, were used for matching.
 ### Vaibhav et al. (2020)
 - Affiliations: IBM Research
 - Affiliations source: https://research.ibm.com/publications/effective-elastic-scaling-of-deep-learning-workloads
+- Paper title: Effective Elastic Scaling of Deep Learning Workloads
+- DOI: -
 - Method: 动态批大小与资源联合扩缩容
 - Advantages: 改善作业运行时间和集群利用率
 - Method/advantages source: https://research.ibm.com/publications/effective-elastic-scaling-of-deep-learning-workloads
@@ -111,6 +129,8 @@ survey names, were used for matching.
 ### SPIN (2020)
 - Affiliations: -
 - Affiliations source: https://ieeexplore.ieee.org/document/9155445/
+- Paper title: Communication Contention Aware Scheduling of Multiple Deep Learning Training Jobs
+- DOI: -
 - Method: 通信争用感知的作业调度
 - Advantages: -
 - Method/advantages source: https://ieeexplore.ieee.org/document/9155445/
@@ -119,6 +139,8 @@ survey names, were used for matching.
 ### E-LAS (2020)
 - Affiliations: University of Louisiana at Lafayette
 - Affiliations source: https://dl.acm.org/doi/fullHtml/10.1145/3404397.3404415
+- Paper title: E-LAS: Design and Analysis of Completion-Time Agnostic Scheduling for Distributed Deep Learning Cluster
+- DOI: https://doi.org/10.1145/3404397.3404415
 - Method: 基于实时 epoch 进度的完成时间无关调度
 - Advantages: 提高训练吞吐量并降低平均完成时间
 - Method/advantages source: https://dl.acm.org/doi/fullHtml/10.1145/3404397.3404415
@@ -127,6 +149,8 @@ survey names, were used for matching.
 ### CODA (2020)
 - Affiliations: Shanghai Jiao Tong University; China University of Geosciences
 - Affiliations source: https://www.proceedings.com/content/057/057955webtoc.pdf
+- Paper title: CODA: Improving Resource Utilization by Slimming and Co-locating DNN Training Jobs
+- DOI: -
 - Method: CPU 资源反馈分配；争用消除；多阵列调度
 - Advantages: 提高 GPU 利用率且不增加 CPU 作业排队时间
 - Method/advantages source: https://cs.sjtu.edu.cn/~leng-jw/resources/Files/zhao20icdcs-coda.pdf
@@ -135,14 +159,18 @@ survey names, were used for matching.
 ### Elan (2020)
 - Affiliations: -
 - Affiliations source: https://ieeexplore.ieee.org/document/9355755
+- Paper title: Elan: Towards Generic and Efficient Elastic Training for Deep Learning
+- DOI: -
 - Method: -
 - Advantages: -
 - Method/advantages source: https://ieeexplore.ieee.org/document/9355755
-- Verification: unresolved: the cited arXiv survey is not the Elan paper, so secondary method and advantage claims were removed; the official IEEE record did not expose enough publication text to verify them.
+- Verification: unresolved: the official IEEE record did not expose enough publication text to verify the method, advantages, or publication-time affiliations.
 
 ### Yeung (2020)
 - Affiliations: University of Leeds
 - Affiliations source: https://www.usenix.org/conference/hotcloud20/presentation/yeung
+- Paper title: Towards GPU Utilization Prediction for Cloud Deep Learning
+- DOI: -
 - Method: 基于计算图的 GPU 利用率预测
 - Advantages: 无需隔离式在线剖析即可预测利用率
 - Method/advantages source: https://www.usenix.org/conference/hotcloud20/presentation/yeung
@@ -151,6 +179,8 @@ survey names, were used for matching.
 ### $Gandiva_{fair}$ (2020)
 - Affiliations: Microsoft Research India
 - Affiliations source: https://www.microsoft.com/en-us/research/wp-content/uploads/2020/05/gandiva-eurosys20.pdf
+- Paper title: Balancing Efficiency and Fairness in Heterogeneous GPU Clusters for Deep Learning
+- DOI: -
 - Method: Kubernetes 上的异构 GPU 公平共享与资源交易
 - Advantages: 在保证用户级 GPU 时间公平的同时提高集群效率和作业进度
 - Method/advantages source: https://www.microsoft.com/en-us/research/wp-content/uploads/2020/05/gandiva-eurosys20.pdf
@@ -159,6 +189,8 @@ survey names, were used for matching.
 ### MLCloudPrice (2020)
 - Affiliations: Stanford University; Microsoft Research
 - Affiliations source: https://deepakn94.github.io/assets/papers/trainingonadime-dispa20.pdf
+- Paper title: Training on a Dime: Cost-Effective Training of Machine Learning Models in the Cloud
+- DOI: -
 - Method: 跨区域、市场和云实例的动态价格优化
 - Advantages: 降低训练成本；支持速度成本权衡
 - Method/advantages source: https://deepakn94.github.io/assets/papers/trainingonadime-dispa20.pdf
@@ -167,6 +199,8 @@ survey names, were used for matching.
 ### MLFS (2020)
 - Affiliations: -
 - Affiliations source: https://dl.acm.org/doi/10.1145/3386367.3432588
+- Paper title: Job Scheduling for Large-Scale Machine Learning Clusters
+- DOI: https://doi.org/10.1145/3386367.3432588
 - Method: 基于作业特征的并行度感知调度
 - Advantages: 降低 JCT 和 makespan
 - Method/advantages source: https://dl.acm.org/doi/10.1145/3386367.3432588
@@ -175,6 +209,8 @@ survey names, were used for matching.
 ### MARBLE (2020)
 - Affiliations: Oak Ridge National Laboratory; Virginia Tech
 - Affiliations source: https://people.cs.vt.edu/~butta/docs/ccgrid2020-MARBLE.pdf
+- Paper title: MARBLE: A Multi-GPU Aware Job Scheduler for Deep Learning on HPC Systems
+- DOI: https://doi.org/10.1109/CCGrid49817.2020.00066
 - Method: 多 GPU 节点非线性扩展建模与共享调度
 - Advantages: 改善训练性能并降低 JCT
 - Method/advantages source: https://research.ibm.com/publications/marble-a-multi-gpu-aware-job-scheduler-for-deep-learning-on-hpc-systems
@@ -183,6 +219,8 @@ survey names, were used for matching.
 ### Ada-SRSF (2020)
 - Affiliations: -
 - Affiliations source: https://arxiv.org/abs/2002.10105
+- Paper title: Communication Contention Aware Scheduling of Multiple Deep Learning Training Jobs
+- DOI: https://doi.org/10.48550/arXiv.2002.10105
 - Method: 通信争用感知的放置与最短剩余服务时间调度
 - Advantages: 相比无争用或盲目接受争用的策略降低平均 JCT 并提高资源利用率
 - Method/advantages source: https://arxiv.org/abs/2002.10105
@@ -191,6 +229,8 @@ survey names, were used for matching.
 ### Co-scheML (2020)
 - Affiliations: -
 - Affiliations source: https://ieeexplore.ieee.org/document/9196380
+- Paper title: Co-scheML: Interference-Aware Container Co-scheduling Scheme Using Machine Learning Application Profiles for GPU Clusters
+- DOI: https://doi.org/10.1109/CLUSTER49012.2020.00020
 - Method: -
 - Advantages: -
 - Method/advantages source: https://ieeexplore.ieee.org/document/9196380
@@ -199,6 +239,8 @@ survey names, were used for matching.
 ### HyperSched (2019)
 - Affiliations: University of California, Berkeley
 - Affiliations source: https://dl.acm.org/doi/10.1145/3357223.3362719
+- Paper title: HyperSched: Dynamic Resource Reallocation for Model Development on a Deadline
+- DOI: https://doi.org/10.1145/3357223.3362719
 - Method: 截止期驱动的动态资源再分配
 - Advantages: 提高截止期内完成率和资源利用率
 - Method/advantages source: https://dl.acm.org/doi/10.1145/3357223.3362719
@@ -207,6 +249,8 @@ survey names, were used for matching.
 ### Tiresias (2019)
 - Affiliations: University of Michigan; Microsoft Research
 - Affiliations source: https://www.usenix.org/system/files/nsdi19-gu.pdf
+- Paper title: Tiresias: A GPU Cluster Manager for Distributed Deep Learning
+- DOI: -
 - Method: 预估 JCT 的短作业优先与离散分配
 - Advantages: 降低平均 JCT
 - Method/advantages source: https://www.usenix.org/conference/nsdi19/presentation/gu
@@ -215,6 +259,8 @@ survey names, were used for matching.
 ### FfDL (2019)
 - Affiliations: IBM Research
 - Affiliations source: https://dl.acm.org/doi/10.1145/3361525.3361538
+- Paper title: FfDL: A Framework for Deep Learning as a Service
+- DOI: https://doi.org/10.1145/3361525.3361538
 - Method: 容器化深度学习服务编排与资源调度
 - Advantages: 提供多框架训练服务
 - Method/advantages source: https://dl.acm.org/doi/10.1145/3361525.3361538
@@ -223,6 +269,8 @@ survey names, were used for matching.
 ### JPAS (2019)
 - Affiliations: -
 - Affiliations source: https://www.sciencedirect.com/science/article/abs/pii/S1084804520300643
+- Paper title: JPAS: Job-Progress-Aware Flow Scheduling for Deep Learning Clusters
+- DOI: -
 - Method: MAIF 作业进度感知的流优先级调度
 - Advantages: 加速分布式训练早期阶段的探索过程
 - Method/advantages source: https://www.sciencedirect.com/science/article/abs/pii/S1084804520300643
@@ -231,6 +279,8 @@ survey names, were used for matching.
 ### Harmony (2019)
 - Affiliations: -
 - Affiliations source: https://ieeexplore.ieee.org/document/8737460
+- Paper title: Deep Learning-Based Job Placement in Distributed Machine Learning Clusters
+- DOI: -
 - Method: 基于奖励建模的深度强化学习干扰感知放置
 - Advantages: 降低平均 JCT
 - Method/advantages source: https://ieeexplore.ieee.org/document/8737460
@@ -239,6 +289,8 @@ survey names, were used for matching.
 ### Cynthia (2019)
 - Affiliations: -
 - Affiliations source: https://dl.acm.org/doi/10.1145/3337821.3337873
+- Paper title: Cynthia: Cost-Efficient Cloud Resource Provisioning for Predictable Distributed Deep Neural Network Training
+- DOI: https://doi.org/10.1145/3337821.3337873
 - Method: 轻量级分析模型驱动的云资源配置
 - Advantages: 提供可预测训练性能并降低训练预算
 - Method/advantages source: https://dl.acm.org/doi/10.1145/3337821.3337873
@@ -247,6 +299,8 @@ survey names, were used for matching.
 ### Jahani (2019)
 - Affiliations: Politecnico di Milano
 - Affiliations source: https://ieeexplore.ieee.org/document/8888151
+- Paper title: Optimizing On-Demand GPUs in the Cloud for Deep Learning Applications Training
+- DOI: -
 - Method: MILP 全局优化 GPU 租赁与作业延迟
 - Advantages: 降低租赁成本并维持作业时延
 - Method/advantages source: https://ieeexplore.ieee.org/document/8888151
@@ -255,6 +309,8 @@ survey names, were used for matching.
 ### $Sched^2$ (2019)
 - Affiliations: -
 - Affiliations source: https://ieeexplore.ieee.org/document/9014110
+- Paper title: SCHED2: Scheduling Deep Learning Training via Deep Reinforcement Learning
+- DOI: -
 - Method: 深度强化学习驱动的局部性感知训练调度
 - Advantages: -
 - Method/advantages source: https://ieeexplore.ieee.org/document/9014110
@@ -263,6 +319,8 @@ survey names, were used for matching.
 ### Dragon (2019)
 - Affiliations: -
 - Affiliations source: https://closer.scitevents.org/Abstract.aspx?idEvent=uzu18usNf68%3D
+- Paper title: DRAGON: A Dynamic Scheduling and Scaling Controller for Managing Distributed Deep Learning Jobs in Kubernetes Cluster
+- DOI: https://doi.org/10.5220/0007707605690577
 - Method: Kubernetes 集群上的分布式训练作业动态调度与扩缩容
 - Advantages: -
 - Method/advantages source: https://closer.scitevents.org/Abstract.aspx?idEvent=uzu18usNf68%3D
@@ -271,6 +329,8 @@ survey names, were used for matching.
 ### $FC^2$ (2019)
 - Affiliations: -
 - Affiliations source: https://link.springer.com/article/10.1007/s10586-019-02912-6
+- Paper title: FC2: Cloud-Based Cluster Provisioning for Distributed Machine Learning
+- DOI: https://doi.org/10.1007/s10586-019-02912-6
 - Method: 云端集群自动配置与参数服务器资源规划
 - Advantages: 降低云资源成本并保持训练性能
 - Method/advantages source: https://link.springer.com/article/10.1007/s10586-019-02912-6
@@ -279,6 +339,8 @@ survey names, were used for matching.
 ### Philly (2019)
 - Affiliations: UNIST; University of Wisconsin; Microsoft Research; Beihang University
 - Affiliations source: https://www.usenix.org/system/files/atc19-jeon.pdf
+- Paper title: Analysis of Large-Scale Multi-Tenant GPU Clusters for DNN Training Workloads
+- DOI: -
 - Method: 生产多租户 GPU 集群工作负载分析与调度追踪
 - Advantages: 揭示 gang 调度、本地性和故障对集群利用率的影响并给出调度设计指导
 - Method/advantages source: https://www.usenix.org/conference/atc19/presentation/jeon
@@ -287,6 +349,8 @@ survey names, were used for matching.
 ### Gandiva (2018)
 - Affiliations: Beihang University; Microsoft Research; The University of Hong Kong; Huazhong University of Science and Technology; Peking University
 - Affiliations source: https://www.usenix.org/system/files/osdi18-xiao.pdf
+- Paper title: Gandiva: Introspective Cluster Scheduling for Deep Learning
+- DOI: -
 - Method: 运行时剖析；可抢占迭代级 GPU 调度
 - Advantages: 提高 GPU 利用率和作业吞吐
 - Method/advantages source: https://www.usenix.org/conference/osdi18/presentation/xiao
@@ -295,6 +359,8 @@ survey names, were used for matching.
 ### OASiS (2018)
 - Affiliations: The University of Hong Kong; University of Calgary
 - Affiliations source: https://i.cs.hku.hk/~cwu/papers/yxbao-infocom18.pdf
+- Paper title: Online Job Scheduling in Distributed Machine Learning Clusters
+- DOI: https://doi.org/10.1109/INFOCOM.2018.8486422
 - Method: 原始-对偶在线调度；联合决定 worker 与 parameter server 数量
 - Advantages: 提高共享集群总体效用并改善训练完成时间
 - Method/advantages source: https://i.cs.hku.hk/~cwu/papers/yxbao-infocom18.pdf
@@ -303,6 +369,8 @@ survey names, were used for matching.
 ### Optimus (2018)
 - Affiliations: The University of Hong Kong; ByteDance
 - Affiliations source: https://i.cs.hku.hk/~cwu/papers/yhpeng-eurosys18.pdf
+- Paper title: Optimus: An Efficient Dynamic Resource Scheduler for Deep Learning Clusters
+- DOI: -
 - Method: 基于性能模型的动态资源调度
 - Advantages: 提高集群利用率并降低 JCT
 - Method/advantages source: https://i.cs.hku.hk/~cwu/papers/yhpeng-eurosys18.pdf
@@ -311,6 +379,8 @@ survey names, were used for matching.
 ### Dorm (2017)
 - Affiliations: -
 - Affiliations source: https://www.computer.org/csdl/proceedings-article/smartcomp/2017/07947053/12OmNAlvHZ3
+- Paper title: Towards Distributed Machine Learning in Shared Clusters: A Dynamically-Partitioned Approach
+- DOI: -
 - Method: 容器化动态划分集群；运行时调整应用分区
 - Advantages: 兼顾共享集群的资源效率与公平性
 - Method/advantages source: https://arxiv.org/abs/1704.06738
@@ -319,6 +389,8 @@ survey names, were used for matching.
 ### Topology-Aware (2017)
 - Affiliations: Barcelona Supercomputing Center; Universitat Politècnica de Catalunya; IBM Watson Research Center
 - Affiliations source: https://upcommons.upc.edu/bitstreams/6244943d-5795-4c80-b2ac-222d1f1dc355/download
+- Paper title: Topology-Aware GPU Scheduling for Learning Workloads in Cloud Environments
+- DOI: -
 - Method: 拓扑感知多 GPU 放置
 - Advantages: 提高资源利用率和执行性能
 - Method/advantages source: https://research.ibm.com/publications/topology-aware-gpu-scheduling-for-learning-workloads-in-cloud-environments
@@ -327,6 +399,8 @@ survey names, were used for matching.
 ### HyperDrive (2017)
 - Affiliations: Brown University; Microsoft; University of Nevada, Reno
 - Affiliations source: https://www2.cs.uh.edu/~fyan/Paper/Middleware17.pdf
+- Paper title: HyperDrive: A Flexible Cloud Testbed for Research and Education
+- DOI: -
 - Method: POP 调度下的超参数探索
 - Advantages: 提高超参数搜索吞吐量
 - Method/advantages source: https://www2.cs.uh.edu/~fyan/Paper/Middleware17.pdf
