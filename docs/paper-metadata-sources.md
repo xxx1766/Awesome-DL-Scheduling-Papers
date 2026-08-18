@@ -649,7 +649,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 - Method: 深度强化学习驱动的 GPU 资源调度
 - Advantages: 降低平均 JCT 并提高资源利用率
 - Method/advantages source: https://arxiv.org/abs/1909.06040
-- Verification: unresolved DOI and publication affiliation; method/advantage confirmed from the linked preprint.
+- Verification: DOI confirmed; only the publication-time affiliation remains unresolved; method/advantage confirmed from the linked preprint.
 
 ### Astraea (2021)
 - Paper title: ASTRAEA: A Fair Deep Learning Scheduler for Multi-Tenant GPU Clusters
@@ -769,7 +769,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 - Method: 训练作业 profiling；兼顾能耗与延迟惩罚的 Random Greedy GPU 分配
 - Advantages: 相比基线平均降低 30%–62% 成本
 - Method/advantages source: https://arxiv.org/abs/2105.05080
-- Verification: confirmed from the arXiv full text; no formal publication DOI was found.
+- Verification: DOI confirmed by the formal IEEE/Crossref publication record; method/advantage confirmed from the arXiv full text.
 
 ### RubberBand (2021)
 - Paper title: RubberBand: Cloud-based Hyperparameter Tuning
