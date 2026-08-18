@@ -17,8 +17,18 @@ Please feel free to pull requests or open an issue to add papers.
 
 
 ## Schedulers for DL Training
+
+> **Update scope (2026-08-17):** This list prioritizes CCF-A conference papers from 2025–2026. A small number of highly relevant MLSys and EuroSys papers are also included as non-CCF-A supplements. New entries are limited to papers with an official proceedings, publisher page, or official conference acceptance record. arXiv-only, workshop-only, and industrial-report-only works are not included in the main tables.
+
 | **Scheduler** | **Year** | **Series** | **Paper** | **Objective** | **Heter.** | **Elastic** | **AutoML** | **Code** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Heterogeneity at Hyperscale | 2026 | OSDI | [Paper](https://www.usenix.org/conference/osdi26/presentation/li-suyi) | ♠ | ✔ | - | - | - |
+| Weave | 2026 | OSDI | [Paper](https://www.usenix.org/conference/osdi26/presentation/wu-tianyuan) | ♠♦ | ✔ | - | - | - |
+| RollPacker | 2026 | NSDI | [Paper](https://www.usenix.org/conference/nsdi26/presentation/gao-wei) | ♠♣▲ | - | ✔ | - | [Code](https://github.com/alibaba/ROLL) |
+| GFS | 2026 | ASPLOS | [Paper](https://www.asplos-conference.org/asplos2026/program/index.html) | ♦ | - | - | - | - |
+| SING | 2025 | ASPLOS | [Paper](https://doi.org/10.1145/3669940.3707266) | ♠♥ | - | - | - | - |
+| Rubick | 2025 | MLSys | [Paper](https://proceedings.mlsys.org/paper_files/paper/2025/hash/270339c997293ca2988c62f4308e389f-Abstract-Conference.html) | ♠♣ | - | ✔ | - | [Code](https://github.com/AlibabaPAI/reconfigurable-dl-scheduler) |
+| JABAS | 2025 | EuroSys | [Paper](https://doi.org/10.1145/3689031.3696078) | ♠♣ | ✔ | ✔ | - | [Code](https://github.com/unist-ssl/JABAS) |
 | Acme | 2024 | NSDI | [Paper](https://www.usenix.org/conference/nsdi24/presentation/hu) | ♣ | - | - | - | [Code](https://github.com/InternLM/AcmeTrace) |
 | Cassini | 2024 | NSDI | [Paper](https://arxiv.org/abs/2308.00852) | ♠♣♥ | - | ✔ | - | - |
 | Sia | 2023 | SOSP | [Paper](https://dl.acm.org/doi/10.1145/3600006.3613175) | ♠♣♥ | ✔ | ✔ | ✔ | [Code](https://github.com/siasosp23/artifacts) |
@@ -105,8 +115,23 @@ Please feel free to pull requests or open an issue to add papers.
 <!-- JCT: ♣ Utilization: ♠ Cost: ♦ Fairness: ♥ DDL: ✿ Accuracy: ▲  -->
 
 ## Schedulers for DL Inference
+
+> **Update scope (2026-08-17):** The inference table follows the same publication and CCF-A-priority criteria as the training table. “Batch”, “Share”, and “Cloud” are marked only when the paper explicitly describes the corresponding serving capability.
+
 | **Scheduler** | **Year** | **Series** | **Paper** | **Objective** | **Batch** | **Share** | **Cloud** | **Source Code** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| OpenTela | 2026 | OSDI | [Paper](https://www.usenix.org/conference/osdi26/presentation/yao) | - | ✔ | - | - | [Code](https://github.com/eth-easl/OpenTela) |
+| EcoServe | 2026 | OSDI | [Paper](https://www.usenix.org/conference/osdi26/presentation/du) | ♠♦✿ | ✔ | - | - | [Code](https://github.com/MachineLearningSystem/26OSDI-EcoServe) |
+| FlexLLM | 2026 | NSDI | [Paper](https://www.usenix.org/conference/nsdi26/presentation/oliaro) | ♠♦✿ | ✔ | ✔ | - | [Code](https://github.com/FlexLLM/artifact) |
+| JITServe | 2026 | NSDI | [Paper](https://www.usenix.org/conference/nsdi26/presentation/zhang-wei) | ♠♦✿ | ✔ | - | - | [Code](https://github.com/UIUC-MLSys/JITServe) |
+| FastServe | 2026 | NSDI | [Paper](https://www.usenix.org/conference/nsdi26/presentation/wu-bingyang) | ♠♦ | ✔ | - | - | - |
+| TAPAS | 2025 | ASPLOS | [Paper](https://doi.org/10.1145/3676641.3716025) | ♠♥ | - | - | ✔ | - |
+| Past-Future Scheduler | 2025 | ASPLOS | [Paper](https://www.asplos-conference.org/asplos2025/program.html) | ♠♦✿ | ✔ | - | - | [Code](https://github.com/ModelTC/LightLLM) |
+| Helix | 2025 | ASPLOS | [Paper](https://doi.org/10.1145/3669940.3707215) | ♠♦♥ | - | - | ✔ | [Code](https://github.com/Thesys-lab/Helix-ASPLOS25) |
+| Dilu | 2025 | ASPLOS | [Paper](https://doi.org/10.1145/3669940.3707251) | ♦✿ | - | ✔ | ✔ | - |
+| GPU-Disaggregated Serving (Prism) | 2025 | NSDI | [Paper](https://www.usenix.org/conference/nsdi25/presentation/yang) | ♠♦✿ | - | - | - | - |
+| ThunderServe | 2025 | MLSys | [Paper](https://proceedings.mlsys.org/paper_files/paper/2025/hash/c2a0e26dd9ee7d57e92bb1c24b39659a-Abstract-Conference.html) | ♠♦♥ | ✔ | - | ✔ | - |
+| SOLA | 2025 | MLSys | [Paper](https://proceedings.mlsys.org/paper_files/paper/2025/hash/bc82dbfbfa43232be85b8d9838f49c3e-Abstract-Conference.html) | ♠♦ | ✔ | - | - | - |
 | SpotServe | 2024 | ASPLOS | [Paper](https://arxiv.org/abs/2311.15566) | ♦♥ | ✔ | - | ✔ | [Code](https://github.com/Hsword/SpotServe) |
 | DeltaZip | 2023 | arxiv | [Paper](https://arxiv.org/abs/2312.05215) | ♥♠ | ✔ | - | - | [Code](https://github.com/eth-easl/deltazip) |
 | MOSEL | 2023 | arxiv | [Paper](https://arxiv.org/abs/2310.18481) | ♦♠ | ✔ | - | - | - |
