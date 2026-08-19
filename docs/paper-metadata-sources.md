@@ -1184,13 +1184,13 @@ and two from 2022), and all 15 are covered below.
 
 ### MOSEL (2023)
 - Paper title: MOSEL: Inference Serving Using Dynamic Modality Selection
-- DOI: -
+- DOI: https://doi.org/10.18653/v1/2024.emnlp-main.501
 - Affiliations: The University of Texas at Austin
-- Affiliations source: https://arxiv.org/pdf/2310.18481
+- Affiliations source: https://aclanthology.org/2024.emnlp-main.501.pdf
 - Method: 按请求准确率与时延约束动态选择多模态输入；截止期感知排队与批处理
 - Advantages: 在论文多模态工作负载中，保证目标准确率时吞吐提升 3.6×、作业完成时间缩短 11×
-- Method/advantages source: https://arxiv.org/pdf/2310.18481
-- Verification: confirmed from the arXiv paper; no formal proceedings version or DOI was found.
+- Method/advantages source: https://aclanthology.org/2024.emnlp-main.501/
+- Verification: confirmed from the formal EMNLP 2024 proceedings paper in the official ACL Anthology; the README retains the original 2023 arXiv row year and link.
 
 ### Punica (2023)
 - Paper title: Punica: Multi-Tenant LoRA Serving
