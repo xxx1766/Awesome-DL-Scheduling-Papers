@@ -46,14 +46,14 @@ matching.
 - Verification: confirmed against the formal TCC paper, "Efficient Online Scheduling for Coflow-Aware Machine Learning Clusters" (online publication: 2020; IEEE Transactions on Cloud Computing, Volume 10, Issue 4, 2022; DOI 10.1109/TCC.2020.3040312); publication-time affiliations follow the paper's author footnotes.
 
 ### Non-Intrusive (2020)
-- Affiliations: -
-- Affiliations source: https://dl.acm.org/doi/abs/10.5555/3433701.3433820
+- Affiliations: University of Colorado, Colorado Springs<br>Nokia Bell Labs
+- Affiliations source: https://ieeexplore.ieee.org/document/9355203
 - Paper title: An Efficient and Non-Intrusive GPU Scheduling Framework for Deep Learning Training Systems
-- DOI: https://doi.org/10.5555/3433701.3433820
-- Method: -
-- Advantages: -
-- Method/advantages source: https://dl.acm.org/doi/abs/10.5555/3433701.3433820
-- Verification: unresolved: the linked DOI resolves to a record whose publication-time affiliation block and full claim text could not be reliably retrieved, so affiliations, method, and advantages remain unfilled.
+- DOI: https://doi.org/10.1109/SC41405.2020.00094
+- Method: 自适应 GPU 调度器；弹性 GPU 分配；SideCar 非侵入式资源管理
+- Advantages: 相对默认调度器最多降低 45% makespan、63% 平均 JCT；边界为论文评测工作负载与基线
+- Method/advantages source: https://ieeexplore.ieee.org/document/9355203
+- Verification: confirmed against the formal SC paper and IEEE record; the reported improvements are bounded by the paper's evaluated workloads and default-scheduler baselines.
 
 ### Antman (2020)
 - Affiliations: Alibaba Group
@@ -197,12 +197,12 @@ matching.
 
 ### MARBLE (2020)
 - Affiliations: Oak Ridge National Laboratory<br>Virginia Tech
-- Affiliations source: https://people.cs.vt.edu/~butta/docs/ccgrid2020-MARBLE.pdf
+- Affiliations source: https://ieeexplore.ieee.org/document/9139710
 - Paper title: MARBLE: A Multi-GPU Aware Job Scheduler for Deep Learning on HPC Systems
-- DOI: https://doi.org/10.1109/CCGrid49817.2020.00066
+- DOI: https://doi.org/10.1109/CCGrid49817.2020.00-66
 - Method: 多 GPU 节点非线性扩展建模与共享调度
 - Advantages: 改善训练性能并降低作业完成时间（JCT）
-- Method/advantages source: https://research.ibm.com/publications/marble-a-multi-gpu-aware-job-scheduler-for-deep-learning-on-hpc-systems
+- Method/advantages source: https://ieeexplore.ieee.org/document/9139710
 - Verification: confirmed
 
 ### Ada-SRSF (2020)
