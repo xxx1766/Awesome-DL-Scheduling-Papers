@@ -6,10 +6,13 @@ mechanical matching key is `batch + scheduler + year + paper title`: batch,
 scheduler, and year come from the README row, while `Paper title` is the title
 of the work resolved by that row's `Paper` link. Every README paper row must
 match exactly one evidence entry, and no evidence entry may be orphaned or
-duplicated. The current full-table audit is 138/138 (84 training and 54
-inference entries; batch counts 37/40/7/27/15/12). Each entry contains exactly
-one `Paper title`, `DOI`, `Affiliations`, `Affiliations source`, `Method`,
-`Advantages`, `Method/advantages source`, and `Verification` field.
+duplicated. The current full-table audit is 138/138 structurally matched entries
+(84 training and 54 inference entries; batch counts 37/40/7/27/15/12, retained
+for maintenance-audit bookkeeping). Structural matching does not mean that every
+factual field in every entry has been confirmed; field-level status remains in
+each entry's `Verification` field. Each entry contains exactly one `Paper title`,
+`DOI`, `Affiliations`, `Affiliations source`, `Method`, `Advantages`,
+`Method/advantages source`, and `Verification` field.
 
 The paper or official proceedings is the primary source. Affiliations preserve
 publication-time institutions, remove department/address suffixes, and use
@@ -448,14 +451,14 @@ retain `DOI: -`.
 - Verification: confirmed
 
 ### Shockwave (2023)
-- Paper title: Shockwave: Proactive, Fair and Efficient Cluster Scheduling for Dynamic Adaptation in Machine Learning
+- Paper title: Shockwave: Fair and Efficient Cluster Scheduling for Dynamic Adaptation in Machine Learning
 - DOI: -
 - Affiliations: University of Wisconsin–Madison<br>University of Texas at Austin
 - Affiliations source: https://www.usenix.org/system/files/nsdi23-zheng.pdf
-- Method: 动态市场机制；随机动态规划预测未来调度
-- Advantages: 提高动态适应作业的 makespan 与公平性
+- Method: 面向动态适应作业的未来规划；以动态市场机制联合优化效率与公平性
+- Advantages: 降低 makespan 并改善公平性
 - Method/advantages source: https://www.usenix.org/conference/nsdi23/presentation/zheng
-- Verification: confirmed
+- Verification: confirmed against the formal NSDI 2023 proceedings paper and conference page; no formal DOI was found.
 
 ### ModelKeeper (2023)
 - Paper title: ModelKeeper: Accelerating DNN Training via Automated Training Warmup
@@ -470,52 +473,52 @@ retain `DOI: -`.
 ### Lyra (2023)
 - Paper title: Lyra: Elastic Scheduling for Deep Learning Clusters
 - DOI: https://doi.org/10.1145/3552326.3587445
-- Affiliations: Tsinghua University
-- Affiliations source: https://dl.acm.org/doi/10.1145/3552326.3587445
-- Method: 弹性并行度与资源分配；按作业进度动态调整
-- Advantages: 缩短作业完成时间并提高集群利用率
-- Method/advantages source: https://dl.acm.org/doi/10.1145/3552326.3587445
-- Verification: confirmed
+- Affiliations: City University of Hong Kong<br>The Chinese University of Hong Kong<br>Google<br>ByteDance Inc.
+- Affiliations source: https://dl.acm.org/doi/pdf/10.1145/3552326.3587445
+- Method: 跨训练/推理集群借用空闲推理服务器；弹性扩缩训练作业；按服务器抢占成本回收资源
+- Advantages: 仿真中相对 FIFO，平均排队时间和平均作业完成时间（JCT）分别改善 1.53× 和 1.48×；GPU 使用率最高提高 25%
+- Method/advantages source: https://dl.acm.org/doi/pdf/10.1145/3552326.3587445
+- Verification: confirmed against the EuroSys 2023 camera-ready paper and ACM DOI record; the camera-ready first page lists Chuanxiong Guo as unaffiliated, so no institution was inferred for that author.
 
 ### SiloD (2023)
-- Paper title: SiloD: A Co-Design of Caching and Scheduling for Deep Learning Clusters
+- Paper title: SiloD: A Co-design of Caching and Scheduling for Deep Learning Clusters
 - DOI: https://doi.org/10.1145/3552326.3567499
-- Affiliations: University of California, Berkeley<br>University of Washington
-- Affiliations source: https://dl.acm.org/doi/abs/10.1145/3552326.3567499
-- Method: 隔离式 GPU 共享与深度学习作业调度
-- Advantages: 降低干扰并改善 GPU 利用率
-- Method/advantages source: https://dl.acm.org/doi/abs/10.1145/3552326.3567499
-- Verification: unresolved: the ACM record confirms identity and venue, but the full title and publication affiliation block were not reliably extractable.
+- Affiliations: Peking University<br>Microsoft Research<br>University of Science and Technology of China<br>Microsoft<br>BaseBit Technologies
+- Affiliations source: https://dl.acm.org/doi/10.1145/3552326.3567499
+- Method: 缓存与调度协同设计；将缓存和远程 I/O 作为一等资源，并联合估算计算、缓存与 I/O 分配
+- Advantages: 相对缓存与调度独立运行的组合，平均作业完成时间、集群利用率和公平性最高分别改善 7.4×、2.57× 和 1.89×
+- Method/advantages source: https://www.microsoft.com/en-us/research/publication/silod-a-co-design-of-caching-and-scheduling-for-deep-learning-clusters
+- Verification: confirmed against the ACM EuroSys 2023 publication record, official EuroSys program, and Microsoft Research publication page.
 
 ### FGD (2023)
 - Paper title: Beware of Fragmentation: Scheduling GPU-Sharing Workloads with Fragmentation Gradient Descent
 - DOI: -
-- Affiliations: Hong Kong University of Science and Technology
-- Affiliations source: https://www.usenix.org/conference/atc23/presentation/weng
-- Method: GPU 需求预测；面向协同调度作业的公平调度
-- Advantages: 提供可扩展的 GPU 集群调度仿真与比较
+- Affiliations: Hong Kong University of Science and Technology<br>Alibaba Group
+- Affiliations source: https://www.usenix.org/system/files/atc23-weng.pdf
+- Method: Fragmentation Gradient Descent（FGD）沿碎片最速下降方向放置 GPU-sharing 任务，最小化每次分配导致的 GPU 碎片增长
+- Advantages: 在 6,200+ GPU 的生产 trace 仿真中，较装箱式调度器最多减少 49% 未分配 GPU，并额外利用 290 个 GPU
 - Method/advantages source: https://www.usenix.org/conference/atc23/presentation/weng
-- Verification: unresolved: the official page confirms the linked artifact, but the full paper metadata was not reliably extractable.
+- Verification: confirmed against the formal USENIX ATC 2023 proceedings paper and conference page; no formal DOI was found.
 
 ### ElasticFlow (2023)
 - Paper title: ElasticFlow: An Elastic Serverless Training Platform for Distributed Deep Learning
 - DOI: https://doi.org/10.1145/3575693.3575721
-- Affiliations: Peking University
-- Affiliations source: https://dl.acm.org/doi/10.1145/3575693.3575721
-- Method: 基于流量/进度的弹性资源分配
-- Advantages: 提高训练资源利用率并降低作业完成时间（JCT）
-- Method/advantages source: https://dl.acm.org/doi/10.1145/3575693.3575721
-- Verification: confirmed
+- Affiliations: Peking University<br>Microsoft Research
+- Affiliations source: https://dl.acm.org/doi/pdf/10.1145/3575693.3575721
+- Method: 截止期感知准入控制；按边际收益动态分配 GPU；buddy worker 放置
+- Advantages: 在 128-GPU 集群中，满足截止期的作业数相对对比方案提高 1.46–7.65×
+- Method/advantages source: https://dl.acm.org/doi/pdf/10.1145/3575693.3575721
+- Verification: confirmed against the ASPLOS 2023 camera-ready paper and ACM DOI record.
 
 ### Lucid (2023)
 - Paper title: Lucid: A Non-intrusive, Scalable and Interpretable Scheduler for Deep Learning Training Jobs
 - DOI: https://doi.org/10.1145/3575693.3575705
-- Affiliations: Shanghai AI Laboratory
-- Affiliations source: https://tianweiz07.github.io/Papers/23-asplos.pdf
-- Method: 非侵入式在线剖析；可解释的作业配对与调度
-- Advantages: 减少 profiling 开销；改善训练吞吐与可扩展性
-- Method/advantages source: https://tianweiz07.github.io/Papers/23-asplos.pdf
-- Verification: confirmed
+- Affiliations: Nanyang Technological University<br>Shanghai AI Laboratory<br>SenseTime Research
+- Affiliations source: https://dl.acm.org/doi/pdf/10.1145/3575693.3575705
+- Method: 二维低开销 profiling；基于可解释优先级估计的非侵入式、无抢占惰性装箱调度
+- Advantages: 相对 FIFO 将平均 JCT 改善 5.2–7.9×；相对 Tiresias 将平均 JCT 和排队延迟分别改善 1.1–1.3× 和 1.8–9.1×
+- Method/advantages source: https://dl.acm.org/doi/pdf/10.1145/3575693.3575705
+- Verification: confirmed against the ASPLOS 2023 camera-ready paper and ACM DOI record.
 
 ### PowerFlow (2023)
 - Paper title: Energy-Efficient GPU Clusters Scheduling for Deep Learning
@@ -550,12 +553,12 @@ retain `DOI: -`.
 ### Titan (2022)
 - Paper title: Titan: A Scheduler for Foundation Model Fine-tuning Workloads
 - DOI: https://doi.org/10.1145/3542929.3563460
-- Affiliations: University of California, Berkeley
-- Affiliations source: https://dl.acm.org/doi/abs/10.1145/3542929.3563460
-- Method: 面向深度学习作业的 GPU 共享调度
-- Advantages: 提高多租户 GPU 利用率
-- Method/advantages source: https://dl.acm.org/doi/abs/10.1145/3542929.3563460
-- Verification: unresolved: abbreviated title and affiliation block require the full proceedings PDF.
+- Affiliations: Nanyang Technological University<br>S-Lab, Nanyang Technological University<br>SenseTime
+- Affiliations source: https://dl.acm.org/doi/pdf/10.1145/3542929.3563460
+- Method: 训练时间 lookup table 估算配置；task merging 合并可迁移的微调任务；pipeline switching 降低上下文切换开销
+- Advantages: 相对基线调度器将平均作业完成时间（JCT）和 makespan 分别降低 38% 和 12%
+- Method/advantages source: https://dl.acm.org/doi/pdf/10.1145/3542929.3563460
+- Verification: confirmed against the formal SoCC 2022 paper and ACM DOI record.
 
 ### Muri (2022)
 - Paper title: Multi-Resource Interleaving for Deep Learning Training
@@ -680,12 +683,12 @@ retain `DOI: -`.
 ### Chronus (2021)
 - Paper title: Chronus: A Novel Deadline-aware Scheduler for Deep Learning Training Jobs
 - DOI: https://doi.org/10.1145/3472883.3486978
-- Affiliations: Shanghai Jiao Tong University<br>Shanghai AI Laboratory
-- Affiliations source: https://dl.acm.org/doi/abs/10.1145/3472883.3486978
-- Method: 面向 DAG 的训练作业关键路径调度
-- Advantages: 降低分布式训练作业完成时间
-- Method/advantages source: https://dl.acm.org/doi/abs/10.1145/3472883.3486978
-- Verification: unresolved full publication block
+- Affiliations: Nanyang Technological University<br>S-Lab, Nanyang Technological University<br>Peking University<br>SenseTime
+- Affiliations source: https://dl.acm.org/doi/pdf/10.1145/3472883.3486978
+- Method: 基于作业内可预测性的动态资源 profiling；lease-based 抢占选择；放置感知的整合与局部搜索
+- Advantages: 为 SLO 作业提供截止期保障，同时优化 best-effort 作业；仿真中截止期未达率和 best-effort 延迟最高分别改善 14.7× 和 19.9×
+- Method/advantages source: https://dl.acm.org/doi/pdf/10.1145/3472883.3486978
+- Verification: confirmed against the SoCC 2021 paper first page, abstract, and ACM DOI record.
 
 ### SEER (2021)
 - Paper title: Elastic Hyperparameter Tuning on the Cloud
@@ -1108,11 +1111,11 @@ proceedings; arXiv-only records retain `DOI: -`.
 - Paper title: Dynamic Space-Time Scheduling for GPU Inference
 - DOI: -
 - Affiliations: University of California, Berkeley<br>Massachusetts Institute of Technology
-- Affiliations source: http://learningsys.org/nips18/assets/papers/102CameraReadySubmissionGPU_Virtualization%20(8).pdf
+- Affiliations source: https://arxiv.org/pdf/1901.00041
 - Method: 基于 GPU 空间与时间切分的动态共置调度
 - Advantages: 提高 GPU 利用率；在满足延迟目标下提升吞吐
-- Method/advantages source: http://learningsys.org/nips18/assets/papers/102CameraReadySubmissionGPU_Virtualization%20(8).pdf
-- Verification: confirmed from the NeurIPS 2018 workshop camera-ready PDF; no formal DOI was found.
+- Method/advantages source: https://arxiv.org/pdf/1901.00041
+- Verification: confirmed from the stable arXiv copy of the NeurIPS 2018 workshop camera-ready paper; no formal DOI was found.
 
 ### Ease.ml (2018)
 - Paper title: Ease.ml: Towards Multi-Tenant Resource Sharing for Machine Learning Workloads
