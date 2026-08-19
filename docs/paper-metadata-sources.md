@@ -456,9 +456,9 @@ retain `DOI: -`.
 - Affiliations: University of Wisconsin–Madison<br>University of Texas at Austin
 - Affiliations source: https://www.usenix.org/system/files/nsdi23-zheng.pdf
 - Method: 面向动态适应作业的未来规划；以动态市场机制联合优化效率与公平性
-- Advantages: 降低 makespan 并改善公平性
+- Advantages: 相对现有公平调度器，makespan 改善 1.3×、公平性改善 2×
 - Method/advantages source: https://www.usenix.org/conference/nsdi23/presentation/zheng
-- Verification: confirmed against the formal NSDI 2023 proceedings paper and conference page; no formal DOI was found.
+- Verification: confirmed against the formal NSDI 2023 abstract on the USENIX conference page; the 1.3× makespan and 2× fairness improvements follow the abstract's comparison against existing fair schedulers; no formal DOI was found.
 
 ### ModelKeeper (2023)
 - Paper title: ModelKeeper: Accelerating DNN Training via Automated Training Warmup
@@ -486,7 +486,7 @@ retain `DOI: -`.
 - Affiliations: Peking University<br>Microsoft Research<br>University of Science and Technology of China<br>Microsoft<br>BaseBit Technologies
 - Affiliations source: https://dl.acm.org/doi/10.1145/3552326.3567499
 - Method: 缓存与调度协同设计；将缓存和远程 I/O 作为一等资源，并联合估算计算、缓存与 I/O 分配
-- Advantages: 相对缓存与调度独立运行的组合，平均作业完成时间、集群利用率和公平性最高分别改善 7.4×、2.57× 和 1.89×
+- Advantages: 相对缓存与调度独立运行的组合，平均作业完成时间（JCT）、makespan 和公平性最高分别改善 7.4×、2.57× 和 1.89×
 - Method/advantages source: https://www.microsoft.com/en-us/research/publication/silod-a-co-design-of-caching-and-scheduling-for-deep-learning-clusters
 - Verification: confirmed against the ACM EuroSys 2023 publication record, official EuroSys program, and Microsoft Research publication page.
 
