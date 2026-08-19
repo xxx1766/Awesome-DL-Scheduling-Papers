@@ -1,8 +1,13 @@
 # Paper Metadata Sources
 
 This file records exactly one evidence entry for each paper in the
-`Affiliations`, `Method`, and `Advantages` columns of `README.md`. Entries are
-identified by scheduler, year, and training/inference batch. Each entry contains
+`Affiliations`, `Method`, and `Advantages` columns of `README.md`. The stable
+mechanical matching key is `batch + scheduler + year + paper title`: batch,
+scheduler, and year come from the README row, while `Paper title` is the title
+of the work resolved by that row's `Paper` link. Every README paper row must
+match exactly one evidence entry, and no evidence entry may be orphaned or
+duplicated. The current full-table audit is 138/138 (84 training and 54
+inference entries; batch counts 37/40/7/27/15/12). Each entry contains exactly
 one `Paper title`, `DOI`, `Affiliations`, `Affiliations source`, `Method`,
 `Advantages`, `Method/advantages source`, and `Verification` field.
 
@@ -14,8 +19,8 @@ attached to the claims they support.
 
 ## Batch 1: Training papers, 2017–2020
 
-The README contains 37 rows in this batch. The linked records, rather than
-survey names, were used for matching.
+The linked publication records, rather than survey names, were used for
+matching.
 
 ### GENIE (2020)
 - Affiliations: National University of Defense Technology
@@ -33,7 +38,7 @@ survey names, were used for matching.
 - Paper title: Efficient Online Scheduling for Coflow-Aware Machine Learning Clusters
 - DOI: https://doi.org/10.1109/TCC.2020.3040312
 - Method: LPCAS 推断 SRPT 作业；动态作业权重与 LP 加权带宽缩放分配
-- Advantages: 降低依赖 coflow 作业的总作业完成时间（JCT）；在基于 Microsoft workload 的大规模 trace-driven 仿真中，较 Aalo 最多降低总作业完成时间（JCT）58.4%
+- Advantages: 降低具有 coflow 依赖的作业总完成时间（JCT）；在 Microsoft workload 驱动的大规模 trace-driven 仿真、与 Aalo 相同实验设定下，较 Aalo 最多降低总 JCT 58.4%
 - Method/advantages source: https://ieeexplore.ieee.org/document/9269382
 - Verification: confirmed against the formal TCC paper, "Efficient Online Scheduling for Coflow-Aware Machine Learning Clusters" (online publication: 2020; IEEE Transactions on Cloud Computing, Volume 10, Issue 4, 2022; DOI 10.1109/TCC.2020.3040312); publication-time affiliations follow the paper's author footnotes.
 
@@ -108,14 +113,14 @@ survey names, were used for matching.
 - Verification: confirmed
 
 ### SPIN (2020)
-- Affiliations: University of Florida<br>University of California, Los Angeles<br>University of California, Santa Barbara
-- Affiliations source: https://research.aalto.fi/en/publications/scheduling-placement-sensitive-bsp-jobs-with-inaccurate-execution
+- Affiliations: University of Science and Technology of China<br>Weizmann Institute of Science<br>University of Göttingen<br>The University of Hong Kong
+- Affiliations source: https://doi.org/10.1109/INFOCOM41043.2020.9155445
 - Paper title: Scheduling Placement-Sensitive BSP Jobs with Inaccurate Execution Time Estimation
 - DOI: https://doi.org/10.1109/INFOCOM41043.2020.9155445
 - Method: 面向放置敏感 BSP 作业的在线调度；基于不准确执行时间估计进行决策
 - Advantages: 在放置敏感 BSP 作业的实验中降低 makespan；对执行时间估计误差具有鲁棒性
-- Method/advantages source: https://research.aalto.fi/en/publications/scheduling-placement-sensitive-bsp-jobs-with-inaccurate-execution
-- Verification: confirmed against the INFOCOM publication record and abstract: SPIN is the scheduler for placement-sensitive BSP jobs; the author affiliations are University of Florida, UCLA, and UCSB, and the evaluation reports makespan behavior under inaccurate execution-time estimates.
+- Method/advantages source: https://ieeexplore.ieee.org/document/9155445
+- Verification: confirmed against the formal IEEE INFOCOM DOI record (paper identity), official IEEE INFOCOM 2020 accepted-paper record (publication affiliations), and IEEE paper record (method and evaluation claims). The Aalto research portal is auxiliary bibliographic metadata only and is not used as the formal identity, affiliation, or claim source.
 
 ### E-LAS (2020)
 - Affiliations: University of Louisiana at Lafayette
@@ -389,8 +394,8 @@ survey names, were used for matching.
 
 ## Batch 2: Training papers, 2021–2024
 
-The README contains 40 rows in this batch. Formal publisher or proceedings
-records are preferred; arXiv-only records retain `DOI: -`.
+Formal publisher or proceedings records are preferred; arXiv-only records
+retain `DOI: -`.
 
 ### Acme (2024)
 - Paper title: Characterization of Large Language Model Development in the Datacenter
@@ -766,11 +771,11 @@ records are preferred; arXiv-only records retain `DOI: -`.
 - Paper title: A GPU Scheduling Framework to Accelerate Hyper-Parameter Optimization in Deep Learning Clusters
 - DOI: https://doi.org/10.3390/electronics10030350
 - Affiliations: Sogang University<br>SK Telecom
-- Affiliations source: https://pdfs.semanticscholar.org/d0c6/afaefd29c27ab510000bf772d14c1be989af.pdf
+- Affiliations source: https://doi.org/10.3390/electronics10030350
 - Method: 容器抢占与时间共享；按早期收敛速度动态排序
 - Advantages: 加快超参数搜索并减少时间共享开销
 - Method/advantages source: https://www.mdpi.com/2079-9292/10/3/350
-- Verification: confirmed
+- Verification: confirmed from the formal MDPI publication record and paper; the third-party Semantic Scholar PDF mirror is not used as evidence.
 
 ### Jigsaw (2021)
 - Paper title: Doing More by Doing Less: How Structured Partial Backpropagation Improves Deep Learning Clusters
@@ -850,7 +855,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 - Affiliations: East China Normal University<br>Alibaba Group<br>Huazhong University of Science and Technology<br>Peng Cheng Laboratory
 - Affiliations source: https://proceedings.mlsys.org/paper_files/paper/2025/file/270339c997293ca2988c62f4308e389f-Paper-Conference.pdf
 - Method: 性能模型驱动作业执行计划重配置；联合优化多资源分配
-- Advantages: 在 64-GPU 集群实验中，相对论文对比系统，平均作业完成时间（JCT）和 makespan 最多分别缩短至 1/3.2 和 1/1.4
+- Advantages: 在 64-GPU 集群实验中，相对论文对比系统，平均作业完成时间（JCT）和 makespan 最多分别降至基线的 31.25% 和 71.4%（即论文所述最高 3.2× 和 1.4× reduction）
 - Method/advantages source: https://proceedings.mlsys.org/paper_files/paper/2025/hash/270339c997293ca2988c62f4308e389f-Abstract-Conference.html
 - Verification: confirmed against the official MLSys 2025 proceedings page and conference paper PDF: the abstract (PDF p. 1) states the 64-GPU boundary and reductions of up to 3.2× and 1.4× versus state-of-the-art systems; §7 “Evaluation” (PDF p. 8) specifies the 64-GPU cluster, and §7.2 “End-to-end comparison,” Table 4 (PDF p. 10), reports the average-JCT and makespan comparisons.
 
@@ -866,7 +871,8 @@ records are preferred; arXiv-only records retain `DOI: -`.
 
 ## Batch 4: Inference papers, 2016–2021
 
-The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows). Affiliations below are normalized from the publication-time paper or official proceedings; arXiv-only records retain `DOI: -`.
+Affiliations below are normalized from the publication-time paper or official
+proceedings; arXiv-only records retain `DOI: -`.
 
 ### INFaaS (2021)
 - Paper title: INFaaS: Automated Model-less Inference Serving
@@ -1140,9 +1146,6 @@ The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows)
 
 ## Batch 5: Inference papers, 2022–2024
 
-The README contains 15 rows in this batch (one from 2024, twelve from 2023,
-and two from 2022), and all 15 are covered below.
-
 ### SpotServe (2024)
 - Paper title: SpotServe: Serving Generative Large Language Models on Preemptible Instances
 - DOI: https://doi.org/10.1145/3620665.3640411
@@ -1383,7 +1386,7 @@ and two from 2022), and all 15 are covered below.
 - Method: 面向 serverless DL 的内省弹性；资源互补放置与 GPU 垂直/实例水平二维协同扩缩容
 - Advantages: 论文评测中，较论文基线减少 10%–46% GPU 碎片，推理/训练吞吐分别提升 1.8×/1.1×，服务等级目标（SLO）违约率降低 11%–71%
 - Method/advantages source: https://doi.org/10.1145/3669940.3707251
-- Verification: confirmed from the official ASPLOS program and ACM proceedings paper; campus labels for UCAS were deduplicated as one institution.
+- Verification: confirmed from the official ASPLOS program and ACM proceedings paper; campus labels for UCAS were deduplicated as one institution. The formal paper's author-affiliation block prints `Nanjing Institute of InforSuperBahn`; that spelling is therefore retained verbatim rather than guessed or normalized.
 
 ### GPU-Disaggregated Serving (Prism) (2025)
 - Paper title: GPU-Disaggregated Serving for Deep Learning Recommendation Models at Scale
@@ -1401,7 +1404,7 @@ and two from 2022), and all 15 are covered below.
 - Affiliations: University of Cambridge<br>Peking University<br>ETH Zurich
 - Affiliations source: https://proceedings.mlsys.org/paper_files/paper/2025/file/c2a0e26dd9ee7d57e92bb1c24b39659a-Paper-Conference.pdf
 - Method: 面向云端异构 GPU/网络联合优化分组、prefill/decode 阶段配置、并行策略与请求路由；轻量重调度
-- Advantages: 相同价格预算的异构云与同构自建环境实验中，较 HexGen、DistServe、vLLM 吞吐最高/平均提升 2.1×/1.7×，可满足最高 2.5×、平均 1.5× 更严格的时延期限
+- Advantages: 在相同价格预算的异构云与同构自建环境实验中，较 HexGen、DistServe 和 vLLM，吞吐最高提升 2.1×、平均提升 1.7×。在论文的 latency-deadline 评测中，可满足的时延期限最高严格 2.5×、平均严格 1.5×
 - Method/advantages source: https://proceedings.mlsys.org/paper_files/paper/2025/hash/c2a0e26dd9ee7d57e92bb1c24b39659a-Abstract-Conference.html
 - Verification: confirmed from the official MLSys proceedings paper and abstract page; no DOI is listed.
 
