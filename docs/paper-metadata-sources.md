@@ -1311,3 +1311,123 @@ and two from 2022), and all 15 are covered below.
 - Verification: confirmed from the official USENIX NSDI proceedings page and paper; no DOI is listed.
 
 ## Batch 6: Inference papers, 2025–2026
+
+### OpenTela (2026)
+- Paper title: OpenTela: Unifying Decentralized Computing Resources for Heterogeneous LLM Serving (Operational Systems)
+- DOI: -
+- Affiliations: ETH Zurich; University of Cambridge; EPFL; MIT; ETH AI Center; The Hong Kong University of Science and Technology
+- Affiliations source: https://www.usenix.org/conference/osdi26/presentation/yao
+- Method: 用户态去中心化编排覆盖层；CRDT gossip 服务发现、统一异构集群接口与异构感知调度
+- Advantages: 生产部署超过 22 个月，跨机构为 1000+ 研究者、142 个模型处理 1300 万请求和 150 亿 token
+- Method/advantages source: https://www.usenix.org/conference/osdi26/presentation/yao
+- Verification: confirmed from the official USENIX OSDI proceedings page and paper; no DOI is listed.
+
+### EcoServe (2026)
+- Paper title: Efficient LLM Serving on Commodity GPU Clusters with Data-Reduced Cross-Instance Orchestration
+- DOI: -
+- Affiliations: Sun Yat-Sen University
+- Affiliations source: https://www.usenix.org/conference/osdi26/presentation/du
+- Method: 面向普通 GPU 集群的部分解耦编排；实例内按时间分离 prefill/decode、跨实例循环激活并自适应路由
+- Advantages: 32 张 L20、以太网集群服务 30B/70B 模型时，goodput 较 vLLM、Sarathi、DistServe、MoonCake 分别提升 1.96×、1.99×、2.51×、2.40×
+- Method/advantages source: https://www.usenix.org/conference/osdi26/presentation/du
+- Verification: confirmed from the official USENIX OSDI proceedings page and paper; no DOI is listed.
+
+### FlexLLM (2026)
+- Paper title: FlexLLM: Token-Level Co-Serving of LLM Inference and Finetuning with SLO Guarantees
+- DOI: -
+- Affiliations: Carnegie Mellon University; Purdue University; Anthropic PBC; Mistral AI; Stanford University; Amazon Web Services
+- Affiliations source: https://www.usenix.org/conference/nsdi26/presentation/oliaro
+- Method: 在共享 GPU 上按 token 融合 LLM 推理与 PEFT 微调；混合 token 调度器按 SLO 动态交错执行
+- Advantages: LLaMA-3.1-8B、Qwen-2.5-14B/32B 端到端实验中，在推理负载最高 20 req/s 时满足 SLO；微调吞吐在重载/轻载下分别提升 1.9×–4.8×/2.5×–6.8×
+- Method/advantages source: https://www.usenix.org/conference/nsdi26/presentation/oliaro
+- Verification: confirmed from the official USENIX NSDI proceedings page and paper; no DOI is listed.
+
+### JITServe (2026)
+- Paper title: JITServe: SLO-aware LLM Serving with Imprecise Request Information
+- DOI: -
+- Affiliations: University of Illinois Urbana-Champaign; Google; Cisco Research
+- Affiliations source: https://www.usenix.org/conference/nsdi26/presentation/zhang-wei
+- Method: 以渐进修正的不精确请求信息进行 SLO 感知调度；分组 margin-goodput 优化按需分配带宽与组批
+- Advantages: 在聊天、深度研究和智能体流水线等工作负载中，较先进设计将 service goodput 提升 1.4×–6.3×，或节省 28.5%–83.2% 资源
+- Method/advantages source: https://www.usenix.org/conference/nsdi26/presentation/zhang-wei
+- Verification: confirmed from the official USENIX NSDI proceedings page and paper; the unaffiliated author is not an institution and no DOI is listed.
+
+### FastServe (2026)
+- Paper title: FastServe: Iteration-Level Preemptive Scheduling for Large Language Model Inference
+- DOI: -
+- Affiliations: Peking University
+- Affiliations source: https://www.usenix.org/conference/nsdi26/presentation/wu-bingyang
+- Method: 输出 token 粒度抢占式调度；skip-join 多级反馈队列与 GPU/主存中间状态换入换出
+- Advantages: 论文评测中，吞吐较 vLLM 最高提升 6.1×
+- Method/advantages source: https://www.usenix.org/conference/nsdi26/presentation/wu-bingyang
+- Verification: confirmed from the official USENIX NSDI proceedings page and paper; no DOI is listed.
+
+### TAPAS (2025)
+- Paper title: TAPAS: Thermal- and Power-Aware Scheduling for LLM Inference in Cloud Platforms
+- DOI: https://doi.org/10.1145/3676641.3716025
+- Affiliations: University of Illinois at Urbana-Champaign; Microsoft Azure Research; Microsoft Azure
+- Affiliations source: https://www.asplos-conference.org/asplos2025/program.html
+- Method: 热/功耗感知的 GPU VM 放置、LLM 请求路由与实例配置联合调度
+- Advantages: Azure 生产 traces 的大规模评测中保持 P99 推理时延，最高温度和行峰值功耗分别降低 17% 和 23%，支持最多 40% 额外容量
+- Method/advantages source: https://doi.org/10.1145/3676641.3716025
+- Verification: confirmed from the official ASPLOS program and ACM proceedings paper.
+
+### Past-Future Scheduler (2025)
+- Paper title: Past-Future Scheduler for LLM Serving under SLA Guarantees
+- DOI: https://doi.org/10.1145/3676641.3716011
+- Affiliations: Beihang University; SenseTime; Peking University
+- Affiliations source: https://www.asplos-conference.org/asplos2025/program.html
+- Method: 结合历史输出长度分布与未来各时点 KV-cache 需求预测进行批次准入，平衡排队与请求驱逐
+- Advantages: 多种模型与硬件实验中，LightLLM 的 SLA goodput 较激进或保守调度器最高提升约 2–3×
+- Method/advantages source: https://doi.org/10.1145/3676641.3716011
+- Verification: confirmed from the official ASPLOS program and ACM DOI record; the author-hosted arXiv copy was used only to inspect the method and evaluation details.
+
+### Helix (2025)
+- Paper title: Helix: Serving Large Language Models over Heterogeneous GPUs and Network via Max-Flow
+- DOI: https://doi.org/10.1145/3669940.3707215
+- Affiliations: Carnegie Mellon University
+- Affiliations source: https://www.asplos-conference.org/asplos2025/program.html
+- Method: 将异构 GPU 与网络建模为最大流；用 MILP 联合优化模型放置并按请求选择流水线
+- Advantages: 24–42 节点异构集群实验中，较异构感知基线吞吐最高提升 3.3×，prompt/decode 平均时延最高降低 66%/24%
+- Method/advantages source: https://doi.org/10.1145/3669940.3707215
+- Verification: confirmed from the official ASPLOS program and ACM proceedings paper.
+
+### Dilu (2025)
+- Paper title: Dilu: Enabling GPU Resourcing-on-Demand for Serverless DL Serving via Introspective Elasticity
+- DOI: https://doi.org/10.1145/3669940.3707251
+- Affiliations: Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences; Zhongguancun Laboratory; Nanjing Institute of InforSuperBahn; Institute of Intelligent Computing Technology, Suzhou, Chinese Academy of Sciences
+- Affiliations source: https://doi.org/10.1145/3669940.3707251
+- Method: 面向 serverless DL 的内省弹性；资源互补放置与 GPU 垂直/实例水平二维协同扩缩容
+- Advantages: 论文评测中，较先进基线减少 10%–46% 碎片，推理/训练吞吐分别提升 1.8×/1.1×，SLO 违约率降低 11%–71%
+- Method/advantages source: https://doi.org/10.1145/3669940.3707251
+- Verification: confirmed from the official ASPLOS program and ACM proceedings paper; campus labels for UCAS were deduplicated as one institution.
+
+### GPU-Disaggregated Serving (Prism) (2025)
+- Paper title: GPU-Disaggregated Serving for Deep Learning Recommendation Models at Scale
+- DOI: -
+- Affiliations: The Hong Kong University of Science and Technology; Alibaba Group
+- Affiliations source: https://www.usenix.org/conference/nsdi25/presentation/yang
+- Method: 将 DLRM 自动切分为 CPU/GPU 密集子图并在 RDMA 解耦资源池调度；拓扑感知放置与 SLO 感知通信
+- Advantages: 拥挤 GPU 集群实验中，CPU 和 GPU 碎片分别减少 53% 和 27%
+- Method/advantages source: https://www.usenix.org/conference/nsdi25/presentation/yang
+- Verification: confirmed from the official USENIX NSDI proceedings page and paper; Prism is the system name used in the paper and no DOI is listed.
+
+### ThunderServe (2025)
+- Paper title: ThunderServe: High-performance and Cost-efficient LLM Serving in Cloud Environments
+- DOI: -
+- Affiliations: University of Cambridge; Peking University; ETH Zurich
+- Affiliations source: https://proceedings.mlsys.org/paper_files/paper/2025/file/c2a0e26dd9ee7d57e92bb1c24b39659a-Paper-Conference.pdf
+- Method: 面向云端异构 GPU/网络联合优化分组、prefill/decode 阶段配置、并行策略与请求路由；轻量重调度
+- Advantages: 相同价格预算的异构云与同构自建环境实验中，较 HexGen、DistServe、vLLM 吞吐最高/平均提升 2.1×/1.7×，时延 deadline 最高/平均缩短 2.5×/1.5×
+- Method/advantages source: https://proceedings.mlsys.org/paper_files/paper/2025/hash/c2a0e26dd9ee7d57e92bb1c24b39659a-Abstract-Conference.html
+- Verification: confirmed from the official MLSys proceedings paper and abstract page; no DOI is listed.
+
+### SOLA (2025)
+- Paper title: SOLA: Optimizing SLO Attainment for Large Language Model Serving with State-Aware Scheduling
+- DOI: -
+- Affiliations: Tsinghua University; Infinigence AI; Shanghai Jiao Tong University; Peking University
+- Affiliations source: https://proceedings.mlsys.org/paper_files/paper/2025/file/bc82dbfbfa43232be85b8d9838f49c3e-Paper-Conference.pdf
+- Method: 迭代级状态感知调度；按请求与系统状态动态控制执行顺序和工作量，平衡 TTFT/TPOT
+- Advantages: A100 上 ShareGPT/LongBench 实验中，SLO 达成率由 45.5% 提至 99.4%；相对 vLLM-S、vLLM-D、SJF 平均多服务 1.04×–1.27× 请求
+- Method/advantages source: https://proceedings.mlsys.org/paper_files/paper/2025/hash/bc82dbfbfa43232be85b8d9838f49c3e-Abstract-Conference.html
+- Verification: confirmed from the official MLSys proceedings paper and abstract page; no DOI is listed.
