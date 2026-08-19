@@ -49,8 +49,6 @@ survey names, were used for matching.
 - Affiliations source: https://doi.org/10.1109/TCC.2020.3040312 (DOI is the identity anchor; the publication record is the source for the affiliation block.)
 - Paper title: Efficient Online Scheduling for Coflow-Aware Machine Learning Clusters
 - DOI: https://doi.org/10.1109/TCC.2020.3040312
-- Paper title: Efficient Online Scheduling for Coflow-Aware Machine Learning Clusters
-- DOI: https://doi.org/10.1109/TCC.2020.3040312
 - Method: LPCAS 推断 SRPT 作业；动态作业权重与 LP 加权带宽缩放分配
 - Advantages: 降低依赖 coflow 作业的总 JCT；在基于 Microsoft workload 的大规模 trace-driven 仿真中，较 Aalo 最多降低总 JCT 58.4%
 - Method/advantages source: https://ieeexplore.ieee.org/document/9269382
