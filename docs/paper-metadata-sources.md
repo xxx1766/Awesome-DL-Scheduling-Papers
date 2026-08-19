@@ -1368,7 +1368,7 @@ and two from 2022), and all 15 are covered below.
 - Affiliations: University of Illinois at Urbana-Champaign; Microsoft Azure Research; Microsoft Azure
 - Affiliations source: https://www.asplos-conference.org/asplos2025/program.html
 - Method: 热/功耗感知的 GPU VM 放置、LLM 请求路由与实例配置联合调度
-- Advantages: Azure 生产 traces 的大规模评测中保持 P99 推理时延，最高温度和行峰值功耗分别降低 17% 和 23%，支持最多 40% 额外容量
+- Advantages: Azure 生产 traces 的大规模评测中保持 P99 推理时延，最高温度和行峰值功耗分别降低 17% 和 23%，在热与功耗封顶时间低于 0.7% 的条件下，支持最多 40% 的服务器超配
 - Method/advantages source: https://doi.org/10.1145/3676641.3716025
 - Verification: confirmed from the official ASPLOS program and ACM proceedings paper.
 
@@ -1398,7 +1398,7 @@ and two from 2022), and all 15 are covered below.
 - Affiliations: Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences; Zhongguancun Laboratory; Nanjing Institute of InforSuperBahn; Institute of Intelligent Computing Technology, Suzhou, Chinese Academy of Sciences
 - Affiliations source: https://doi.org/10.1145/3669940.3707251
 - Method: 面向 serverless DL 的内省弹性；资源互补放置与 GPU 垂直/实例水平二维协同扩缩容
-- Advantages: 论文评测中，较先进基线减少 10%–46% 碎片，推理/训练吞吐分别提升 1.8×/1.1×，SLO 违约率降低 11%–71%
+- Advantages: 论文评测中，较先进基线减少 10%–46% GPU 碎片，推理/训练吞吐分别提升 1.8×/1.1×，SLO 违约率降低 11%–71%
 - Method/advantages source: https://doi.org/10.1145/3669940.3707251
 - Verification: confirmed from the official ASPLOS program and ACM proceedings paper; campus labels for UCAS were deduplicated as one institution.
 
@@ -1418,7 +1418,7 @@ and two from 2022), and all 15 are covered below.
 - Affiliations: University of Cambridge; Peking University; ETH Zurich
 - Affiliations source: https://proceedings.mlsys.org/paper_files/paper/2025/file/c2a0e26dd9ee7d57e92bb1c24b39659a-Paper-Conference.pdf
 - Method: 面向云端异构 GPU/网络联合优化分组、prefill/decode 阶段配置、并行策略与请求路由；轻量重调度
-- Advantages: 相同价格预算的异构云与同构自建环境实验中，较 HexGen、DistServe、vLLM 吞吐最高/平均提升 2.1×/1.7×，时延 deadline 最高/平均缩短 2.5×/1.5×
+- Advantages: 相同价格预算的异构云与同构自建环境实验中，较 HexGen、DistServe、vLLM 吞吐最高/平均提升 2.1×/1.7×，可满足最高 2.5×、平均 1.5× 更严格的时延期限
 - Method/advantages source: https://proceedings.mlsys.org/paper_files/paper/2025/hash/c2a0e26dd9ee7d57e92bb1c24b39659a-Abstract-Conference.html
 - Verification: confirmed from the official MLSys proceedings paper and abstract page; no DOI is listed.
 
