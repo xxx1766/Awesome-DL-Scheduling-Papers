@@ -27,13 +27,13 @@ matching.
 
 ### GENIE (2020)
 - Affiliations: National University of Defense Technology
-- Affiliations source: https://www.computer.org/csdl/journal/td/2020/01/08778770/1fPUi51S3ny
-- Paper title: Characterizing and Scheduling with QoS Guarantees on GPU Clusters
-- DOI: -
+- Affiliations source: https://doi.org/10.1109/TPDS.2019.2931558
+- Paper title: Deep Learning Research and Development Platform: Characterizing and Scheduling with QoS Guarantees on GPU Clusters
+- DOI: https://doi.org/10.1109/TPDS.2019.2931558
 - Method: 轻量级剖析建模；QoS 感知动态放置
-- Advantages: 提高 QoS 保证和系统利用率
-- Method/advantages source: https://jianbinfang.github.io/files/2019-07-29-tpds.pdf
-- Verification: confirmed
+- Advantages: 正式摘要实验中 QoS 最多提升 67.4%、makespan 最多降低 28.2%；边界为论文评测工作负载与基线
+- Method/advantages source: https://doi.org/10.1109/TPDS.2019.2931558
+- Verification: confirmed against the formal IEEE TPDS DOI record and abstract; quantitative claims are limited to the paper's evaluated workloads and baselines.
 
 ### Parrot (2020)
 - Affiliations: Hong Kong University of Science and Technology<br>Tianjin University<br>Dalian University of Technology
@@ -106,14 +106,14 @@ matching.
 - Verification: confirmed
 
 ### Vaibhav et al. (2020)
-- Affiliations: IBM Research
-- Affiliations source: https://research.ibm.com/publications/effective-elastic-scaling-of-deep-learning-workloads
+- Affiliations: IBM Research<br>Microsoft
+- Affiliations source: https://doi.org/10.1109/MASCOTS50786.2020.9285954
 - Paper title: Effective Elastic Scaling of Deep Learning Workloads
-- DOI: -
+- DOI: https://doi.org/10.1109/MASCOTS50786.2020.9285954
 - Method: 动态批大小与资源联合扩缩容
 - Advantages: 改善作业运行时间和集群利用率
-- Method/advantages source: https://research.ibm.com/publications/effective-elastic-scaling-of-deep-learning-workloads
-- Verification: confirmed
+- Method/advantages source: https://doi.org/10.1109/MASCOTS50786.2020.9285954
+- Verification: confirmed against the formal IEEE MASCOTS DOI record; affiliations are separated by the publication's institution markers.
 
 ### SPIN (2020)
 - Affiliations: University of Science and Technology of China<br>Weizmann Institute of Science<br>University of Göttingen<br>The University of Hong Kong
@@ -248,7 +248,7 @@ matching.
 ### FfDL (2019)
 - Affiliations: IBM Research
 - Affiliations source: https://dl.acm.org/doi/10.1145/3361525.3361538
-- Paper title: FfDL: A Framework for Deep Learning as a Service
+- Paper title: FfDL: A Flexible Multi-tenant Deep Learning Platform
 - DOI: https://doi.org/10.1145/3361525.3361538
 - Method: 容器化深度学习服务编排与资源调度
 - Advantages: 提供多框架训练服务
@@ -387,13 +387,13 @@ matching.
 
 ### HyperDrive (2017)
 - Affiliations: Brown University<br>Microsoft<br>University of Nevada, Reno
-- Affiliations source: https://www2.cs.uh.edu/~fyan/Paper/Middleware17.pdf
-- Paper title: HyperDrive: A Flexible Cloud Testbed for Research and Education
-- DOI: -
+- Affiliations source: https://doi.org/10.1145/3135974.3135994
+- Paper title: HyperDrive: Exploring Hyperparameters with POP Scheduling
+- DOI: https://doi.org/10.1145/3135974.3135994
 - Method: POP 调度下的超参数探索
 - Advantages: 提高超参数搜索吞吐量
-- Method/advantages source: https://www2.cs.uh.edu/~fyan/Paper/Middleware17.pdf
-- Verification: confirmed
+- Method/advantages source: https://doi.org/10.1145/3135974.3135994
+- Verification: confirmed against the formal ACM Middleware 2017 DOI record; the DOI record is the sole title, affiliation, and method/advantages source.
 
 ## Batch 2: Training papers, 2021–2024
 
@@ -563,7 +563,7 @@ retain `DOI: -`.
 ### Muri (2022)
 - Paper title: Multi-Resource Interleaving for Deep Learning Training
 - DOI: https://doi.org/10.1145/3544216.3544224
-- Affiliations: University of Washington<br>University of California, Berkeley
+- Affiliations: Peking University<br>ByteDance Inc.
 - Affiliations source: https://dl.acm.org/doi/10.1145/3544216.3544224
 - Method: 多资源交错调度；利用资源使用互补性共置作业
 - Advantages: 提高资源利用率并降低作业完成时间（JCT）
@@ -922,10 +922,10 @@ proceedings; arXiv-only records retain `DOI: -`.
 - DOI: https://doi.org/10.1145/3472883.3486987
 - Affiliations: Hong Kong University of Science and Technology<br>Alibaba Group
 - Affiliations source: https://dl.acm.org/doi/10.1145/3472883.3486987
-- Method: 以性能模型和贝叶斯优化搜索云原生模型服务配置
-- Advantages: 接近最优配置；降低配置搜索开销；改善服务性能
+- Method: 模型无关元学习构建性能元模型；少量采样后快速搜索云原生模型服务配置
+- Advantages: 减少配置搜索开销；支持云原生模型服务配置探索
 - Method/advantages source: https://dl.acm.org/doi/10.1145/3472883.3486987
-- Verification: confirmed from the ACM SoCC publication record and DOI metadata.
+- Verification: confirmed from the ACM SoCC publication record and DOI metadata; the advantages wording is limited to reduced search overhead and configuration exploration.
 
 ### Irina (2020)
 - Paper title: Irina: Accelerating DNN Inference with Efficient Online Scheduling
