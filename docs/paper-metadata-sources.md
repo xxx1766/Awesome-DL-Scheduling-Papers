@@ -1159,5 +1159,157 @@ The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows)
 
 ## Batch 5: Inference papers, 2022–2024
 
+The README contains 15 rows in this batch (one from 2024, twelve from 2023,
+and two from 2022), and all 15 are covered below.
+
+### SpotServe (2024)
+- Paper title: SpotServe: Serving Generative Large Language Models on Preemptible Instances
+- DOI: https://doi.org/10.1145/3620665.3640411
+- Affiliations: Carnegie Mellon University<br>Peking University<br>The Chinese University of Hong Kong
+- Affiliations source: https://www.cs.cmu.edu/~zhihaoj2/papers/spotserve.pdf
+- Method: 抢占式 GPU 实例上的动态并行重配置；最小成本上下文迁移与有状态推理恢复
+- Advantages: 在真实抢占 traces 上，P99 尾延迟较最佳基线降低 2.4×–9.1×；较按需实例节省 54% 成本
+- Method/advantages source: https://www.cs.cmu.edu/~zhihaoj2/papers/spotserve.pdf
+- Verification: confirmed from the formal ASPLOS 2024 paper and official ASPLOS program; the README retains its existing arXiv link.
+
+### DeltaZip (2023)
+- Paper title: DeltaZip: Efficient Serving of Multiple Full-Model-Tuned LLMs
+- DOI: https://doi.org/10.1145/3689031.3717468
+- Affiliations: ETH Zurich<br>Massachusetts Institute of Technology
+- Affiliations source: https://2025.eurosys.org/accepted-papers.html
+- Method: 压缩全参数微调模型的权重增量；共享基础模型并批处理增量计算
+- Advantages: 模型增量最高压缩 10×且保持论文评测质量；吞吐较比较系统提升 2×–12×
+- Method/advantages source: https://doi.org/10.1145/3689031.3717468
+- Verification: confirmed from the formal EuroSys 2025 paper and official accepted-paper record; the README retains the original 2023 arXiv row year and link.
+
+### MOSEL (2023)
+- Paper title: MOSEL: Inference Serving Using Dynamic Modality Selection
+- DOI: -
+- Affiliations: The University of Texas at Austin
+- Affiliations source: https://arxiv.org/pdf/2310.18481
+- Method: 按请求准确率与时延约束动态选择多模态输入；截止期感知排队与批处理
+- Advantages: 在论文多模态工作负载中，保证目标准确率时吞吐提升 3.6×、作业完成时间缩短 11×
+- Method/advantages source: https://arxiv.org/pdf/2310.18481
+- Verification: confirmed from the arXiv paper; no formal proceedings version or DOI was found.
+
+### Punica (2023)
+- Paper title: Punica: Multi-Tenant LoRA Serving
+- DOI: -
+- Affiliations: University of Washington<br>Duke University
+- Affiliations source: https://proceedings.mlsys.org/paper_files/paper/2024/file/054de805fcceb78a201f5e9d53c85908-Paper-Conference.pdf
+- Method: 跨 LoRA 适配器异构批处理 CUDA 内核；共享基础模型并整合多租户请求
+- Advantages: 固定 GPU 集群上，吞吐较论文比较的 LLM serving 系统提升 12×，每 token 仅增加 2 ms 时延
+- Method/advantages source: https://proceedings.mlsys.org/paper_files/paper/2024/hash/054de805fcceb78a201f5e9d53c85908-Abstract-Conference.html
+- Verification: confirmed from the formal MLSys 2024 proceedings paper; MLSys does not list a DOI, and the README retains the original 2023 arXiv row year and link.
+
+### S-LoRA (2023)
+- Paper title: SLoRA: Scalable Serving of Thousands of LoRA Adapters
+- DOI: -
+- Affiliations: University of California, Berkeley<br>Stanford University<br>Shanghai Jiao Tong University
+- Affiliations source: https://proceedings.mlsys.org/paper_files/paper/2024/file/906419cd502575b617cc489a1a696a67-Paper-Conference.pdf
+- Method: Unified Paging 联合管理 LoRA 权重与 KV cache；异构批处理内核和张量并行
+- Advantages: 较 HuggingFace PEFT 与朴素 vLLM LoRA 支持，吞吐最高提升 4×；单机可服务数千适配器
+- Method/advantages source: https://proceedings.mlsys.org/paper_files/paper/2024/hash/906419cd502575b617cc489a1a696a67-Abstract-Conference.html
+- Verification: confirmed from the formal MLSys 2024 proceedings paper; MLSys does not list a DOI, and the README retains the original 2023 arXiv row year and link.
+
+### Symphony (2023)
+- Paper title: Symphony: Optimized DNN Model Serving using Deferred Batch Scheduling
+- DOI: -
+- Affiliations: University of Washington<br>Duke University<br>Microsoft
+- Affiliations source: https://arxiv.org/pdf/2308.07470
+- Method: SLO 可调度窗口内延迟派发以扩大批次；集中式细粒度协调与负载比例扩缩容
+- Advantages: 同等 GPU 数下 goodput 提升 5×；同等工作负载下 GPU 用量减少 60%
+- Method/advantages source: https://arxiv.org/pdf/2308.07470
+- Verification: confirmed from the arXiv paper; no formal proceedings version or DOI was found.
+
+### DeepPlan (2023)
+- Paper title: Fast and Efficient Model Serving Using Multi-GPUs with Direct-Host-Access
+- DOI: https://doi.org/10.1145/3552326.3567508
+- Affiliations: Ajou University
+- Affiliations source: https://jeongseob.github.io/assets/papers/jeong_eurosys23.pdf
+- Method: Direct Host Access 边加载边执行；多 GPU 并行传输模型并生成执行计划
+- Advantages: 四张 V100 上，单请求推理加速 1.18×–2.21×；BERT-Base 100 ms SLO 实验 goodput 达 98%–99%
+- Method/advantages source: https://jeongseob.github.io/assets/papers/jeong_eurosys23.pdf
+- Verification: confirmed from the formal EuroSys paper and ACM DOI record.
+
+### Tabi (2023)
+- Paper title: Tabi: An Efficient Multi-Level Inference System for Large Language Models
+- DOI: https://doi.org/10.1145/3552326.3587438
+- Affiliations: Hong Kong University of Science and Technology<br>University of Science and Technology of China<br>Fuzhou University
+- Affiliations source: https://2023.eurosys.org/accepted-papers.html
+- Method: 小模型置信度路由至大模型的多级推理；注意力词剪枝与加权集成
+- Advantages: 达到 LLM 级准确率目标时，平均时延较 INFaaS 降低 21%–40%、较 Cocktail 降低 11%–26%
+- Method/advantages source: https://cse.hkust.edu.hk/~kaichen/papers/tabi-eurosys23.pdf
+- Verification: confirmed from the official EuroSys accepted-paper record, formal paper, and ACM DOI.
+
+### Kairos (2023)
+- Paper title: Kairos: Building Cost-Efficient Machine Learning Inference Systems with Heterogeneous Cloud Resources
+- DOI: https://doi.org/10.1145/3588195.3592997
+- Affiliations: Northeastern University<br>MIT Lincoln Laboratory
+- Affiliations source: https://dl.acm.org/doi/10.1145/3588195.3592997
+- Method: 成本预算下近似搜索异构 CPU/GPU 配置；二分图匹配进行 QoS 感知请求路由
+- Advantages: 满足 QoS 与成本预算时，吞吐较满足 QoS 的同构配置高 1.25× 以上
+- Method/advantages source: https://baolin-li.netlify.app/uploads/2023_HPDC_KAIROS.pdf
+- Verification: confirmed from the formal ACM HPDC record and the authors' conference paper/presentation.
+
+### Shepherd (2023)
+- Paper title: SHEPHERD: Serving DNNs in the Wild
+- DOI: -
+- Affiliations: University of Waterloo<br>Yale University<br>University of California, Berkeley
+- Affiliations source: https://www.usenix.org/conference/nsdi23/presentation/zhang-hong
+- Method: 聚合请求流的两级规划/服务；结合抢占与模型批处理特性的在线调度
+- Advantages: 生产工作负载上，goodput 最高提升 18.1×、利用率最高提升 1.8×，并扩展至数百 workers
+- Method/advantages source: https://www.usenix.org/conference/nsdi23/presentation/zhang-hong
+- Verification: confirmed from the official USENIX NSDI proceedings page and paper; no DOI is listed.
+
+### AlpaServe (2023)
+- Paper title: AlpaServe: Statistical Multiplexing with Model Parallelism for Deep Learning Serving
+- DOI: -
+- Affiliations: University of California, Berkeley<br>Peking University<br>University of Pennsylvania<br>Stanford University<br>Google<br>University of California, San Diego
+- Affiliations source: https://www.usenix.org/system/files/osdi23-li-zhuohan.pdf
+- Method: 联合优化多模型放置与模型并行；以统计复用吸收突发请求
+- Advantages: 在生产工作负载上，满足 99% 以上请求时延约束时，请求率最高提升 10×或可承受突发度提升 6×
+- Method/advantages source: https://www.usenix.org/conference/osdi23/presentation/li-zhouhan
+- Verification: confirmed from the official USENIX OSDI proceedings page and paper; no DOI is listed.
+
+### Clover (2023)
+- Paper title: Clover: Toward Sustainable AI with Carbon-Aware Machine Learning Inference Service
+- DOI: https://doi.org/10.1145/3581784.3607034
+- Affiliations: Northeastern University<br>MIT Lincoln Laboratory
+- Affiliations source: https://arxiv.org/pdf/2304.09781
+- Method: 碳强度感知的混合精度模型选择；MIG GPU 分区与请求调度
+- Advantages: 48 小时 California trace 实验中，满足 SLA 且准确率下降 2%–4% 时，各应用碳排放节省超过 75%
+- Method/advantages source: https://doi.org/10.1145/3581784.3607034
+- Verification: confirmed from the formal ACM SC publication and publication paper affiliation block; the quantitative boundary is the paper's 48-hour California carbon-intensity experiment.
+
+### iGniter (2023)
+- Paper title: iGniter: Interference-Aware GPU Resource Provisioning for Predictable DNN Inference in the Cloud
+- DOI: https://doi.org/10.1109/TPDS.2022.3232715
+- Affiliations: East China Normal University<br>University of Louisiana at Lafayette<br>Sun Yat-Sen University<br>Peng Cheng Laboratory<br>Huazhong University of Science and Technology
+- Affiliations source: https://ieeexplore.ieee.org/document/10002315
+- Method: GPU 共享干扰性能建模；联合优化空间配额与自适应批大小
+- Advantages: 在云 GPU 共置实验中满足时延/吞吐 SLO，并降低资源配置成本
+- Method/advantages source: https://fangmingliu.github.io/files/GPU-inference-cloud-tpds2023.pdf
+- Verification: confirmed from the formal IEEE TPDS record and publication paper.
+
+### Gpulet (2022)
+- Paper title: Serving Heterogeneous Machine Learning Models on Multi-GPU Servers with Spatio-Temporal Sharing
+- DOI: -
+- Affiliations: Korea Advanced Institute of Science and Technology
+- Affiliations source: https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf
+- Method: GPU 空间分区与时间共享统一为 gpulet；干扰感知装箱、批处理和自动扩缩容
+- Advantages: 两台双 RTX 2080 Ti 服务器上，SLO 保持吞吐较时间共享平均提升 61.7%，干扰建模再提升 7.5%
+- Method/advantages source: https://www.usenix.org/sites/default/files/conference/protected-files/atc22_slides_choi_seungbeom.pdf
+- Verification: confirmed from the official USENIX ATC proceedings paper and slides; no DOI is listed.
+
+### Cocktail (2022)
+- Paper title: Cocktail: A Multidimensional Optimization for Model Serving in Cloud
+- DOI: -
+- Affiliations: The Pennsylvania State University
+- Affiliations source: https://www.usenix.org/conference/nsdi22/presentation/gunasekaran
+- Method: 动态选择满足准确率/时延的模型集成；结合 transient VM 的主动自动扩缩容
+- Advantages: AWS 实验中部署成本降低 1.45×、时延降低 2×，最多 96% 请求满足目标准确率
+- Method/advantages source: https://www.usenix.org/conference/nsdi22/presentation/gunasekaran
+- Verification: confirmed from the official USENIX NSDI proceedings page and paper; no DOI is listed.
 
 ## Batch 6: Inference papers, 2025–2026
