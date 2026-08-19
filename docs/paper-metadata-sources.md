@@ -1,33 +1,16 @@
 # Paper Metadata Sources
 
-This file records the evidence used for the `Affiliations`, `Method`, and
-`Advantages` columns in `README.md`. Task 1 establishes the record structure
-only; no paper metadata is asserted here until it has been verified from a
-reliable publication-time source.
+This file records exactly one evidence entry for each paper in the
+`Affiliations`, `Method`, and `Advantages` columns of `README.md`. Entries are
+identified by scheduler, year, and training/inference batch. Each entry contains
+one `Paper title`, `DOI`, `Affiliations`, `Affiliations source`, `Method`,
+`Advantages`, `Method/advantages source`, and `Verification` field.
 
-## Evidence record template
-
-Create one entry per paper using the following form:
-
-```markdown
-### Scheduler (YEAR)
-
-- Affiliations: Institution A; Institution B
-- Affiliations source: URL
-- Paper title: Full paper title
-- DOI: https://doi.org/...
-- Method: 中文方法短语
-- Advantages: 中文优点短语
-- Method/advantages source: URL
-- Verification: confirmed
-```
-
-Use the paper or official proceedings as the primary source. Record
-publication-time affiliations, normalize institution names without guessing,
-and use `-` when a field cannot be confirmed. Keep source URLs attached to the
-specific claims they support. `Verification` should state `confirmed` only
-after the affiliation, method, and advantages claims have each been checked;
-otherwise record the unresolved ambiguity instead of filling it speculatively.
+The paper or official proceedings is the primary source. Affiliations preserve
+publication-time institutions, remove department/address suffixes, and use
+normalized institution names without guessing. A `-` marks a field that could
+not be confirmed, with the reason recorded in `Verification`. Source URLs remain
+attached to the claims they support.
 
 ## Batch 1: Training papers, 2017–2020
 
@@ -45,12 +28,12 @@ survey names, were used for matching.
 - Verification: confirmed
 
 ### Parrot (2020)
-- Affiliations: Hong Kong University of Science and Technology; Tianjin University; Dalian University of Technology
+- Affiliations: Hong Kong University of Science and Technology<br>Tianjin University<br>Dalian University of Technology
 - Affiliations source: https://doi.org/10.1109/TCC.2020.3040312 (DOI is the identity anchor; the publication record is the source for the affiliation block.)
 - Paper title: Efficient Online Scheduling for Coflow-Aware Machine Learning Clusters
 - DOI: https://doi.org/10.1109/TCC.2020.3040312
 - Method: LPCAS 推断 SRPT 作业；动态作业权重与 LP 加权带宽缩放分配
-- Advantages: 降低依赖 coflow 作业的总 JCT；在基于 Microsoft workload 的大规模 trace-driven 仿真中，较 Aalo 最多降低总 JCT 58.4%
+- Advantages: 降低依赖 coflow 作业的总作业完成时间（JCT）；在基于 Microsoft workload 的大规模 trace-driven 仿真中，较 Aalo 最多降低总作业完成时间（JCT）58.4%
 - Method/advantages source: https://ieeexplore.ieee.org/document/9269382
 - Verification: confirmed against the formal TCC paper, "Efficient Online Scheduling for Coflow-Aware Machine Learning Clusters" (online publication: 2020; IEEE Transactions on Cloud Computing, Volume 10, Issue 4, 2022; DOI 10.1109/TCC.2020.3040312); publication-time affiliations follow the paper's author footnotes.
 
@@ -62,10 +45,10 @@ survey names, were used for matching.
 - Method: -
 - Advantages: -
 - Method/advantages source: https://dl.acm.org/doi/abs/10.5555/3433701.3433820
-- Verification: unresolved: the linked DOI resolves to a record whose publication-time affiliation block could not be reliably retrieved.
+- Verification: unresolved: the linked DOI resolves to a record whose publication-time affiliation block and full claim text could not be reliably retrieved, so affiliations, method, and advantages remain unfilled.
 
 ### Antman (2020)
-- Affiliations: Alibaba
+- Affiliations: Alibaba Group
 - Affiliations source: https://www.usenix.org/system/files/osdi20-xiao.pdf
 - Paper title: AntMan: Dynamic Scaling on GPU Clusters for Deep Learning
 - DOI: -
@@ -75,17 +58,17 @@ survey names, were used for matching.
 - Verification: confirmed
 
 ### Gavel (2020)
-- Affiliations: Stanford University; Microsoft Research
+- Affiliations: Stanford University<br>Microsoft Research
 - Affiliations source: https://deepakn94.github.io/assets/papers/gavel-osdi20.pdf
 - Paper title: Heterogeneity-Aware Cluster Scheduling Policies for Deep Learning Workloads
 - DOI: -
 - Method: 有效吞吐量建模；异构感知优化分配
-- Advantages: 提高负载承载量；降低 JCT 和 makespan
+- Advantages: 提高负载承载量；降低作业完成时间（JCT）和 makespan
 - Method/advantages source: https://www.usenix.org/conference/osdi20/presentation/narayanan-deepak
 - Verification: confirmed
 
 ### HiveD (2020)
-- Affiliations: Peking University; Microsoft; The University of Hong Kong
+- Affiliations: Peking University<br>Microsoft<br>The University of Hong Kong
 - Affiliations source: https://www.usenix.org/system/files/osdi20-zhao_hanyu.pdf
 - Paper title: HiveD: Sharing a GPU Cluster for Deep Learning with Guarantees
 - DOI: -
@@ -95,7 +78,7 @@ survey names, were used for matching.
 - Verification: confirmed
 
 ### Themis (2020)
-- Affiliations: University of Wisconsin–Madison; Microsoft Research
+- Affiliations: University of Wisconsin–Madison<br>Microsoft Research
 - Affiliations source: https://wisr.cs.wisc.edu/papers/nsdi20-themis.pdf
 - Paper title: Themis: Fair and Efficient GPU Cluster Scheduling
 - DOI: -
@@ -125,14 +108,14 @@ survey names, were used for matching.
 - Verification: confirmed
 
 ### SPIN (2020)
-- Affiliations: -
-- Affiliations source: https://ieeexplore.ieee.org/document/9155445/
-- Paper title: Communication Contention Aware Scheduling of Multiple Deep Learning Training Jobs
-- DOI: -
-- Method: 通信争用感知的作业调度
-- Advantages: -
-- Method/advantages source: https://ieeexplore.ieee.org/document/9155445/
-- Verification: unresolved: official page was reachable but its publication-time affiliation block and evaluation claims were not reliably extractable.
+- Affiliations: University of Florida<br>University of California, Los Angeles<br>University of California, Santa Barbara
+- Affiliations source: https://research.aalto.fi/en/publications/scheduling-placement-sensitive-bsp-jobs-with-inaccurate-execution
+- Paper title: Scheduling Placement-Sensitive BSP Jobs with Inaccurate Execution Time Estimation
+- DOI: https://doi.org/10.1109/INFOCOM41043.2020.9155445
+- Method: 面向放置敏感 BSP 作业的在线调度；基于不准确执行时间估计进行决策
+- Advantages: 在放置敏感 BSP 作业的实验中降低 makespan；对执行时间估计误差具有鲁棒性
+- Method/advantages source: https://research.aalto.fi/en/publications/scheduling-placement-sensitive-bsp-jobs-with-inaccurate-execution
+- Verification: confirmed against the INFOCOM publication record and abstract: SPIN is the scheduler for placement-sensitive BSP jobs; the author affiliations are University of Florida, UCLA, and UCSB, and the evaluation reports makespan behavior under inaccurate execution-time estimates.
 
 ### E-LAS (2020)
 - Affiliations: University of Louisiana at Lafayette
@@ -145,7 +128,7 @@ survey names, were used for matching.
 - Verification: confirmed for method and advantage; affiliation normalized from the publication record.
 
 ### CODA (2020)
-- Affiliations: Shanghai Jiao Tong University; China University of Geosciences
+- Affiliations: Shanghai Jiao Tong University<br>China University of Geosciences
 - Affiliations source: https://www.proceedings.com/content/057/057955webtoc.pdf
 - Paper title: CODA: Improving Resource Utilization by Slimming and Co-locating DNN Training Jobs
 - DOI: -
@@ -185,7 +168,7 @@ survey names, were used for matching.
 - Verification: confirmed from the EuroSys paper; the PDF identifies all authors with Microsoft Research India and states the fairness, efficiency, and trading benefits.
 
 ### MLCloudPrice (2020)
-- Affiliations: Stanford University; Microsoft Research
+- Affiliations: Stanford University<br>Microsoft Research
 - Affiliations source: https://deepakn94.github.io/assets/papers/trainingonadime-dispa20.pdf
 - Paper title: Training on a Dime: Cost-Effective Training of Machine Learning Models in the Cloud
 - DOI: -
@@ -200,17 +183,17 @@ survey names, were used for matching.
 - Paper title: Job Scheduling for Large-Scale Machine Learning Clusters
 - DOI: https://doi.org/10.1145/3386367.3432588
 - Method: 基于作业特征的并行度感知调度
-- Advantages: 降低 JCT 和 makespan
+- Advantages: 降低作业完成时间（JCT）和 makespan
 - Method/advantages source: https://dl.acm.org/doi/10.1145/3386367.3432588
 - Verification: unresolved affiliation: the ACM record confirms the paper identity, but a publication-time affiliation block was not reliably retrievable.
 
 ### MARBLE (2020)
-- Affiliations: Oak Ridge National Laboratory; Virginia Tech
+- Affiliations: Oak Ridge National Laboratory<br>Virginia Tech
 - Affiliations source: https://people.cs.vt.edu/~butta/docs/ccgrid2020-MARBLE.pdf
 - Paper title: MARBLE: A Multi-GPU Aware Job Scheduler for Deep Learning on HPC Systems
 - DOI: https://doi.org/10.1109/CCGrid49817.2020.00066
 - Method: 多 GPU 节点非线性扩展建模与共享调度
-- Advantages: 改善训练性能并降低 JCT
+- Advantages: 改善训练性能并降低作业完成时间（JCT）
 - Method/advantages source: https://research.ibm.com/publications/marble-a-multi-gpu-aware-job-scheduler-for-deep-learning-on-hpc-systems
 - Verification: confirmed
 
@@ -220,7 +203,7 @@ survey names, were used for matching.
 - Paper title: Communication Contention Aware Scheduling of Multiple Deep Learning Training Jobs
 - DOI: https://doi.org/10.48550/arXiv.2002.10105
 - Method: 通信争用感知的放置与最短剩余服务时间调度
-- Advantages: 相比无争用或盲目接受争用的策略降低平均 JCT 并提高资源利用率
+- Advantages: 相比无争用或盲目接受争用的策略降低平均作业完成时间（JCT）并提高资源利用率
 - Method/advantages source: https://arxiv.org/abs/2002.10105
 - Verification: method and advantage confirmed in the original paper, which names Ada-SRSF as the scheduling algorithm; publication-time affiliation was not reliably extractable.
 
@@ -245,12 +228,12 @@ survey names, were used for matching.
 - Verification: confirmed
 
 ### Tiresias (2019)
-- Affiliations: University of Michigan; Microsoft Research
+- Affiliations: University of Michigan<br>Microsoft Research
 - Affiliations source: https://www.usenix.org/system/files/nsdi19-gu.pdf
 - Paper title: Tiresias: A GPU Cluster Manager for Distributed Deep Learning
 - DOI: -
-- Method: 预估 JCT 的短作业优先与离散分配
-- Advantages: 降低平均 JCT
+- Method: 预估作业完成时间（JCT）的短作业优先与离散分配
+- Advantages: 降低平均作业完成时间（JCT）
 - Method/advantages source: https://www.usenix.org/conference/nsdi19/presentation/gu
 - Verification: confirmed
 
@@ -280,7 +263,7 @@ survey names, were used for matching.
 - Paper title: Deep Learning-Based Job Placement in Distributed Machine Learning Clusters
 - DOI: -
 - Method: 基于奖励建模的深度强化学习干扰感知放置
-- Advantages: 降低平均 JCT
+- Advantages: 降低平均作业完成时间（JCT）
 - Method/advantages source: https://ieeexplore.ieee.org/document/8737460
 - Verification: method and advantage confirmed from the official IEEE paper record; affiliation was not exposed reliably.
 
@@ -322,7 +305,7 @@ survey names, were used for matching.
 - Method: Kubernetes 集群上的分布式训练作业动态调度与扩缩容
 - Advantages: -
 - Method/advantages source: https://closer.scitevents.org/Abstract.aspx?idEvent=uzu18usNf68%3D
-- Verification: method confirmed by the official CLOSER paper record; the prior National Taiwan University affiliation and speed claim came from a secondary copy and were removed.
+- Verification: method confirmed by the official CLOSER paper record; the prior National Taiwan University affiliation and speed claim came from a secondary copy and were removed, and no replacement affiliation or advantage claim was reliably confirmable.
 
 ### $FC^2$ (2019)
 - Affiliations: -
@@ -335,17 +318,17 @@ survey names, were used for matching.
 - Verification: method and advantage confirmed against the formal Cluster Computing paper record; affiliation was not reliably extractable.
 
 ### Philly (2019)
-- Affiliations: UNIST; University of Wisconsin; Microsoft Research; Beihang University
+- Affiliations: UNIST<br>University of Wisconsin–Madison<br>Microsoft Research<br>Beihang University
 - Affiliations source: https://www.usenix.org/system/files/atc19-jeon.pdf
 - Paper title: Analysis of Large-Scale Multi-Tenant GPU Clusters for DNN Training Workloads
 - DOI: -
 - Method: 生产多租户 GPU 集群工作负载分析与调度追踪
-- Advantages: 揭示 gang 调度、本地性和故障对集群利用率的影响并给出调度设计指导
+- Advantages: 揭示协同调度、本地性和故障对集群利用率的影响并给出调度设计指导
 - Method/advantages source: https://www.usenix.org/conference/atc19/presentation/jeon
 - Verification: confirmed against the README-linked Philly/ATC publication; the prior five-institution list belonged to Gandiva and was removed.
 
 ### Gandiva (2018)
-- Affiliations: Beihang University; Microsoft Research; The University of Hong Kong; Huazhong University of Science and Technology; Peking University
+- Affiliations: Beihang University<br>Microsoft Research<br>The University of Hong Kong<br>Huazhong University of Science and Technology<br>Peking University
 - Affiliations source: https://www.usenix.org/system/files/osdi18-xiao.pdf
 - Paper title: Gandiva: Introspective Cluster Scheduling for Deep Learning
 - DOI: -
@@ -355,7 +338,7 @@ survey names, were used for matching.
 - Verification: confirmed
 
 ### OASiS (2018)
-- Affiliations: The University of Hong Kong; University of Calgary
+- Affiliations: The University of Hong Kong<br>University of Calgary
 - Affiliations source: https://i.cs.hku.hk/~cwu/papers/yxbao-infocom18.pdf
 - Paper title: Online Job Scheduling in Distributed Machine Learning Clusters
 - DOI: https://doi.org/10.1109/INFOCOM.2018.8486422
@@ -365,12 +348,12 @@ survey names, were used for matching.
 - Verification: confirmed against the original paper PDF for the IEEE INFOCOM publication linked by README.
 
 ### Optimus (2018)
-- Affiliations: The University of Hong Kong; ByteDance
+- Affiliations: The University of Hong Kong<br>ByteDance
 - Affiliations source: https://i.cs.hku.hk/~cwu/papers/yhpeng-eurosys18.pdf
 - Paper title: Optimus: An Efficient Dynamic Resource Scheduler for Deep Learning Clusters
 - DOI: -
 - Method: 基于性能模型的动态资源调度
-- Advantages: 提高集群利用率并降低 JCT
+- Advantages: 提高集群利用率并降低作业完成时间（JCT）
 - Method/advantages source: https://i.cs.hku.hk/~cwu/papers/yhpeng-eurosys18.pdf
 - Verification: confirmed
 
@@ -385,7 +368,7 @@ survey names, were used for matching.
 - Verification: method and advantage confirmed against the authors' original paper version; publication-time affiliation was not reliably extractable from the linked proceedings record.
 
 ### Topology-Aware (2017)
-- Affiliations: Barcelona Supercomputing Center; Universitat Politècnica de Catalunya; IBM Watson Research Center
+- Affiliations: Barcelona Supercomputing Center<br>Universitat Politècnica de Catalunya<br>IBM Watson Research Center
 - Affiliations source: https://upcommons.upc.edu/bitstreams/6244943d-5795-4c80-b2ac-222d1f1dc355/download
 - Paper title: Topology-Aware GPU Scheduling for Learning Workloads in Cloud Environments
 - DOI: -
@@ -395,7 +378,7 @@ survey names, were used for matching.
 - Verification: confirmed
 
 ### HyperDrive (2017)
-- Affiliations: Brown University; Microsoft; University of Nevada, Reno
+- Affiliations: Brown University<br>Microsoft<br>University of Nevada, Reno
 - Affiliations source: https://www2.cs.uh.edu/~fyan/Paper/Middleware17.pdf
 - Paper title: HyperDrive: A Flexible Cloud Testbed for Research and Education
 - DOI: -
@@ -412,7 +395,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### Acme (2024)
 - Paper title: Characterization of Large Language Model Development in the Datacenter
 - DOI: -
-- Affiliations: Shanghai AI Laboratory; Nanyang Technological University; Peking University; Shanghai Jiao Tong University; SenseTime Research; The Chinese University of Hong Kong
+- Affiliations: Shanghai AI Laboratory<br>Nanyang Technological University<br>Peking University<br>Shanghai Jiao Tong University<br>SenseTime Research<br>The Chinese University of Hong Kong
 - Affiliations source: https://www.usenix.org/conference/nsdi24/presentation/hu
 - Method: LLM 训练数据中心工作负载画像；故障与资源利用分析
 - Advantages: 揭示 LLM 训练相对传统 DL 的资源低效、并行与故障特征
@@ -422,20 +405,20 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### Cassini (2024)
 - Paper title: CASSINI: Network-Aware Job Scheduling in Machine Learning Clusters
 - DOI: -
-- Affiliations: Massachusetts Institute of Technology; University of Texas at Austin
+- Affiliations: Massachusetts Institute of Technology<br>University of Texas at Austin
 - Affiliations source: https://www.usenix.org/system/files/nsdi24-rajasekaran.pdf
 - Method: 基于 Affinity graph 错开共享链路上的通信阶段
-- Advantages: 降低平均/尾部 JCT；减少 ECN 标记报文
+- Advantages: 降低平均/尾部作业完成时间（JCT）；减少 ECN 标记报文
 - Method/advantages source: https://www.usenix.org/conference/nsdi24/presentation/rajasekaran
 - Verification: confirmed
 
 ### Sia (2023)
 - Paper title: Sia: Heterogeneity-aware, goodput-optimized ML-cluster scheduling
 - DOI: https://doi.org/10.1145/3600006.3613175
-- Affiliations: Carnegie Mellon University; Cornell University; Petuum
+- Affiliations: Carnegie Mellon University<br>Cornell University<br>Petuum
 - Affiliations source: https://sosp2023.mpi-sws.org/program.html
-- Method: 异构 GPU goodput 建模；自适应资源与作业调度
-- Advantages: 提高异构集群 goodput；兼顾公平性与效率
+- Method: 异构 GPU 有效吞吐量建模；自适应资源与作业调度
+- Advantages: 提高异构集群有效吞吐量；兼顾公平性与效率
 - Method/advantages source: https://dl.acm.org/doi/10.1145/3600006.3613175
 - Verification: confirmed
 
@@ -452,7 +435,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### Hydro (2023)
 - Paper title: Hydro: Surrogate-Based Hyperparameter Tuning Service in Datacenters
 - DOI: -
-- Affiliations: Nanyang Technological University; Shanghai AI Laboratory; Peking University; National University of Singapore; SenseTime Research
+- Affiliations: Nanyang Technological University<br>Shanghai AI Laboratory<br>Peking University<br>National University of Singapore<br>SenseTime Research
 - Affiliations source: https://www.usenix.org/conference/osdi23/presentation/hu
 - Method: 代理模型驱动的超参搜索；作业级与集群级协调
 - Advantages: 提升超参调优效率和集群资源利用率
@@ -462,7 +445,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### Shockwave (2023)
 - Paper title: Shockwave: Proactive, Fair and Efficient Cluster Scheduling for Dynamic Adaptation in Machine Learning
 - DOI: -
-- Affiliations: University of Wisconsin–Madison; University of Texas at Austin
+- Affiliations: University of Wisconsin–Madison<br>University of Texas at Austin
 - Affiliations source: https://www.usenix.org/system/files/nsdi23-zheng.pdf
 - Method: 动态市场机制；随机动态规划预测未来调度
 - Advantages: 提高动态适应作业的 makespan 与公平性
@@ -492,7 +475,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### SiloD (2023)
 - Paper title: SiloD: A Co-Design of Caching and Scheduling for Deep Learning Clusters
 - DOI: https://doi.org/10.1145/3552326.3567499
-- Affiliations: University of California, Berkeley; University of Washington
+- Affiliations: University of California, Berkeley<br>University of Washington
 - Affiliations source: https://dl.acm.org/doi/abs/10.1145/3552326.3567499
 - Method: 隔离式 GPU 共享与深度学习作业调度
 - Advantages: 降低干扰并改善 GPU 利用率
@@ -504,7 +487,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 - DOI: -
 - Affiliations: Hong Kong University of Science and Technology
 - Affiliations source: https://www.usenix.org/conference/atc23/presentation/weng
-- Method: GPU 需求预测；面向 gang 作业的公平调度
+- Method: GPU 需求预测；面向协同调度作业的公平调度
 - Advantages: 提供可扩展的 GPU 集群调度仿真与比较
 - Method/advantages source: https://www.usenix.org/conference/atc23/presentation/weng
 - Verification: unresolved: the official page confirms the linked artifact, but the full paper metadata was not reliably extractable.
@@ -515,7 +498,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 - Affiliations: Peking University
 - Affiliations source: https://dl.acm.org/doi/10.1145/3575693.3575721
 - Method: 基于流量/进度的弹性资源分配
-- Advantages: 提高训练资源利用率并降低 JCT
+- Advantages: 提高训练资源利用率并降低作业完成时间（JCT）
 - Method/advantages source: https://dl.acm.org/doi/10.1145/3575693.3575721
 - Verification: confirmed
 
@@ -534,15 +517,15 @@ records are preferred; arXiv-only records retain `DOI: -`.
 - DOI: -
 - Affiliations: Peking University
 - Affiliations source: https://arxiv.org/pdf/2304.06381
-- Method: 性能模型驱动的 GPU 分配与频率调节；网络打包与 buddy placement
-- Advantages: 在能耗预算相同下降低平均 JCT；减少碎片化能耗
+- Method: 性能模型驱动的 GPU 分配与频率调节；网络打包与 buddy 放置
+- Advantages: 在能耗预算相同下降低平均作业完成时间（JCT）；减少碎片化能耗
 - Method/advantages source: https://arxiv.org/abs/2304.06381
 - Verification: confirmed from the arXiv preprint; no formal publication DOI was found.
 
 ### EDL (2022)
 - Paper title: Elastic Deep Learning in Multi-Tenant GPU Clusters
 - DOI: https://doi.org/10.1109/TPDS.2021.3064966
-- Affiliations: The Chinese University of Hong Kong; Huawei Technologies Co. Ltd
+- Affiliations: The Chinese University of Hong Kong<br>Huawei Technologies Co., Ltd.
 - Affiliations source: http://www.cse.cuhk.edu.hk/~jcheng/papers/edl_tpds21.pdf
 - Method: 停止无关扩缩容；动态数据管线；弹性调整训练并行度
 - Advantages: 适应负载变化并提高 GPU 利用率；支持迁移与落后者缓解
@@ -552,7 +535,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### AOnline (2022)
 - Paper title: Online Scheduling Algorithm for Heterogeneous Distributed Machine Learning Jobs
 - DOI: https://doi.org/10.1109/TCC.2022.3143153
-- Affiliations: Wuhan University; University of Hong Kong; University of Oregon
+- Affiliations: Wuhan University<br>The University of Hong Kong<br>University of Oregon
 - Affiliations source: https://doi.org/10.1109/TCC.2022.3143153
 - Method: 在线批处理分组；原始-对偶算法决定作业窗口与 worker/parameter server 配置
 - Advantages: 在多种资源配置下提高资源利用率并降低加权平均完成时间
@@ -572,10 +555,10 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### Muri (2022)
 - Paper title: Multi-Resource Interleaving for Deep Learning Training
 - DOI: https://doi.org/10.1145/3544216.3544224
-- Affiliations: University of Washington; University of California, Berkeley
+- Affiliations: University of Washington<br>University of California, Berkeley
 - Affiliations source: https://dl.acm.org/doi/10.1145/3544216.3544224
 - Method: 多资源交错调度；利用资源使用互补性共置作业
-- Advantages: 提高资源利用率并降低 JCT
+- Advantages: 提高资源利用率并降低作业完成时间（JCT）
 - Method/advantages source: https://dl.acm.org/doi/10.1145/3544216.3544224
 - Verification: confirmed
 
@@ -602,10 +585,10 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### GADGET (2022)
 - Paper title: GADGET: Online Resource Optimization for Scheduling Ring-All-Reduce Learning Jobs
 - DOI: https://doi.org/10.1109/INFOCOM48880.2022.9796785
-- Affiliations: Iowa State University; Virginia Tech; The University of Hong Kong; The Ohio State University
+- Affiliations: Iowa State University<br>Virginia Tech<br>The University of Hong Kong<br>The Ohio State University
 - Affiliations source: https://arxiv.org/pdf/2202.01158
 - Method: 环境建模；贪心 ring-all-reduce 调度与虚拟网络嵌入
-- Advantages: 在线调度 ring-all-reduce 作业并降低 JCT；提供竞争比保证
+- Advantages: 在线调度 ring-all-reduce 作业并降低作业完成时间（JCT）；提供竞争比保证
 - Method/advantages source: https://arxiv.org/abs/2202.01158
 - Verification: confirmed against the arXiv full text and its IEEE INFOCOM acceptance record
 
@@ -622,7 +605,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### Aryl (2022)
 - Paper title: Aryl: An Elastic Cluster Scheduler for Deep Learning
 - DOI: -
-- Affiliations: ByteDance; City University of Hong Kong; The Chinese University of Hong Kong
+- Affiliations: ByteDance<br>City University of Hong Kong<br>The Chinese University of Hong Kong
 - Affiliations source: https://arxiv.org/pdf/2202.07896
 - Method: 借用空闲推理服务器；训练作业弹性伸缩；回收时减少抢占
 - Advantages: 提高训练集群利用率并降低排队与完成时间
@@ -642,27 +625,27 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### $DL^2$ (2021)
 - Paper title: DL2: A Deep Learning-Driven Scheduler for Deep Learning Clusters
 - DOI: https://doi.org/10.1109/TPDS.2021.3052895
-- Affiliations: University of Illinois Urbana–Champaign
+- Affiliations: University of Illinois Urbana-Champaign
 - Affiliations source: https://arxiv.org/abs/1909.06040
 - Method: 深度强化学习驱动的 GPU 资源调度
-- Advantages: 降低平均 JCT 并提高资源利用率
+- Advantages: 降低平均作业完成时间（JCT）并提高资源利用率
 - Method/advantages source: https://arxiv.org/abs/1909.06040
 - Verification: DOI confirmed; only the publication-time affiliation remains unresolved; method/advantage confirmed from the linked preprint.
 
 ### Astraea (2021)
 - Paper title: ASTRAEA: A Fair Deep Learning Scheduler for Multi-Tenant GPU Clusters
 - DOI: https://doi.org/10.1109/TPDS.2021.3136245
-- Affiliations: Peking University; SenseTime Research; Nanyang Technological University
+- Affiliations: Peking University<br>SenseTime Research<br>Nanyang Technological University
 - Affiliations source: https://www.computer.org/csdl/journal/td/2022/11/09655467/1zpnJgc6F4k
 - Method: LTGF 长期 GPU 时间公平度量；两阶段租户/作业调度
-- Advantages: 提高租户与作业公平性，同时不牺牲平均 JCT
+- Advantages: 提高租户与作业公平性，同时不牺牲平均作业完成时间（JCT）
 - Method/advantages source: https://ieeexplore.ieee.org/document/9655467/
 - Verification: confirmed
 
 ### Horus (2021)
 - Paper title: Horus: Interference-Aware and Prediction-Based Scheduling in Deep Learning Systems
 - DOI: https://doi.org/10.1109/TPDS.2021.3079202
-- Affiliations: Lancaster University; University of Leeds
+- Affiliations: Lancaster University<br>University of Leeds
 - Affiliations source: https://www.computer.org/csdl/journal/td/2022/01/09428512/1twaPWUeIMw
 - Method: 基于计算图特征预测 GPU 利用率；干扰感知共置
 - Advantages: 减少在线 profiling；提高吞吐与资源效率
@@ -692,7 +675,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### Chronus (2021)
 - Paper title: Chronus: A Novel Deadline-aware Scheduler for Deep Learning Training Jobs
 - DOI: https://doi.org/10.1145/3472883.3486978
-- Affiliations: Shanghai Jiao Tong University; Shanghai AI Laboratory
+- Affiliations: Shanghai Jiao Tong University<br>Shanghai AI Laboratory
 - Affiliations source: https://dl.acm.org/doi/abs/10.1145/3472883.3486978
 - Method: 面向 DAG 的训练作业关键路径调度
 - Advantages: 降低分布式训练作业完成时间
@@ -712,7 +695,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### Helios (2021)
 - Paper title: Characterization and Prediction of Deep Learning Workloads in Large-Scale GPU Datacenters
 - DOI: https://doi.org/10.1145/3458817.3476223
-- Affiliations: Nanyang Technological University; Shanghai AI Laboratory
+- Affiliations: Nanyang Technological University<br>Shanghai AI Laboratory
 - Affiliations source: https://dl.acm.org/doi/abs/10.1145/3458817.3476223
 - Method: 大规模 GPU 数据中心工作负载统计与时间序列预测
 - Advantages: 揭示负载、故障和资源利用规律；提供公开 traces
@@ -722,10 +705,10 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### ONES (2021)
 - Paper title: Online Evolutionary Batch Size Orchestration for Scheduling Deep Learning Workloads in GPU Clusters
 - DOI: https://doi.org/10.1145/3458817.3480859
-- Affiliations: National University of Singapore; Nanyang Technological University; ByteDance
+- Affiliations: National University of Singapore<br>Nanyang Technological University<br>ByteDance
 - Affiliations source: https://sc21.supercomputing.org/app/uploads/2021/11/SC21-Final-Program-211114.pdf
 - Method: 在线进化搜索与弹性 batch size 编排
-- Advantages: 降低平均 JCT；提高 GPU 利用率
+- Advantages: 降低平均作业完成时间（JCT）；提高 GPU 利用率
 - Method/advantages source: https://dl.acm.org/doi/10.1145/3458817.3480859
 - Verification: confirmed
 
@@ -734,8 +717,8 @@ records are preferred; arXiv-only records retain `DOI: -`.
 - DOI: -
 - Affiliations: Carnegie Mellon University
 - Affiliations source: https://www.usenix.org/system/files/osdi21-qiao.pdf
-- Method: goodput 建模与自适应并行度/资源联合调度
-- Advantages: 提高 goodput 并兼顾公平性
+- Method: 有效吞吐量建模与自适应并行度/资源联合调度
+- Advantages: 提高有效吞吐量并兼顾公平性
 - Method/advantages source: https://www.usenix.org/conference/osdi21/presentation/qiao
 - Verification: confirmed
 
@@ -752,7 +735,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### SMD (2021)
 - Paper title: A Sum-of-Ratios Multi-Dimensional-Knapsack Decomposition for DNN Resource Scheduling
 - DOI: https://doi.org/10.1109/INFOCOM42981.2021.9488916
-- Affiliations: Iowa State University; The University of Hong Kong; Virginia Tech; The Ohio State University
+- Affiliations: Iowa State University<br>The University of Hong Kong<br>Virginia Tech<br>The Ohio State University
 - Affiliations source: https://arxiv.org/pdf/2105.13855
 - Method: 和式比值多维背包分解；内层资源分配与外层作业选择
 - Advantages: 降低 DNN 作业完成时间并提供近似保证
@@ -762,7 +745,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### ANDREAS (2021)
 - Paper title: ANDREAS: Artificial intelligence traiNing scheDuler foR accElerAted resource clusterS
 - DOI: https://doi.org/10.1109/FICLOUD49777.2021.00063
-- Affiliations: Politecnico di Milano; 7bulls; University of Milano-Bicocca; E4 Computer Engineering
+- Affiliations: Politecnico di Milano<br>7bulls<br>University of Milano-Bicocca<br>E4 Computer Engineering
 - Affiliations source: https://arxiv.org/pdf/2105.05080
 - Method: 训练作业 profiling；兼顾能耗与延迟惩罚的 Random Greedy GPU 分配
 - Advantages: 相比基线平均降低 30%–62% 成本
@@ -772,7 +755,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### RubberBand (2021)
 - Paper title: RubberBand: Cloud-based Hyperparameter Tuning
 - DOI: https://doi.org/10.1145/3447786.3456245
-- Affiliations: University of California, Berkeley; Georgia Institute of Technology
+- Affiliations: University of California, Berkeley<br>Georgia Institute of Technology
 - Affiliations source: https://dl.acm.org/doi/10.1145/3447786.3456245
 - Method: 贝叶斯优化驱动的云端超参调优与资源调度
 - Advantages: 减少超参搜索成本并提高调优效率
@@ -782,7 +765,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### Hermes (2021)
 - Paper title: A GPU Scheduling Framework to Accelerate Hyper-Parameter Optimization in Deep Learning Clusters
 - DOI: https://doi.org/10.3390/electronics10030350
-- Affiliations: Sogang University; SK Telecom
+- Affiliations: Sogang University<br>SK Telecom
 - Affiliations source: https://pdfs.semanticscholar.org/d0c6/afaefd29c27ab510000bf772d14c1be989af.pdf
 - Method: 容器抢占与时间共享；按早期收敛速度动态排序
 - Advantages: 加快超参数搜索并减少时间共享开销
@@ -792,7 +775,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### Jigsaw (2021)
 - Paper title: Doing More by Doing Less: How Structured Partial Backpropagation Improves Deep Learning Clusters
 - DOI: https://doi.org/10.1145/3488659.3493778
-- Affiliations: Amazon Alexa AI; University of Wisconsin–Madison; University of Texas at Austin
+- Affiliations: Amazon Alexa AI<br>University of Wisconsin–Madison<br>University of Texas at Austin
 - Affiliations source: https://arxiv.org/pdf/2111.10672
 - Method: 结构化部分反向传播；按迭代粒度进行调度
 - Advantages: 减少反向传播资源开销并提高集群效率
@@ -814,7 +797,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### Heterogeneity at Hyperscale (2026)
 - Paper title: Heterogeneity at Hyperscale: Characterization and Scheduling of Large Production AI Clusters at Alibaba (Operational Systems)
 - DOI: -
-- Affiliations: Hong Kong University of Science and Technology; Alibaba Group; Fudan University
+- Affiliations: Hong Kong University of Science and Technology<br>Alibaba Group<br>Fudan University
 - Affiliations source: https://www.usenix.org/system/files/osdi26-li-suyi.pdf
 - Method: 生产 AI 集群工作负载刻画；GPU 碎片整理与抢占成本感知 SpotGPU 调度
 - Advantages: 回放实验中，存在资源余量的节点数减少 20.2%；GPU 分配率从 68% 提升至 93%
@@ -824,17 +807,17 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### Weave (2026)
 - Paper title: Weave: Efficient Co-Scheduling for Disaggregated RL Post-Training
 - DOI: -
-- Affiliations: Hong Kong University of Science and Technology; University of Illinois Urbana–Champaign; Alibaba Group
+- Affiliations: Hong Kong University of Science and Technology<br>University of Illinois Urbana-Champaign<br>Alibaba Group
 - Affiliations source: https://www.usenix.org/system/files/osdi26-wu-tianyuan.pdf
 - Method: 解耦式 RL 后训练跨集群共调度；两级 co-execution group 编排与热启动切换
-- Advantages: 成本效率较标准解耦提升 1.84×、较共置基线提升 1.38×；SLO 达成率 100%
+- Advantages: 成本效率较标准解耦提升 1.84×、较共置基线提升 1.38×；服务等级目标（SLO）达成率 100%
 - Method/advantages source: https://www.usenix.org/conference/osdi26/presentation/wu-tianyuan
 - Verification: confirmed against the official OSDI 2026 paper page and proceedings PDF.
 
 ### RollPacker (2026)
 - Paper title: RollPacker: Taming Long-Tail Rollouts for RL Post-Training with Tail Batching
 - DOI: -
-- Affiliations: Hong Kong University of Science and Technology; Alibaba Group
+- Affiliations: Hong Kong University of Science and Technology<br>Alibaba Group
 - Affiliations source: https://www.usenix.org/conference/nsdi26/presentation/gao-wei
 - Method: Tail batching 集中长尾 rollout；联合弹性并行、奖励阶段调度与流式训练
 - Advantages: 较 veRL 端到端加速 2.03×–2.56×、较 RLHFuse 最高 2.24×；保持 on-policy 准确性
@@ -844,7 +827,7 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### GFS (2026)
 - Paper title: GFS: A Preemption-aware Scheduling Framework for GPU Clusters with Predictive Spot Instance Management
 - DOI: https://doi.org/10.1145/3760250.3762231
-- Affiliations: Shanghai Jiao Tong University; Zhejiang University; Alibaba Group
+- Affiliations: Shanghai Jiao Tong University<br>Zhejiang University<br>Alibaba Group
 - Affiliations source: https://www.asplos-conference.org/asplos2026/program/index.html
 - Method: 租户 GPU 需求预测；动态 Spot 配额与抢占成本感知调度
 - Advantages: Spot 任务驱逐率降低 33.0%、排队延迟降低 44.1%；GPU 分配率最高提升 22.8%
@@ -864,17 +847,17 @@ records are preferred; arXiv-only records retain `DOI: -`.
 ### Rubick (2025)
 - Paper title: Rubick: Exploiting Job Reconfigurability for Deep Learning Cluster Scheduling
 - DOI: -
-- Affiliations: East China Normal University; Alibaba Group; Huazhong University of Science and Technology; Peng Cheng Laboratory
+- Affiliations: East China Normal University<br>Alibaba Group<br>Huazhong University of Science and Technology<br>Peng Cheng Laboratory
 - Affiliations source: https://proceedings.mlsys.org/paper_files/paper/2025/file/270339c997293ca2988c62f4308e389f-Paper-Conference.pdf
 - Method: 性能模型驱动作业执行计划重配置；联合优化多资源分配
-- Advantages: 在 64-GPU 集群实验中，相对论文比较的先进系统，平均 JCT 和 makespan 最多分别缩短至 1/3.2 和 1/1.4
+- Advantages: 在 64-GPU 集群实验中，相对论文对比系统，平均作业完成时间（JCT）和 makespan 最多分别缩短至 1/3.2 和 1/1.4
 - Method/advantages source: https://proceedings.mlsys.org/paper_files/paper/2025/hash/270339c997293ca2988c62f4308e389f-Abstract-Conference.html
 - Verification: confirmed against the official MLSys 2025 proceedings page and conference paper PDF: the abstract (PDF p. 1) states the 64-GPU boundary and reductions of up to 3.2× and 1.4× versus state-of-the-art systems; §7 “Evaluation” (PDF p. 8) specifies the 64-GPU cluster, and §7.2 “End-to-end comparison,” Table 4 (PDF p. 10), reports the average-JCT and makespan comparisons.
 
 ### JABAS (2025)
 - Paper title: JABAS: Joint Adaptive Batching and Automatic Scaling for DNN Training on Heterogeneous GPUs
 - DOI: https://doi.org/10.1145/3689031.3696078
-- Affiliations: UNIST; Samsung SDS
+- Affiliations: UNIST<br>Samsung SDS
 - Affiliations source: https://dl.acm.org/doi/10.1145/3689031.3696078
 - Method: 异构 GPU 上联合细粒度自适应 batching 与粗粒度 GPU 自动扩缩容
 - Advantages: 平均训练时间缩短 33.3%、成本降低 54.2%，且无准确率损失
@@ -891,7 +874,7 @@ The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows)
 - Affiliations: Stanford University
 - Affiliations source: https://www.usenix.org/system/files/atc21-romero.pdf
 - Method: 模型变体生成与性能/成本/准确率约束下的模型、硬件和优化选择；模型级与虚拟机级自动扩缩容
-- Advantages: 提高吞吐；减少延迟 SLO 违约；降低成本
+- Advantages: 提高吞吐；减少延迟服务等级目标（SLO）违约；降低成本
 - Method/advantages source: https://www.usenix.org/conference/atc21/presentation/romero
 - Verification: confirmed; official USENIX ATC proceedings used instead of the linked PDF mirror, and no formal DOI was assigned in the proceedings record.
 
@@ -928,7 +911,7 @@ The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows)
 ### Morphling (2021)
 - Paper title: Morphling: Fast, Near-Optimal Auto-Configuration for Cloud-Native Model Serving
 - DOI: https://doi.org/10.1145/3472883.3486987
-- Affiliations: The Hong Kong University of Science and Technology<br>Alibaba Group
+- Affiliations: Hong Kong University of Science and Technology<br>Alibaba Group
 - Affiliations source: https://dl.acm.org/doi/10.1145/3472883.3486987
 - Method: 以性能模型和贝叶斯优化搜索云原生模型服务配置
 - Advantages: 接近最优配置；降低配置搜索开销；改善服务性能
@@ -950,7 +933,7 @@ The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows)
 - DOI: https://doi.org/10.1109/CCGrid49817.2020.00-32
 - Affiliations: The University of Sydney<br>Commonwealth Scientific and Industrial Research Organisation<br>RMIT University
 - Affiliations source: https://ieeexplore.ieee.org/document/9139602
-- Method: 面向时分设备的动态批处理与公平调度；按请求等待和 SLO 调整批次
+- Method: 面向时分设备的动态批处理与公平调度；按请求等待和服务等级目标（SLO）调整批次
 - Advantages: 提高吞吐；降低延迟；改善多租户公平性
 - Method/advantages source: https://ieeexplore.ieee.org/document/9139602
 - Verification: confirmed from the IEEE CCGrid publication record and DOI metadata.
@@ -1000,7 +983,7 @@ The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows)
 - DOI: https://doi.org/10.1145/3419111.3421284
 - Affiliations: University of California, Riverside<br>Indian Institute of Technology Gandhinagar
 - Affiliations source: https://dl.acm.org/doi/10.1145/3419111.3421284
-- Method: 基于 CUDA MPS 的 GPU 空间切分；自调节分区资源并按 SLO 调整批大小
+- Method: 基于 CUDA MPS 的 GPU 空间切分；自调节分区资源并按服务等级目标（SLO）调整批大小
 - Advantages: 提高 GPU 利用率和吞吐；降低推理延迟
 - Method/advantages source: https://dl.acm.org/doi/10.1145/3419111.3421284
 - Verification: confirmed from ACM SoCC DOI metadata and the publication record.
@@ -1011,17 +994,17 @@ The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows)
 - Affiliations: Microsoft Research<br>University of California, Berkeley<br>Anyscale<br>Databricks<br>Georgia Institute of Technology
 - Affiliations source: https://dl.acm.org/doi/10.1145/3419111.3421285
 - Method: 离线剖析与离散事件仿真选择流水线硬件、复制和批处理；在线控制器按负载自动扩缩容
-- Advantages: 降低成本；减少延迟 SLO 违约
+- Advantages: 降低成本；减少延迟服务等级目标（SLO）违约
 - Method/advantages source: https://par.nsf.gov/servlets/purl/10245792
 - Verification: confirmed from the ACM SoCC record and the camera-ready paper; the README spelling `Inferline` is retained.
 
 ### MArk (2019)
 - Paper title: MArk: Exploiting Cloud Services for Cost-Effective, SLO-Aware Machine Learning Inference Serving
 - DOI: -
-- Affiliations: The Hong Kong University of Science and Technology<br>University of Nevada, Reno
+- Affiliations: Hong Kong University of Science and Technology<br>University of Nevada, Reno
 - Affiliations source: https://www.usenix.org/conference/atc19/presentation/zhang-chengliang
 - Method: 动态批处理；按负载在 CPU、GPU 等异构硬件间路由并弹性扩缩容
-- Advantages: 降低服务成本；满足 SLO；提高吞吐
+- Advantages: 降低服务成本；满足服务等级目标（SLO）；提高吞吐
 - Method/advantages source: https://www.usenix.org/conference/atc19/presentation/zhang-chengliang
 - Verification: confirmed from the official USENIX ATC page and PDF; no DOI is listed in the USENIX proceedings record.
 
@@ -1091,7 +1074,7 @@ The README contains 27 inference rows dated 2016–2021 (there are no 2016 rows)
 - Affiliations: University of Nevada, Reno<br>Google
 - Affiliations source: https://dl.acm.org/doi/10.1145/3295500.3356164
 - Method: 基于强化学习的模型服务调度与资源配置
-- Advantages: 降低服务成本；满足延迟 SLO
+- Advantages: 降低服务成本；满足延迟服务等级目标（SLO）
 - Method/advantages source: https://dl.acm.org/doi/10.1145/3295500.3356164
 - Verification: confirmed from the ACM SC publication and DOI metadata.
 
@@ -1183,7 +1166,7 @@ and two from 2022), and all 15 are covered below.
 ### MOSEL (2023)
 - Paper title: MOSEL: Inference Serving Using Dynamic Modality Selection
 - DOI: https://doi.org/10.18653/v1/2024.emnlp-main.501
-- Affiliations: The University of Texas at Austin
+- Affiliations: University of Texas at Austin
 - Affiliations source: https://aclanthology.org/2024.emnlp-main.501.pdf
 - Method: 按请求准确率与时延约束动态选择多模态输入；截止期感知排队与批处理
 - Advantages: 在论文多模态工作负载中，保证目标准确率时吞吐提升 3.6×、作业完成时间缩短 11×
@@ -1215,8 +1198,8 @@ and two from 2022), and all 15 are covered below.
 - DOI: -
 - Affiliations: University of Washington<br>Duke University<br>Microsoft
 - Affiliations source: https://arxiv.org/pdf/2308.07470
-- Method: SLO 可调度窗口内延迟派发以扩大批次；集中式细粒度协调与负载比例扩缩容
-- Advantages: 同等 GPU 数下 goodput 提升 5×；同等工作负载下 GPU 用量减少 60%
+- Method: 服务等级目标（SLO）可调度窗口内延迟派发以扩大批次；集中式细粒度协调与负载比例扩缩容
+- Advantages: 同等 GPU 数下有效吞吐量提升 5×；同等工作负载下 GPU 用量减少 60%
 - Method/advantages source: https://arxiv.org/pdf/2308.07470
 - Verification: confirmed from the arXiv paper; no formal proceedings version or DOI was found.
 
@@ -1226,7 +1209,7 @@ and two from 2022), and all 15 are covered below.
 - Affiliations: Ajou University
 - Affiliations source: https://jeongseob.github.io/assets/papers/jeong_eurosys23.pdf
 - Method: Direct Host Access 边加载边执行；多 GPU 并行传输模型并生成执行计划
-- Advantages: 四张 V100 上，单请求推理加速 1.18×–2.21×；BERT-Base 100 ms SLO 实验 goodput 达 98%–99%
+- Advantages: 四张 V100 上，单请求推理加速 1.18×–2.21×；BERT-Base 100 ms 服务等级目标（SLO）实验有效吞吐量达 98%–99%
 - Method/advantages source: https://jeongseob.github.io/assets/papers/jeong_eurosys23.pdf
 - Verification: confirmed from the formal EuroSys paper and ACM DOI record.
 
@@ -1256,7 +1239,7 @@ and two from 2022), and all 15 are covered below.
 - Affiliations: University of Waterloo<br>Yale University<br>University of California, Berkeley
 - Affiliations source: https://www.usenix.org/conference/nsdi23/presentation/zhang-hong
 - Method: 聚合请求流的两级规划/服务；结合抢占与模型批处理特性的在线调度
-- Advantages: 生产工作负载上，goodput 最高提升 18.1×、利用率最高提升 1.8×，并扩展至数百 workers
+- Advantages: 生产工作负载上，有效吞吐量最高提升 18.1×、利用率最高提升 1.8×，并扩展至数百 workers
 - Method/advantages source: https://www.usenix.org/conference/nsdi23/presentation/zhang-hong
 - Verification: confirmed from the official USENIX NSDI proceedings page and paper; no DOI is listed.
 
@@ -1286,7 +1269,7 @@ and two from 2022), and all 15 are covered below.
 - Affiliations: East China Normal University<br>University of Louisiana at Lafayette<br>Sun Yat-Sen University<br>Peng Cheng Laboratory<br>Huazhong University of Science and Technology
 - Affiliations source: https://ieeexplore.ieee.org/document/10002315
 - Method: GPU 共享干扰性能建模；联合优化空间配额与自适应批大小
-- Advantages: 在云 GPU 共置实验中满足时延/吞吐 SLO，并降低资源配置成本
+- Advantages: 在云 GPU 共置实验中满足时延/吞吐服务等级目标（SLO），并降低资源配置成本
 - Method/advantages source: https://fangmingliu.github.io/files/GPU-inference-cloud-tpds2023.pdf
 - Verification: confirmed from the formal IEEE TPDS record and publication paper.
 
@@ -1296,7 +1279,7 @@ and two from 2022), and all 15 are covered below.
 - Affiliations: Korea Advanced Institute of Science and Technology
 - Affiliations source: https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf
 - Method: GPU 空间分区与时间共享统一为 gpulet；干扰感知装箱、批处理和自动扩缩容
-- Advantages: 两台双 RTX 2080 Ti 服务器上，SLO 保持吞吐较时间共享平均提升 61.7%，干扰建模再提升 7.5%
+- Advantages: 两台双 RTX 2080 Ti 服务器上，服务等级目标（SLO）保持吞吐较时间共享平均提升 61.7%，干扰建模再提升 7.5%
 - Method/advantages source: https://www.usenix.org/sites/default/files/conference/protected-files/atc22_slides_choi_seungbeom.pdf
 - Verification: confirmed from the official USENIX ATC proceedings paper and slides; no DOI is listed.
 
@@ -1315,7 +1298,7 @@ and two from 2022), and all 15 are covered below.
 ### OpenTela (2026)
 - Paper title: OpenTela: Unifying Decentralized Computing Resources for Heterogeneous LLM Serving (Operational Systems)
 - DOI: -
-- Affiliations: ETH Zurich; University of Cambridge; EPFL; MIT; ETH AI Center; The Hong Kong University of Science and Technology
+- Affiliations: ETH Zurich<br>University of Cambridge<br>EPFL<br>Massachusetts Institute of Technology<br>ETH AI Center<br>Hong Kong University of Science and Technology
 - Affiliations source: https://www.usenix.org/conference/osdi26/presentation/yao
 - Method: 用户态去中心化编排覆盖层；CRDT gossip 服务发现、统一异构集群接口与异构感知调度
 - Advantages: 生产部署超过 22 个月，跨机构为 1000+ 研究者、142 个模型处理 1300 万请求和 150 亿 token
@@ -1328,27 +1311,27 @@ and two from 2022), and all 15 are covered below.
 - Affiliations: Sun Yat-Sen University
 - Affiliations source: https://www.usenix.org/conference/osdi26/presentation/du
 - Method: 面向普通 GPU 集群的部分解耦编排；实例内按时间分离 prefill/decode、跨实例循环激活并自适应路由
-- Advantages: 32 张 L20、以太网集群服务 30B/70B 模型时，goodput 较 vLLM、Sarathi、DistServe、MoonCake 分别提升 1.96×、1.99×、2.51×、2.40×
+- Advantages: 32 张 L20、以太网集群服务 30B/70B 模型时，有效吞吐量较 vLLM、Sarathi、DistServe、MoonCake 分别提升 1.96×、1.99×、2.51×、2.40×
 - Method/advantages source: https://www.usenix.org/conference/osdi26/presentation/du
 - Verification: confirmed from the official USENIX OSDI proceedings page and paper; no DOI is listed.
 
 ### FlexLLM (2026)
 - Paper title: FlexLLM: Token-Level Co-Serving of LLM Inference and Finetuning with SLO Guarantees
 - DOI: -
-- Affiliations: Carnegie Mellon University; Purdue University; Anthropic PBC; Mistral AI; Stanford University; Amazon Web Services
+- Affiliations: Carnegie Mellon University<br>Purdue University<br>Anthropic PBC<br>Mistral AI<br>Stanford University<br>Amazon Web Services
 - Affiliations source: https://www.usenix.org/conference/nsdi26/presentation/oliaro
-- Method: 在共享 GPU 上按 token 融合 LLM 推理与 PEFT 微调；混合 token 调度器按 SLO 动态交错执行
-- Advantages: LLaMA-3.1-8B、Qwen-2.5-14B/32B 端到端实验中，在推理负载最高 20 req/s 时满足 SLO；微调吞吐在重载/轻载下分别提升 1.9×–4.8×/2.5×–6.8×
+- Method: 在共享 GPU 上按 token 融合 LLM 推理与 PEFT 微调；混合 token 调度器按服务等级目标（SLO）动态交错执行
+- Advantages: LLaMA-3.1-8B、Qwen-2.5-14B/32B 端到端实验中，在推理负载最高 20 req/s 时满足服务等级目标（SLO）；微调吞吐在重载/轻载下分别提升 1.9×–4.8×/2.5×–6.8×
 - Method/advantages source: https://www.usenix.org/conference/nsdi26/presentation/oliaro
 - Verification: confirmed from the official USENIX NSDI proceedings page and paper; no DOI is listed.
 
 ### JITServe (2026)
 - Paper title: JITServe: SLO-aware LLM Serving with Imprecise Request Information
 - DOI: -
-- Affiliations: University of Illinois Urbana-Champaign; Google; Cisco Research
+- Affiliations: University of Illinois Urbana-Champaign<br>Google<br>Cisco Research
 - Affiliations source: https://www.usenix.org/conference/nsdi26/presentation/zhang-wei
-- Method: 以渐进修正的不精确请求信息进行 SLO 感知调度；分组 margin-goodput 优化按需分配带宽与组批
-- Advantages: 在聊天、深度研究和智能体流水线等工作负载中，较先进设计将 service goodput 提升 1.4×–6.3×，或节省 28.5%–83.2% 资源
+- Method: 以渐进修正的不精确请求信息进行服务等级目标（SLO）感知调度；分组 margin-goodput 优化按需分配带宽与组批
+- Advantages: 在聊天、深度研究和智能体流水线等工作负载中，较论文对比方案将服务有效吞吐量提升 1.4×–6.3×，或节省 28.5%–83.2% 资源
 - Method/advantages source: https://www.usenix.org/conference/nsdi26/presentation/zhang-wei
 - Verification: confirmed from the official USENIX NSDI proceedings page and paper; the unaffiliated author is not an institution and no DOI is listed.
 
@@ -1365,7 +1348,7 @@ and two from 2022), and all 15 are covered below.
 ### TAPAS (2025)
 - Paper title: TAPAS: Thermal- and Power-Aware Scheduling for LLM Inference in Cloud Platforms
 - DOI: https://doi.org/10.1145/3676641.3716025
-- Affiliations: University of Illinois at Urbana-Champaign; Microsoft Azure Research; Microsoft Azure
+- Affiliations: University of Illinois at Urbana-Champaign<br>Microsoft Azure Research<br>Microsoft Azure
 - Affiliations source: https://www.asplos-conference.org/asplos2025/program.html
 - Method: 热/功耗感知的 GPU VM 放置、LLM 请求路由与实例配置联合调度
 - Advantages: Azure 生产 traces 的大规模评测中保持 P99 推理时延，最高温度和行峰值功耗分别降低 17% 和 23%，在热与功耗封顶时间低于 0.7% 的条件下，支持最多 40% 的服务器超配
@@ -1375,10 +1358,10 @@ and two from 2022), and all 15 are covered below.
 ### Past-Future Scheduler (2025)
 - Paper title: Past-Future Scheduler for LLM Serving under SLA Guarantees
 - DOI: https://doi.org/10.1145/3676641.3716011
-- Affiliations: Beihang University; SenseTime; Peking University
+- Affiliations: Beihang University<br>SenseTime<br>Peking University
 - Affiliations source: https://www.asplos-conference.org/asplos2025/program.html
 - Method: 结合历史输出长度分布与未来各时点 KV-cache 需求预测进行批次准入，平衡排队与请求驱逐
-- Advantages: 多种模型与硬件实验中，LightLLM 的 SLA goodput 较激进或保守调度器最高提升约 2–3×
+- Advantages: 多种模型与硬件实验中，LightLLM 的 SLA 有效吞吐量较激进或保守调度器最高提升约 2–3×
 - Method/advantages source: https://doi.org/10.1145/3676641.3716011
 - Verification: confirmed from the official ASPLOS program and ACM DOI record; the author-hosted arXiv copy was used only to inspect the method and evaluation details.
 
@@ -1395,19 +1378,19 @@ and two from 2022), and all 15 are covered below.
 ### Dilu (2025)
 - Paper title: Dilu: Enabling GPU Resourcing-on-Demand for Serverless DL Serving via Introspective Elasticity
 - DOI: https://doi.org/10.1145/3669940.3707251
-- Affiliations: Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences; Zhongguancun Laboratory; Nanjing Institute of InforSuperBahn; Institute of Intelligent Computing Technology, Suzhou, Chinese Academy of Sciences
+- Affiliations: Institute of Computing Technology, Chinese Academy of Sciences<br>University of Chinese Academy of Sciences<br>Zhongguancun Laboratory<br>Nanjing Institute of InforSuperBahn<br>Institute of Intelligent Computing Technology, Suzhou, Chinese Academy of Sciences
 - Affiliations source: https://doi.org/10.1145/3669940.3707251
 - Method: 面向 serverless DL 的内省弹性；资源互补放置与 GPU 垂直/实例水平二维协同扩缩容
-- Advantages: 论文评测中，较先进基线减少 10%–46% GPU 碎片，推理/训练吞吐分别提升 1.8×/1.1×，SLO 违约率降低 11%–71%
+- Advantages: 论文评测中，较论文基线减少 10%–46% GPU 碎片，推理/训练吞吐分别提升 1.8×/1.1×，服务等级目标（SLO）违约率降低 11%–71%
 - Method/advantages source: https://doi.org/10.1145/3669940.3707251
 - Verification: confirmed from the official ASPLOS program and ACM proceedings paper; campus labels for UCAS were deduplicated as one institution.
 
 ### GPU-Disaggregated Serving (Prism) (2025)
 - Paper title: GPU-Disaggregated Serving for Deep Learning Recommendation Models at Scale
 - DOI: -
-- Affiliations: The Hong Kong University of Science and Technology; Alibaba Group
+- Affiliations: Hong Kong University of Science and Technology<br>Alibaba Group
 - Affiliations source: https://www.usenix.org/conference/nsdi25/presentation/yang
-- Method: 将 DLRM 自动切分为 CPU/GPU 密集子图并在 RDMA 解耦资源池调度；拓扑感知放置与 SLO 感知通信
+- Method: 将 DLRM 自动切分为 CPU/GPU 密集子图并在 RDMA 解耦资源池调度；拓扑感知放置与服务等级目标（SLO）感知通信
 - Advantages: 拥挤 GPU 集群实验中，CPU 和 GPU 碎片分别减少 53% 和 27%
 - Method/advantages source: https://www.usenix.org/conference/nsdi25/presentation/yang
 - Verification: confirmed from the official USENIX NSDI proceedings page and paper; Prism is the system name used in the paper and no DOI is listed.
@@ -1415,7 +1398,7 @@ and two from 2022), and all 15 are covered below.
 ### ThunderServe (2025)
 - Paper title: ThunderServe: High-performance and Cost-efficient LLM Serving in Cloud Environments
 - DOI: -
-- Affiliations: University of Cambridge; Peking University; ETH Zurich
+- Affiliations: University of Cambridge<br>Peking University<br>ETH Zurich
 - Affiliations source: https://proceedings.mlsys.org/paper_files/paper/2025/file/c2a0e26dd9ee7d57e92bb1c24b39659a-Paper-Conference.pdf
 - Method: 面向云端异构 GPU/网络联合优化分组、prefill/decode 阶段配置、并行策略与请求路由；轻量重调度
 - Advantages: 相同价格预算的异构云与同构自建环境实验中，较 HexGen、DistServe、vLLM 吞吐最高/平均提升 2.1×/1.7×，可满足最高 2.5×、平均 1.5× 更严格的时延期限
@@ -1425,9 +1408,9 @@ and two from 2022), and all 15 are covered below.
 ### SOLA (2025)
 - Paper title: SOLA: Optimizing SLO Attainment for Large Language Model Serving with State-Aware Scheduling
 - DOI: -
-- Affiliations: Tsinghua University; Infinigence AI; Shanghai Jiao Tong University; Peking University
+- Affiliations: Tsinghua University<br>Infinigence AI<br>Shanghai Jiao Tong University<br>Peking University
 - Affiliations source: https://proceedings.mlsys.org/paper_files/paper/2025/file/bc82dbfbfa43232be85b8d9838f49c3e-Paper-Conference.pdf
 - Method: 迭代级状态感知调度；按请求与系统状态动态控制执行顺序和工作量，平衡 TTFT/TPOT
-- Advantages: A100 上 ShareGPT/LongBench 实验中，SLO 达成率由 45.5% 提至 99.4%；相对 vLLM-S、vLLM-D、SJF 平均多服务 1.04×–1.27× 请求
+- Advantages: A100 上 ShareGPT/LongBench 实验中，服务等级目标（SLO）达成率由 45.5% 提至 99.4%；相对 vLLM-S、vLLM-D、SJF 平均多服务 1.04×–1.27× 请求
 - Method/advantages source: https://proceedings.mlsys.org/paper_files/paper/2025/hash/bc82dbfbfa43232be85b8d9838f49c3e-Abstract-Conference.html
 - Verification: confirmed from the official MLSys proceedings paper and abstract page; no DOI is listed.
